@@ -1,2 +1,5 @@
 syntax: glob
 ProjectLunarPunch/Library/*
+*.suo
+*.csproj
+*.sln
