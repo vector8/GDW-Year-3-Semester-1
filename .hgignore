@@ -4,3 +4,4 @@ ProjectLunarPunch/Library/*
 *.csproj
 *.sln
 ProjectLunarPunch/obj/*
+Build/*
