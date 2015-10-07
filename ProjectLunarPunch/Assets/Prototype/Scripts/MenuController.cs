@@ -5,14 +5,15 @@ public class MenuController : MonoBehaviour
 {
     public GameObject mainMenuGroup, vsAiGroup, sparGroup;
 
-    public float onScreenX, offScreenX;
-
     public float moveTime;
 
     private float currentMoveTime = 0f;
 
     private void moveGroups(GameObject inFocus, GameObject outOfFocus1, GameObject outOfFocus2)
     {
+        float onScreenX = Camera.main.pixelWidth / 2f;
+        float offScreenX = 2000f;
+
         Vector3 pos = inFocus.transform.position;
         pos.x = onScreenX;
         inFocus.transform.position = pos;
@@ -53,5 +54,10 @@ public class MenuController : MonoBehaviour
     void Update()
     {
 
+    }
+
+    public void goToVsAiScene()
+    {
+        Application.LoadLevel("SampleBattle");
     }
 }
