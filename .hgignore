@@ -3,3 +3,4 @@ ProjectLunarPunch/Library/*
 *.suo
 *.csproj
 *.sln
+ProjectLunarPunch/obj/*
