@@ -5,3 +5,4 @@ ProjectLunarPunch/Library/*
 *.sln
 ProjectLunarPunch/obj/*
 Build/*
+ProjectLunarPunch/Temp/*
