@@ -1,13 +1,22 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class UnitControl : MonoBehaviour
 {
     public GameObject linePrefab;
 
+    private struct UnitCommand
+    {
+        public GameObject fromUnit, toUnit;
+        public LineRenderer line;
+    }
+
     private bool drawingLine = false;
+    private bool commandExists = false;
     private Vector3 lineStart, lineStartScreenSpace;
-    private LineRenderer line;
+    private UnitCommand currentCommand;
+    private List<UnitCommand> allCommands = new List<UnitCommand>();
 
     private const int NUM_LINE_VERTICES = 20;
 
@@ -27,18 +36,57 @@ public class UnitControl : MonoBehaviour
                     lineStart = getMouseWorldPosition();
                     lineStartScreenSpace = Input.mousePosition;
                     //lineStart = hit.transform.position;
-                    if(line != null)
+
+                    commandExists = false;
+                    for(int i = 0; i < allCommands.Count; i++)
                     {
-                        DestroyImmediate(line.gameObject);
+                        allCommands[i].line.enabled = false;
+
+                        if (allCommands[i].fromUnit.transform.GetInstanceID() == hit.transform.GetInstanceID())
+                        {
+                            currentCommand = allCommands[i];
+                            currentCommand.line.enabled = true;
+                            commandExists = true;
+                        }
                     }
-                    GameObject lineObject = Instantiate<GameObject>(linePrefab);
-                    line = lineObject.GetComponent<LineRenderer>();
+
+                    if(!commandExists)
+                    {
+                        currentCommand = new UnitCommand();
+                        GameObject lineObject = Instantiate<GameObject>(linePrefab);
+                        currentCommand.line = lineObject.GetComponent<LineRenderer>();
+                        currentCommand.fromUnit = hit.transform.gameObject;
+                    }
                 }
             }
         }
         else if (!Input.GetMouseButton(0) && drawingLine)
         {
             drawingLine = false;
+
+            RaycastHit hit;
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+            if (Physics.Raycast(ray, out hit) && hit.transform.gameObject.name.StartsWith("Unit"))
+            {
+                currentCommand.toUnit = hit.transform.gameObject;
+                if(!commandExists)
+                {
+                    allCommands.Add(currentCommand);
+                }
+            }
+            else
+            {
+                if(commandExists)
+                {
+                    if(allCommands.Contains(currentCommand))
+                    {
+                        allCommands.Remove(currentCommand);
+                    }
+                }
+                DestroyImmediate(currentCommand.line.gameObject);
+            }
+            
         }
         
 
@@ -63,7 +111,7 @@ public class UnitControl : MonoBehaviour
 
                 pos = bezier(u, lineStart, anchor1, anchor2, worldEndPos);
 
-                line.SetPosition(i, pos);
+                currentCommand.line.SetPosition(i, pos);
             }
         }
     }
@@ -88,9 +136,13 @@ public class UnitControl : MonoBehaviour
 
     public void lockIn()
     {
-        if(line != null)
+        // Battle calculations and animations here.
+
+        // Delete every element of allCommands after the battle.
+        for(int i = 0; i < allCommands.Count; i++)
         {
-            DestroyImmediate(line.gameObject);
+            DestroyImmediate(allCommands[i].line.gameObject);
         }
+        allCommands.Clear();
     }
 }
