@@ -1,0 +1,213 @@
+fileFormatVersion: 2
+guid: b53c0c4ed4619674eaae57ddd28ddfd4
+timeCreated: 1445198233
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: initialShadingGroup_initialShadingGroup1_pCone1_polySurface2_polySurface1
+    100004: initialShadingGroup_initialShadingGroup1_pCone2_polySurface2_polySurface1
+    100006: initialShadingGroup_initialShadingGroup1_pCone3_polySurface2_polySurface1
+    100008: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface10_polySurface1
+    100010: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface11_polySurface1
+    100012: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface12_polySurface1
+    100014: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface13_polySurface1
+    100016: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface14_polySurface1
+    100018: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface15_polySurface1
+    100020: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface16_polySurface1
+    100022: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface17_polySurface1
+    100024: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface18_polySurface1
+    100026: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface9_polySurface1
+    100028: initialShadingGroup_initialShadingGroup1_pCylinder12_polySurface2_polySurface19_polySurface1
+    100030: initialShadingGroup_initialShadingGroup1_pCylinder12_polySurface2_polySurface20_polySurface1
+    100032: initialShadingGroup_initialShadingGroup1_pCylinder12_polySurface2_polySurface21_polySurface1
+    100034: initialShadingGroup_initialShadingGroup1_pCylinder12_polySurface2_polySurface3_polySurface1
+    100036: initialShadingGroup_initialShadingGroup1_pCylinder12_polySurface2_polySurface4_polySurface1
+    100038: initialShadingGroup_initialShadingGroup1_pCylinder12_polySurface2_polySurface5_polySurface1
+    100040: initialShadingGroup_initialShadingGroup1_pCylinder12_polySurface2_polySurface6_polySurface1
+    100042: initialShadingGroup_initialShadingGroup1_pCylinder12_polySurface2_polySurface7_polySurface1
+    100044: initialShadingGroup_initialShadingGroup1_pCylinder12_polySurface2_polySurface8_polySurface1
+    100046: initialShadingGroup_initialShadingGroup1_pCylinder13_polySurface2_polySurface1
+    100048: initialShadingGroup_initialShadingGroup1_pCylinder14_polySurface2_polySurface1
+    100050: initialShadingGroup_initialShadingGroup1_pCylinder1_polySurface2_polySurface1
+    100052: initialShadingGroup_initialShadingGroup1_pPlane1_polySurface2_polySurface1
+    100054: initialShadingGroup_initialShadingGroup1_pPlane2_polySurface2_polySurface1
+    100056: initialShadingGroup_initialShadingGroup1_pSphere1_polySurface2_polySurface1
+    400000: //RootNode
+    400002: initialShadingGroup_initialShadingGroup1_pCone1_polySurface2_polySurface1
+    400004: initialShadingGroup_initialShadingGroup1_pCone2_polySurface2_polySurface1
+    400006: initialShadingGroup_initialShadingGroup1_pCone3_polySurface2_polySurface1
+    400008: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface10_polySurface1
+    400010: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface11_polySurface1
+    400012: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface12_polySurface1
+    400014: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface13_polySurface1
+    400016: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface14_polySurface1
+    400018: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface15_polySurface1
+    400020: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface16_polySurface1
+    400022: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface17_polySurface1
+    400024: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface18_polySurface1
+    400026: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface9_polySurface1
+    400028: initialShadingGroup_initialShadingGroup1_pCylinder12_polySurface2_polySurface19_polySurface1
+    400030: initialShadingGroup_initialShadingGroup1_pCylinder12_polySurface2_polySurface20_polySurface1
+    400032: initialShadingGroup_initialShadingGroup1_pCylinder12_polySurface2_polySurface21_polySurface1
+    400034: initialShadingGroup_initialShadingGroup1_pCylinder12_polySurface2_polySurface3_polySurface1
+    400036: initialShadingGroup_initialShadingGroup1_pCylinder12_polySurface2_polySurface4_polySurface1
+    400038: initialShadingGroup_initialShadingGroup1_pCylinder12_polySurface2_polySurface5_polySurface1
+    400040: initialShadingGroup_initialShadingGroup1_pCylinder12_polySurface2_polySurface6_polySurface1
+    400042: initialShadingGroup_initialShadingGroup1_pCylinder12_polySurface2_polySurface7_polySurface1
+    400044: initialShadingGroup_initialShadingGroup1_pCylinder12_polySurface2_polySurface8_polySurface1
+    400046: initialShadingGroup_initialShadingGroup1_pCylinder13_polySurface2_polySurface1
+    400048: initialShadingGroup_initialShadingGroup1_pCylinder14_polySurface2_polySurface1
+    400050: initialShadingGroup_initialShadingGroup1_pCylinder1_polySurface2_polySurface1
+    400052: initialShadingGroup_initialShadingGroup1_pPlane1_polySurface2_polySurface1
+    400054: initialShadingGroup_initialShadingGroup1_pPlane2_polySurface2_polySurface1
+    400056: initialShadingGroup_initialShadingGroup1_pSphere1_polySurface2_polySurface1
+    2300000: initialShadingGroup_initialShadingGroup1_pCone1_polySurface2_polySurface1
+    2300002: initialShadingGroup_initialShadingGroup1_pCone2_polySurface2_polySurface1
+    2300004: initialShadingGroup_initialShadingGroup1_pCone3_polySurface2_polySurface1
+    2300006: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface10_polySurface1
+    2300008: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface11_polySurface1
+    2300010: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface12_polySurface1
+    2300012: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface13_polySurface1
+    2300014: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface14_polySurface1
+    2300016: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface15_polySurface1
+    2300018: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface16_polySurface1
+    2300020: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface17_polySurface1
+    2300022: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface18_polySurface1
+    2300024: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface9_polySurface1
+    2300026: initialShadingGroup_initialShadingGroup1_pCylinder12_polySurface2_polySurface19_polySurface1
+    2300028: initialShadingGroup_initialShadingGroup1_pCylinder12_polySurface2_polySurface20_polySurface1
+    2300030: initialShadingGroup_initialShadingGroup1_pCylinder12_polySurface2_polySurface21_polySurface1
+    2300032: initialShadingGroup_initialShadingGroup1_pCylinder12_polySurface2_polySurface3_polySurface1
+    2300034: initialShadingGroup_initialShadingGroup1_pCylinder12_polySurface2_polySurface4_polySurface1
+    2300036: initialShadingGroup_initialShadingGroup1_pCylinder12_polySurface2_polySurface5_polySurface1
+    2300038: initialShadingGroup_initialShadingGroup1_pCylinder12_polySurface2_polySurface6_polySurface1
+    2300040: initialShadingGroup_initialShadingGroup1_pCylinder12_polySurface2_polySurface7_polySurface1
+    2300042: initialShadingGroup_initialShadingGroup1_pCylinder12_polySurface2_polySurface8_polySurface1
+    2300044: initialShadingGroup_initialShadingGroup1_pCylinder13_polySurface2_polySurface1
+    2300046: initialShadingGroup_initialShadingGroup1_pCylinder14_polySurface2_polySurface1
+    2300048: initialShadingGroup_initialShadingGroup1_pCylinder1_polySurface2_polySurface1
+    2300050: initialShadingGroup_initialShadingGroup1_pPlane1_polySurface2_polySurface1
+    2300052: initialShadingGroup_initialShadingGroup1_pPlane2_polySurface2_polySurface1
+    2300054: initialShadingGroup_initialShadingGroup1_pSphere1_polySurface2_polySurface1
+    3300000: initialShadingGroup_initialShadingGroup1_pCone1_polySurface2_polySurface1
+    3300002: initialShadingGroup_initialShadingGroup1_pCone2_polySurface2_polySurface1
+    3300004: initialShadingGroup_initialShadingGroup1_pCone3_polySurface2_polySurface1
+    3300006: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface10_polySurface1
+    3300008: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface11_polySurface1
+    3300010: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface12_polySurface1
+    3300012: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface13_polySurface1
+    3300014: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface14_polySurface1
+    3300016: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface15_polySurface1
+    3300018: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface16_polySurface1
+    3300020: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface17_polySurface1
+    3300022: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface18_polySurface1
+    3300024: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface9_polySurface1
+    3300026: initialShadingGroup_initialShadingGroup1_pCylinder12_polySurface2_polySurface19_polySurface1
+    3300028: initialShadingGroup_initialShadingGroup1_pCylinder12_polySurface2_polySurface20_polySurface1
+    3300030: initialShadingGroup_initialShadingGroup1_pCylinder12_polySurface2_polySurface21_polySurface1
+    3300032: initialShadingGroup_initialShadingGroup1_pCylinder12_polySurface2_polySurface3_polySurface1
+    3300034: initialShadingGroup_initialShadingGroup1_pCylinder12_polySurface2_polySurface4_polySurface1
+    3300036: initialShadingGroup_initialShadingGroup1_pCylinder12_polySurface2_polySurface5_polySurface1
+    3300038: initialShadingGroup_initialShadingGroup1_pCylinder12_polySurface2_polySurface6_polySurface1
+    3300040: initialShadingGroup_initialShadingGroup1_pCylinder12_polySurface2_polySurface7_polySurface1
+    3300042: initialShadingGroup_initialShadingGroup1_pCylinder12_polySurface2_polySurface8_polySurface1
+    3300044: initialShadingGroup_initialShadingGroup1_pCylinder13_polySurface2_polySurface1
+    3300046: initialShadingGroup_initialShadingGroup1_pCylinder14_polySurface2_polySurface1
+    3300048: initialShadingGroup_initialShadingGroup1_pCylinder1_polySurface2_polySurface1
+    3300050: initialShadingGroup_initialShadingGroup1_pPlane1_polySurface2_polySurface1
+    3300052: initialShadingGroup_initialShadingGroup1_pPlane2_polySurface2_polySurface1
+    3300054: initialShadingGroup_initialShadingGroup1_pSphere1_polySurface2_polySurface1
+    4300000: initialShadingGroup_initialShadingGroup1_pCone1_polySurface2_polySurface1
+    4300002: initialShadingGroup_initialShadingGroup1_pCone2_polySurface2_polySurface1
+    4300004: initialShadingGroup_initialShadingGroup1_pCone3_polySurface2_polySurface1
+    4300006: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface10_polySurface1
+    4300008: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface11_polySurface1
+    4300010: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface12_polySurface1
+    4300012: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface13_polySurface1
+    4300014: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface14_polySurface1
+    4300016: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface15_polySurface1
+    4300018: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface16_polySurface1
+    4300020: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface17_polySurface1
+    4300022: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface18_polySurface1
+    4300024: initialShadingGroup_initialShadingGroup1_pCylinder11_polySurface2_polySurface9_polySurface1
+    4300026: initialShadingGroup_initialShadingGroup1_pCylinder12_polySurface2_polySurface19_polySurface1
+    4300028: initialShadingGroup_initialShadingGroup1_pCylinder12_polySurface2_polySurface20_polySurface1
+    4300030: initialShadingGroup_initialShadingGroup1_pCylinder12_polySurface2_polySurface21_polySurface1
+    4300032: initialShadingGroup_initialShadingGroup1_pCylinder12_polySurface2_polySurface3_polySurface1
+    4300034: initialShadingGroup_initialShadingGroup1_pCylinder12_polySurface2_polySurface4_polySurface1
+    4300036: initialShadingGroup_initialShadingGroup1_pCylinder12_polySurface2_polySurface5_polySurface1
+    4300038: initialShadingGroup_initialShadingGroup1_pCylinder12_polySurface2_polySurface6_polySurface1
+    4300040: initialShadingGroup_initialShadingGroup1_pCylinder12_polySurface2_polySurface7_polySurface1
+    4300042: initialShadingGroup_initialShadingGroup1_pCylinder12_polySurface2_polySurface8_polySurface1
+    4300044: initialShadingGroup_initialShadingGroup1_pCylinder13_polySurface2_polySurface1
+    4300046: initialShadingGroup_initialShadingGroup1_pCylinder14_polySurface2_polySurface1
+    4300048: initialShadingGroup_initialShadingGroup1_pCylinder1_polySurface2_polySurface1
+    4300050: initialShadingGroup_initialShadingGroup1_pPlane1_polySurface2_polySurface1
+    4300052: initialShadingGroup_initialShadingGroup1_pPlane2_polySurface2_polySurface1
+    4300054: initialShadingGroup_initialShadingGroup1_pSphere1_polySurface2_polySurface1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
