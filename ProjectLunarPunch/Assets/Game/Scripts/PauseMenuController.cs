@@ -22,4 +22,9 @@ public class PauseMenuController : MonoBehaviour
     {
         Application.LoadLevel("MainMenu");
     }
+
+    public void restart()
+    {
+        Application.LoadLevel(Application.loadedLevel);
+    }
 }

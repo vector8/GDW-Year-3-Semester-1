@@ -14,23 +14,100 @@ public class UnitControl : MonoBehaviour
     public GameObject linePrefab;
     public BattleManager battleMgr;
     public Button lockInButton;
+    public TimerController timerControl;
+
+    // TODO: remove after networking?
+    public Unit[] enemies, allies;
 
     private bool drawingLine = false, commandExists = false, endDrawing = false;
     private Vector3 lineStart, lineStartScreenSpace;
     private Vector3 lineEnd, lineEndScreenSpace;
     private UnitCommand currentCommand;
-    private List<UnitCommand> allCommands = new List<UnitCommand>();
+    private List<UnitCommand> playerCommands = new List<UnitCommand>();
 
     private const int NUM_LINE_VERTICES = 20;
 
     // Update is called once per frame
     void Update()
     {
-        if(battleMgr.isBattleInProgress())
+        if (battleMgr.isBattleInProgress())
         {
             return;
         }
 
+        checkGameOver();
+
+        if(battleMgr.isGameOver())
+        {
+            return;
+        }
+
+        if(Mathf.Approximately(timerControl.timer, 0f))
+        {
+            if (drawingLine)
+            {
+                if (commandExists && playerCommands.Contains(currentCommand))
+                {
+                    playerCommands.Remove(currentCommand);
+                }
+                DestroyImmediate(currentCommand.line.gameObject);
+                drawingLine = false;
+            }
+
+            lockIn();
+            return;
+        }
+
+        handleInput();
+
+        if (playerCommands.Count > 0)
+        {
+            lockInButton.interactable = true;
+        }
+        else
+        {
+            lockInButton.interactable = false;
+        }
+    }
+
+    private void checkGameOver()
+    {
+        // Loop through all units to determine if it is game over.
+        bool enemiesDead = true, alliesDead = true;
+        for (int i = 0; i < enemies.Length; i++)
+        {
+            if (enemies[i] != null && enemies[i].gameObject.activeSelf && !enemies[i].isDead())
+            {
+                enemiesDead = false;
+                break;
+            }
+        }
+        for (int i = 0; i < allies.Length; i++)
+        {
+            if (allies[i] != null && allies[i].gameObject.activeSelf && !allies[i].isDead())
+            {
+                alliesDead = false;
+                break;
+            }
+        }
+
+        // TODO: implement these screens
+        if (alliesDead && enemiesDead)
+        {
+            battleMgr.setGameOver(GameOverType.Tie);
+        }
+        else if (alliesDead)
+        {
+            battleMgr.setGameOver(GameOverType.Lose);
+        }
+        else if (enemiesDead)
+        {
+            battleMgr.setGameOver(GameOverType.Win);
+        }
+    }
+
+    private void handleInput()
+    {
         if (Input.GetMouseButtonDown(0))
         {
             RaycastHit hit;
@@ -48,11 +125,11 @@ public class UnitControl : MonoBehaviour
                     //lineStart = hit.transform.position;
 
                     commandExists = false;
-                    for (int i = 0; i < allCommands.Count; i++)
+                    for (int i = 0; i < playerCommands.Count; i++)
                     {
-                        if (allCommands[i].fromUnit.transform.GetInstanceID() == hit.transform.GetInstanceID())
+                        if (playerCommands[i].fromUnit.transform.GetInstanceID() == hit.transform.GetInstanceID())
                         {
-                            currentCommand = allCommands[i];
+                            currentCommand = playerCommands[i];
                             commandExists = true;
                         }
                     }
@@ -96,7 +173,7 @@ public class UnitControl : MonoBehaviour
                     currentCommand.toUnit = unit;
                     if (!commandExists)
                     {
-                        allCommands.Add(currentCommand);
+                        playerCommands.Add(currentCommand);
                     }
                 }
             }
@@ -105,16 +182,15 @@ public class UnitControl : MonoBehaviour
             {
                 if (commandExists)
                 {
-                    if (allCommands.Contains(currentCommand))
+                    if (playerCommands.Contains(currentCommand))
                     {
-                        allCommands.Remove(currentCommand);
+                        playerCommands.Remove(currentCommand);
                     }
                 }
                 DestroyImmediate(currentCommand.line.gameObject);
             }
 
         }
-
 
         if (drawingLine)
         {
@@ -155,15 +231,6 @@ public class UnitControl : MonoBehaviour
                 endDrawing = false;
             }
         }
-
-        if(allCommands.Count > 0)
-        {
-            lockInButton.interactable = true;
-        }
-        else
-        {
-            lockInButton.interactable = false;
-        }
     }
 
     private Vector3 bezier(float u, Vector3 p0, Vector3 c0, Vector3 c1, Vector3 p1)
@@ -195,8 +262,43 @@ public class UnitControl : MonoBehaviour
     {
         //// Battle calculations and animations here. ////
         print("BATTLE STARTING!!");
+        List<UnitCommand> allCommands = new List<UnitCommand>();
 
         // TODO: Generate or fetch enemy commands here.
+        List<int> availableUnits = new List<int>();
+        for(int i = 0; i < allies.Length; i++)
+        {
+            if(allies[i] != null && allies[i].gameObject.activeSelf && !allies[i].isDead())
+            {
+                availableUnits.Add(i);
+            }
+        }
+        if(availableUnits.Count > 0)
+        {
+            for (int i = 0; i < enemies.Length; i++)
+            {
+                if(enemies[i] != null && enemies[i].gameObject.activeSelf && !enemies[i].isDead())
+                {
+                    UnitCommand cmd = new UnitCommand();
+                    cmd.fromUnit = enemies[i];
+                    int unitNumber = Random.Range(0, availableUnits.Count-1);
+                    cmd.toUnit = allies[availableUnits[unitNumber]];
+                    allCommands.Add(cmd);
+                }
+            }
+        }
+        else
+        {
+            // game should be over already...
+        }
+
+        // Loop through player commands to destroy all lines.
+        for (int i = 0; i < playerCommands.Count; i++)
+        {
+            DestroyImmediate(playerCommands[i].line.gameObject);
+        }
+        
+        allCommands.AddRange(playerCommands);
 
         // Sort commands by speed.
         allCommands.Sort(delegate(UnitCommand a, UnitCommand b)
@@ -220,12 +322,11 @@ public class UnitControl : MonoBehaviour
         // Loop through allCommands to create queue for BattleManager and to destroy all lines.
         for (int i = 0; i < allCommands.Count; i++)
         {
-            Destroy(allCommands[i].line.gameObject);
             sortedCommands.Enqueue(allCommands[i]);
         }
 
         battleMgr.commenceBattle(sortedCommands);
 
-        allCommands.Clear();
+        playerCommands.Clear();
     }
 }

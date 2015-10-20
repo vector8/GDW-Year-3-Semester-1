@@ -3,24 +3,33 @@ using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 
+public enum GameOverType
+{
+    Tie,
+    Win,
+    Lose
+}
+
 public class BattleManager : MonoBehaviour
 {
     public Button lockInButton;
     public Text instructionText, timerText;
     public TimerController timerController;
 
+    public GameObject gamePanel, gameOverPanel;
+    public Text gameOverText;
+
     private enum BattleState
     {
         NotInProgress,
         Attacking,
         Waiting,
-        Cleanup
+        Cleanup,
+        GameOver
     }
 
     private BattleState state = BattleState.NotInProgress;
     private Queue<UnitCommand> currentCommands;
-
-    private Timer waitTimer = new Timer();
 
     // Update is called once per frame
     void Update()
@@ -33,7 +42,6 @@ public class BattleManager : MonoBehaviour
                     if (command.fromUnit.gameObject.activeSelf && command.toUnit.gameObject.activeSelf)
                     {
                         command.fromUnit.attack(command.toUnit);
-                        waitTimer.setTime(1f);
                         state = BattleState.Waiting;
                     }
                     else
@@ -43,13 +51,10 @@ public class BattleManager : MonoBehaviour
                 }
                 break;
             case BattleState.Waiting:
-                if(waitTimer.isDone())
+                if(!currentCommands.Peek().fromUnit.isAttacking())
                 {
+
                     state = BattleState.Cleanup;
-                }
-                else
-                {
-                    waitTimer.update(Time.deltaTime);
                 }
                 break;
             case BattleState.Cleanup:
@@ -90,5 +95,31 @@ public class BattleManager : MonoBehaviour
     public bool isBattleInProgress()
     {
         return state != BattleState.NotInProgress;
+    }
+
+    public void setGameOver(GameOverType type)
+    {
+        state = BattleState.GameOver;
+
+        gamePanel.SetActive(false);
+        gameOverPanel.SetActive(true);
+
+        switch(type)
+        {
+            case GameOverType.Tie:
+                gameOverText.text = "It's a tie!";
+                break;
+            case GameOverType.Win:
+                gameOverText.text = "You win!";
+                break;
+            case GameOverType.Lose:
+                gameOverText.text = "You lose!";
+                break;
+        }
+    }
+
+    public bool isGameOver()
+    {
+        return state == BattleState.GameOver;
     }
 }

@@ -19,22 +19,58 @@ public class Unit : MonoBehaviour
     public bool defending = false;
     public bool ally = false;
 
+    private enum AttackState
+    {
+        NotAttacking,
+        Attacking,
+        Returning
+    }
+
     private const float CRIT_BONUS = 1.5f;
     private const float ADVANTAGE_BONUS = 1.2f;
     private const float DEFENDING_MODIFIER = 0.5f;
+    private const float ATTACK_ANIMATION_TIME = 0.5f;
 
-    public void attack(Unit other)
+    private AttackState attackState = AttackState.NotAttacking;
+    private Timer attackTimer = new Timer();
+    private Unit target;
+    private Vector3 originalPosition;
+
+    void Update()
     {
-        if(!other.gameObject.activeSelf)
+        if (attackState == AttackState.Attacking)
         {
-            return;
-        }
+            attackTimer.update(Time.deltaTime);
 
+            gameObject.transform.position = Vector3.Lerp(target.transform.position, originalPosition, attackTimer.getTime() / ATTACK_ANIMATION_TIME);
+
+            if (attackTimer.isDone())
+            {
+                dealDamage(target);
+                attackTimer.setTime(ATTACK_ANIMATION_TIME);
+                attackState = AttackState.Returning;
+            }
+        }
+        else if (attackState == AttackState.Returning)
+        {
+            attackTimer.update(Time.deltaTime);
+
+            gameObject.transform.position = Vector3.Lerp(originalPosition, target.transform.position, attackTimer.getTime() / ATTACK_ANIMATION_TIME);
+
+            if(attackTimer.isDone())
+            {
+                attackState = AttackState.NotAttacking;
+            }
+        }
+    }
+
+    private void dealDamage(Unit target)
+    {
         bool crit = (Random.Range(0f, 100f) < critChance);
 
-        float damage = att * ((100f - other.def) / 100f);
+        float damage = att * ((100f - target.def) / 100f);
 
-        if(hasAdvantage(type, other.type))
+        if (hasAdvantage(type, target.type))
         {
             damage *= ADVANTAGE_BONUS;
         }
@@ -46,15 +82,28 @@ public class Unit : MonoBehaviour
             print("Critical hit!");
         }
 
-        if (other.defending)
+        if (target.defending)
         {
             damage *= DEFENDING_MODIFIER;
         }
 
         // TODO: Add animation logic?
-        print(gameObject.name + " attacking " + other.gameObject.name + " for " + damage + " damage.");
+        print(gameObject.name + " attacking " + target.gameObject.name + " for " + damage + " damage.");
 
-        other.takeDamage(damage);
+        target.takeDamage(damage);
+    }
+
+    public void attack(Unit other)
+    {
+        if(!other.gameObject.activeSelf)
+        {
+            return;
+        }
+
+        attackState = AttackState.Attacking;
+        attackTimer.setTime(ATTACK_ANIMATION_TIME);
+        target = other;
+        originalPosition = gameObject.transform.position;
     }
 
     public void takeDamage(float damage)
@@ -93,5 +142,15 @@ public class Unit : MonoBehaviour
             default:
                 return false;
         }
+    }
+
+    public bool isAttacking()
+    {
+        return attackState != AttackState.NotAttacking;
+    }
+
+    public bool isDead()
+    {
+        return Mathf.Approximately(hp, 0f);
     }
 }
