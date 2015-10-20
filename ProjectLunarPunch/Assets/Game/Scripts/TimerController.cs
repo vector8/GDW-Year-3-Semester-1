@@ -7,7 +7,7 @@ public class TimerController : MonoBehaviour
     public Text timerText;
     public bool paused = false;
 
-    private float timer = 30f;
+    public float timer = 30f;
 
     // Update is called once per frame
     void Update()

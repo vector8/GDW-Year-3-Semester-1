@@ -10,6 +10,11 @@ public class Timer
         time = t;
     }
 
+    public float getTime()
+    {
+        return time;
+    }
+
     public void update(float elapsed)
     {
         time -= elapsed;
