@@ -58,6 +58,6 @@ public class MenuController : MonoBehaviour
 
     public void goToVsAiScene()
     {
-        Application.LoadLevel("SampleBattle");
+        Application.LoadLevel("Battle");
     }
 }

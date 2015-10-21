@@ -6,3 +6,4 @@ ProjectLunarPunch/Library/*
 ProjectLunarPunch/obj/*
 Build/*
 ProjectLunarPunch/Temp/*
+*.zip
