@@ -5,18 +5,21 @@ using System.Collections;
 public class HealthBar : MonoBehaviour
 {
     public Unit target;
-    public RectTransform bar;
+    public GameObject bar;
 
     // Update is called once per frame
     void Update()
     {
-        float width = (target.hp / target.maxHp) * 100f;
+        float width = (target.hp / target.maxHp) * 130f;
         if (width < 0f)
         {
             width = 0;
         }
-        bar.sizeDelta = new Vector2(width, bar.sizeDelta.y);
 
-        gameObject.SetActive(!target.isDead());
+        bar.transform.localScale = new Vector3(width, bar.transform.localScale.y, bar.transform.localScale.z);
+
+        Vector3 lookAtPosition = Camera.main.transform.position;
+        lookAtPosition.x = transform.position.x;
+        transform.LookAt(lookAtPosition);
     }
 }

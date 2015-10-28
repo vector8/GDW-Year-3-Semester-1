@@ -7,11 +7,16 @@ ModelImporter:
   fileIDToRecycleName:
     100000: polySurface1
     100002: //RootNode
+    100004: warhound
     400000: polySurface1
     400002: //RootNode
+    400004: warhound
     2300000: polySurface1
+    2300002: warhound
     3300000: polySurface1
+    3300002: warhound
     4300000: polySurface1
+    4300002: warhound
   materials:
     importMaterials: 1
     materialName: 0

@@ -34,6 +34,7 @@ ModelImporter:
     100052: initialShadingGroup_initialShadingGroup1_pPlane1_polySurface2_polySurface1
     100054: initialShadingGroup_initialShadingGroup1_pPlane2_polySurface2_polySurface1
     100056: initialShadingGroup_initialShadingGroup1_pSphere1_polySurface2_polySurface1
+    100058: berserker
     400000: //RootNode
     400002: initialShadingGroup_initialShadingGroup1_pCone1_polySurface2_polySurface1
     400004: initialShadingGroup_initialShadingGroup1_pCone2_polySurface2_polySurface1
@@ -63,6 +64,7 @@ ModelImporter:
     400052: initialShadingGroup_initialShadingGroup1_pPlane1_polySurface2_polySurface1
     400054: initialShadingGroup_initialShadingGroup1_pPlane2_polySurface2_polySurface1
     400056: initialShadingGroup_initialShadingGroup1_pSphere1_polySurface2_polySurface1
+    400058: berserker
     2300000: initialShadingGroup_initialShadingGroup1_pCone1_polySurface2_polySurface1
     2300002: initialShadingGroup_initialShadingGroup1_pCone2_polySurface2_polySurface1
     2300004: initialShadingGroup_initialShadingGroup1_pCone3_polySurface2_polySurface1
@@ -91,6 +93,7 @@ ModelImporter:
     2300050: initialShadingGroup_initialShadingGroup1_pPlane1_polySurface2_polySurface1
     2300052: initialShadingGroup_initialShadingGroup1_pPlane2_polySurface2_polySurface1
     2300054: initialShadingGroup_initialShadingGroup1_pSphere1_polySurface2_polySurface1
+    2300056: berserker
     3300000: initialShadingGroup_initialShadingGroup1_pCone1_polySurface2_polySurface1
     3300002: initialShadingGroup_initialShadingGroup1_pCone2_polySurface2_polySurface1
     3300004: initialShadingGroup_initialShadingGroup1_pCone3_polySurface2_polySurface1
@@ -119,6 +122,7 @@ ModelImporter:
     3300050: initialShadingGroup_initialShadingGroup1_pPlane1_polySurface2_polySurface1
     3300052: initialShadingGroup_initialShadingGroup1_pPlane2_polySurface2_polySurface1
     3300054: initialShadingGroup_initialShadingGroup1_pSphere1_polySurface2_polySurface1
+    3300056: berserker
     4300000: initialShadingGroup_initialShadingGroup1_pCone1_polySurface2_polySurface1
     4300002: initialShadingGroup_initialShadingGroup1_pCone2_polySurface2_polySurface1
     4300004: initialShadingGroup_initialShadingGroup1_pCone3_polySurface2_polySurface1
@@ -147,6 +151,7 @@ ModelImporter:
     4300050: initialShadingGroup_initialShadingGroup1_pPlane1_polySurface2_polySurface1
     4300052: initialShadingGroup_initialShadingGroup1_pPlane2_polySurface2_polySurface1
     4300054: initialShadingGroup_initialShadingGroup1_pSphere1_polySurface2_polySurface1
+    4300056: berserker
   materials:
     importMaterials: 1
     materialName: 0

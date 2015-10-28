@@ -7,11 +7,16 @@ ModelImporter:
   fileIDToRecycleName:
     100000: pCube12
     100002: //RootNode
+    100004: swordman
     400000: pCube12
     400002: //RootNode
+    400004: swordman
     2300000: pCube12
+    2300002: swordman
     3300000: pCube12
+    3300002: swordman
     4300000: pCube12
+    4300002: swordman
   materials:
     importMaterials: 1
     materialName: 0

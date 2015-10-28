@@ -7,11 +7,16 @@ ModelImporter:
   fileIDToRecycleName:
     100000: //RootNode
     100002: pCube12
+    100004: archer
     400000: //RootNode
     400002: pCube12
+    400004: archer
     2300000: pCube12
+    2300002: archer
     3300000: pCube12
+    3300002: archer
     4300000: pCube12
+    4300002: archer
   materials:
     importMaterials: 1
     materialName: 0
