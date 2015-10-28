@@ -7,11 +7,16 @@ ModelImporter:
   fileIDToRecycleName:
     100000: //RootNode
     100002: spearman
+    100004: Spearman
     400000: //RootNode
     400002: spearman
+    400004: Spearman
     2300000: spearman
+    2300002: Spearman
     3300000: spearman
+    3300002: Spearman
     4300000: spearman
+    4300002: Spearman
   materials:
     importMaterials: 1
     materialName: 0

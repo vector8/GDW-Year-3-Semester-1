@@ -108,6 +108,7 @@ public class UnitControl : MonoBehaviour
 
     private void handleInput()
     {
+        print(Input.GetMouseButtonDown(0));
         if (Input.GetMouseButtonDown(0))
         {
             RaycastHit hit;

@@ -7,11 +7,21 @@ ModelImporter:
   fileIDToRecycleName:
     100000: //RootNode
     100002: initialShadingGroup_Body1
+    100004: cavalry
+    100006: cavalry_Horseman_polySurface1
     400000: //RootNode
     400002: initialShadingGroup_Body1
+    400004: cavalry
+    400006: cavalry_Horseman_polySurface1
     2300000: initialShadingGroup_Body1
+    2300002: cavalry
+    2300004: cavalry_Horseman_polySurface1
     3300000: initialShadingGroup_Body1
+    3300002: cavalry
+    3300004: cavalry_Horseman_polySurface1
     4300000: initialShadingGroup_Body1
+    4300002: cavalry
+    4300004: cavalry_Horseman_polySurface1
   materials:
     importMaterials: 1
     materialName: 0
