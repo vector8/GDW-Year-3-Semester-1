@@ -46,7 +46,7 @@ GameObject:
   - 4: {fileID: 429536}
   - 114: {fileID: 11447744}
   m_Layer: 0
-  m_Name: HealthBar
+  m_Name: Healthbar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
