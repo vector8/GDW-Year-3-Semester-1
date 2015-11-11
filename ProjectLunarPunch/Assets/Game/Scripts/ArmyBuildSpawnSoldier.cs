@@ -5,8 +5,11 @@ public class ArmyBuildSpawnSoldier : MonoBehaviour
 {
 
     public GameObject soldierTest;
+    public int counter = 0;
 
     public GameObject[] spawnLoc;
+
+    bool isButtonPressed = false;
 
     // Use this for initialization
     void Start()
@@ -22,7 +25,8 @@ public class ArmyBuildSpawnSoldier : MonoBehaviour
 
     public void SpawnCharacter()
     {
-        Instantiate(soldierTest, spawnLoc[0].transform.position, spawnLoc[0].transform.rotation);
+        Instantiate(soldierTest, spawnLoc[counter].transform.position, spawnLoc[counter].transform.rotation);
+        counter++;
     }
 
 

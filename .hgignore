@@ -7,3 +7,5 @@ ProjectLunarPunch/obj/*
 Build/*
 ProjectLunarPunch/Temp/*
 *.zip
+ProjectLunarPunch/Assets/Game/Models/SpearMan.obj.meta
+ProjectLunarPunch/Assets/Game/Models/SpearMan.obj
