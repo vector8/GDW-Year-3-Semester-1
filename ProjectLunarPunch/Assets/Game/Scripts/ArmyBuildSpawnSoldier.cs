@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class ArmyBuildSpawnSoldier : MonoBehaviour
@@ -7,6 +8,11 @@ public class ArmyBuildSpawnSoldier : MonoBehaviour
     public GameObject soldierTest;
 
     public GameObject[] spawnLoc;
+    bool isPressed = false;
+
+    int counter = 0;
+
+   
 
     // Use this for initialization
     void Start()
@@ -20,9 +26,18 @@ public class ArmyBuildSpawnSoldier : MonoBehaviour
 
     }
 
-    public void SpawnCharacter()
+    public void SpawnCharacter(Button caller)
     {
-        Instantiate(soldierTest, spawnLoc[0].transform.position, spawnLoc[0].transform.rotation);
+        isPressed = !isPressed;
+
+        if(!caller.GetComponent<SoldierButton>().getButtonState())
+        {
+
+        }
+
+        //Instantiate(soldierTest, spawnLoc[counter].transform.position, spawnLoc[counter].transform.rotation);
+        
+        //counter++;
     }
 
 
