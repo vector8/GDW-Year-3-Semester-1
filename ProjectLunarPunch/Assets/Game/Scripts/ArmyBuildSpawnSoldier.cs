@@ -23,21 +23,12 @@ public class ArmyBuildSpawnSoldier : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+      
     }
 
     public void SpawnCharacter(Button caller)
     {
-        isPressed = !isPressed;
-
-        if(!caller.GetComponent<SoldierButton>().getButtonState())
-        {
-
-        }
-
-        //Instantiate(soldierTest, spawnLoc[counter].transform.position, spawnLoc[counter].transform.rotation);
-        
-        //counter++;
+      
     }
 
 
