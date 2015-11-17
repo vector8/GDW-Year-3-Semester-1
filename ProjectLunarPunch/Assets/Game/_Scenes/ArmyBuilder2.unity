@@ -973,6 +973,12 @@ MonoBehaviour:
   soldierTypes:
   - {fileID: 100000, guid: e72976f7522000942bcd2aca62e21975, type: 3}
   - {fileID: 129702, guid: 4195bbc34316b494a965e8c71d984758, type: 2}
+  g:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &585925202
 GameObject:
   m_ObjectHideFlags: 0
@@ -985,7 +991,7 @@ GameObject:
   - 135: {fileID: 585925205}
   - 23: {fileID: 585925204}
   m_Layer: 0
-  m_Name: Sphere4
+  m_Name: 1
   m_TagString: SpawnSphere
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1242,7 +1248,7 @@ GameObject:
   - 135: {fileID: 721872697}
   - 23: {fileID: 721872696}
   m_Layer: 0
-  m_Name: Sphere3
+  m_Name: 3
   m_TagString: SpawnSphere
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1785,7 +1791,7 @@ GameObject:
   - 135: {fileID: 1037890499}
   - 23: {fileID: 1037890498}
   m_Layer: 0
-  m_Name: Sphere5
+  m_Name: 5
   m_TagString: SpawnSphere
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1967,7 +1973,7 @@ GameObject:
   - 135: {fileID: 1122199307}
   - 23: {fileID: 1122199306}
   m_Layer: 0
-  m_Name: Sphere2
+  m_Name: 4
   m_TagString: SpawnSphere
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2935,7 +2941,7 @@ GameObject:
   - 135: {fileID: 1820627295}
   - 23: {fileID: 1820627294}
   m_Layer: 0
-  m_Name: Sphere1
+  m_Name: 2
   m_TagString: SpawnSphere
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
