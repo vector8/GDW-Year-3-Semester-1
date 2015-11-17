@@ -8,6 +8,7 @@ public class SoldierButton : MonoBehaviour
     public bool buttonCheck;
 
     public GameObject[] soldierTypes;
+    public GameObject[] g;
     // Use this for initialization
     void Start()
     {
@@ -27,16 +28,24 @@ public class SoldierButton : MonoBehaviour
                 if (hit.collider.tag == "SpawnSphere" && Input.GetMouseButtonDown(0))
                 {
 
+                   char spawnLocID = hit.collider.name.ToCharArray()[0];
+                   int ID = (int)spawnLocID - 49;
 
-                    Debug.Log(hit.collider.name);
+                    Debug.Log("sphere " + hit.collider.name);
+                    Debug.Log("ID " + ID);
 
                     if(pressedButton.name.Contains("dog"))
                     {
-                        Instantiate(soldierTypes[0], hit.transform.position, hit.transform.rotation);
+                      
+                         Destroy(g[ID]);
+                       g[ID] =  (GameObject)Instantiate(soldierTypes[0], hit.transform.position, hit.transform.rotation);
+
+                      
                     }
                     if(pressedButton.name.Contains("spearman"))
                     {
-                        Instantiate(soldierTypes[1], hit.transform.position, hit.transform.rotation);
+                        Destroy(g[ID]);
+                       g[ID] = (GameObject)Instantiate(soldierTypes[1], hit.transform.position, hit.transform.rotation);
                         
                     }
                 }
