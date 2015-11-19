@@ -48,6 +48,18 @@ public class SoldierButton : MonoBehaviour
                        g[ID] = (GameObject)Instantiate(soldierTypes[1], hit.transform.position, hit.transform.rotation);
                         
                     }
+                    if (pressedButton.name.Contains("swordsman"))
+                    {
+                        Destroy(g[ID]);
+                        g[ID] = (GameObject)Instantiate(soldierTypes[2], hit.transform.position, hit.transform.rotation);
+
+                    }
+                    if (pressedButton.name.Contains("archer"))
+                    {
+                        Destroy(g[ID]);
+                        g[ID] = (GameObject)Instantiate(soldierTypes[3], hit.transform.position, hit.transform.rotation);
+
+                    }
                 }
             }
         }
