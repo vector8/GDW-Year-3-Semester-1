@@ -27,6 +27,6 @@ public class SplineController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 }
