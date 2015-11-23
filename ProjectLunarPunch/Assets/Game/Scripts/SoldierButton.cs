@@ -9,15 +9,18 @@ public class SoldierButton : MonoBehaviour
 
     public GameObject[] soldierTypes;
     public GameObject[] g;
+
+    public Button goBtn;
+
     // Use this for initialization
     void Start()
     {
-       
+
     }
 
     void Update()
     {
-       if (pressedButton != null)
+        if (pressedButton != null)
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
@@ -28,25 +31,25 @@ public class SoldierButton : MonoBehaviour
                 if (hit.collider.tag == "SpawnSphere" && Input.GetMouseButtonDown(0))
                 {
 
-                   char spawnLocID = hit.collider.name.ToCharArray()[0];
-                   int ID = (int)spawnLocID - 49;
+                    char spawnLocID = hit.collider.name.ToCharArray()[0];
+                    int ID = (int)spawnLocID - 49;
 
                     Debug.Log("sphere " + hit.collider.name);
                     Debug.Log("ID " + ID);
 
-                    if(pressedButton.name.Contains("dog"))
+                    if (pressedButton.name.Contains("dog"))
                     {
-                      
-                         Destroy(g[ID]);
-                       g[ID] =  (GameObject)Instantiate(soldierTypes[0], hit.transform.position, hit.transform.rotation);
 
-                      
+                        Destroy(g[ID]);
+                        g[ID] = (GameObject)Instantiate(soldierTypes[0], hit.transform.position, hit.transform.rotation);
+
+
                     }
-                    if(pressedButton.name.Contains("spearman"))
+                    if (pressedButton.name.Contains("spearman"))
                     {
                         Destroy(g[ID]);
-                       g[ID] = (GameObject)Instantiate(soldierTypes[1], hit.transform.position, hit.transform.rotation);
-                        
+                        g[ID] = (GameObject)Instantiate(soldierTypes[1], hit.transform.position, hit.transform.rotation);
+
                     }
                     if (pressedButton.name.Contains("swordsman"))
                     {
@@ -76,6 +79,15 @@ public class SoldierButton : MonoBehaviour
             }
         }
 
+        goBtn.interactable = true;
+        for (int i = 0; i < 5; i++)
+        {
+            if (g[i] == null)
+            {
+                goBtn.interactable = false;
+                break;
+            }
+        }
     }
 
     public void buttonPress(Button caller)
@@ -87,10 +99,21 @@ public class SoldierButton : MonoBehaviour
             buttonCheck = pressedButton.IsInteractable();
         }
 
-      
+
 
         pressedButton = caller;
         pressedButton.interactable = false;
         buttonCheck = pressedButton.IsInteractable();
+    }
+
+    public void loadBattleScreen()
+    {
+        for (int i = 0; i < 5; i++)
+        {
+            Unit u = g[i].GetComponent<Unit>();
+            ArmyConfiguration.army[i] = u.type;
+        }
+
+        Application.LoadLevel("Battle");
     }
 }
