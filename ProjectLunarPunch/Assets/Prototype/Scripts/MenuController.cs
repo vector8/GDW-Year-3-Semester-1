@@ -42,6 +42,11 @@ public class MenuController : MonoBehaviour
         moveGroups(sparGroup, mainMenuGroup, vsAiGroup);
     }
 
+    public void goToArmySelect()
+    {
+        //load army select here
+    }
+
     public void exitGame()
     {
 #if UNITY_EDITOR
