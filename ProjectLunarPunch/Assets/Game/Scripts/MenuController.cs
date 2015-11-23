@@ -44,7 +44,7 @@ public class MenuController : MonoBehaviour
 
     public void goToArmySelect()
     {
-        //load army select here
+        Application.LoadLevel("ArmyBuilder2");
     }
 
     public void exitGame()
