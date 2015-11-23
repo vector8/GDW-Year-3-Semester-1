@@ -17,7 +17,9 @@ public class UnitControl : MonoBehaviour
     public TimerController timerControl;
 
     // TODO: remove after networking?
-    public Unit[] enemies, allies;
+    public GameObject[] prefabs = new GameObject[6];
+    public GameObject[] allySpots = new GameObject[5], enemySpots = new GameObject[5];
+    public Unit[] enemies = new Unit[5], allies = new Unit[5];
 
     private bool drawingLine = false, commandExists = false, endDrawing = false;
     private Vector3 lineStart, lineStartScreenSpace;
@@ -26,6 +28,32 @@ public class UnitControl : MonoBehaviour
     private List<UnitCommand> playerCommands = new List<UnitCommand>();
 
     private const int NUM_LINE_VERTICES = 20;
+
+    void Start()
+    {
+        // Initialize allies using ArmyConfiguration and enemies using random creation
+        for(int i = 0; i < 5; i++)
+        {
+            int allyIndex;
+            if(ArmyConfiguration.army[i] == ClassType.NotSet)
+            {
+                allyIndex = Random.Range(0, 5);
+            }
+            else
+            {
+                allyIndex = (int)ArmyConfiguration.army[i];
+            }
+            GameObject ally = Instantiate<GameObject>(prefabs[allyIndex]);
+            allies[i] = ally.GetComponent<Unit>();
+            allies[i].ally = true;
+            ally.transform.SetParent(allySpots[i].transform, false);
+
+            int randomIndex = Random.Range(0, 5);
+            GameObject enemy = Instantiate<GameObject>(prefabs[randomIndex]);
+            enemies[i] = enemy.GetComponent<Unit>();
+            enemy.transform.SetParent(enemySpots[i].transform, false);
+        }
+    }
 
     // Update is called once per frame
     void Update()

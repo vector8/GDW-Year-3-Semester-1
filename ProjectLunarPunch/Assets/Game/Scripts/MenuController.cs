@@ -7,7 +7,7 @@ public class MenuController : MonoBehaviour
 
     public float moveTime;
 
-    private float currentMoveTime = 0f;
+    //private float currentMoveTime = 0f;
 
     private void moveGroups(GameObject inFocus, GameObject outOfFocus1, GameObject outOfFocus2)
     {

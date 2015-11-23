@@ -7,6 +7,11 @@ public class HealthBar : MonoBehaviour
     public Unit target;
     public GameObject bar;
 
+    void Start()
+    {
+        target = GetComponentInParent<Unit>();
+    }
+
     // Update is called once per frame
     void Update()
     {

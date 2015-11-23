@@ -5,10 +5,11 @@ public enum ClassType
 {
     Archer,
     Berserker,
-    Horseman,
+    Cavalry,
     Spearman,
     Swordsman,
-    Warhound
+    Warhound,
+    NotSet
 }
 
 public class Unit : MonoBehaviour
@@ -139,10 +140,10 @@ public class Unit : MonoBehaviour
                 return second == ClassType.Spearman;
             case ClassType.Berserker:
                 return second == ClassType.Warhound;
-            case ClassType.Horseman:
+            case ClassType.Cavalry:
                 return second == ClassType.Swordsman;
             case ClassType.Spearman:
-                return second == ClassType.Horseman;
+                return second == ClassType.Cavalry;
             case ClassType.Swordsman:
                 return second == ClassType.Berserker;
             case ClassType.Warhound:
