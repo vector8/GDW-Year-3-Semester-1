@@ -11,7 +11,6 @@ GameObject:
   - 33: {fileID: 3369880}
   - 23: {fileID: 2390956}
   - 114: {fileID: 11480508}
-  - 136: {fileID: 13601594}
   m_Layer: 0
   m_Name: Swordsman
   m_TagString: Untagged
@@ -156,19 +155,6 @@ MonoBehaviour:
   type: 4
   defending: 0
   ally: 0
---- !u!136 &13601594
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 168606}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 40.4599991
-  m_Height: 154.600006
-  m_Direction: 1
-  m_Center: {x: 0, y: 76.9000015, z: 1.92999268}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
