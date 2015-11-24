@@ -29,7 +29,6 @@ GameObject:
   - 33: {fileID: 3345218}
   - 23: {fileID: 2325714}
   - 114: {fileID: 11496176}
-  - 136: {fileID: 13610702}
   m_Layer: 0
   m_Name: Archer
   m_TagString: Untagged
@@ -157,19 +156,6 @@ MonoBehaviour:
   defending: 0
   ally: 0
   arrowPrefab: {fileID: 122890, guid: 52c7fe06d6e045348b36ae2dc4b31cb8, type: 2}
---- !u!136 &13610702
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 174828}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 34.5
-  m_Height: 151.434494
-  m_Direction: 1
-  m_Center: {x: 0, y: 74.9881516, z: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

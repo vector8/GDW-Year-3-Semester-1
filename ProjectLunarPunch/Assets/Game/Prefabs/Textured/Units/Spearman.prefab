@@ -12,7 +12,6 @@ GameObject:
   - 23: {fileID: 2321586}
   - 64: {fileID: 6472342}
   - 114: {fileID: 11420906}
-  - 136: {fileID: 13640314}
   m_Layer: 0
   m_Name: Spearman
   m_TagString: Untagged
@@ -169,19 +168,6 @@ MonoBehaviour:
   type: 3
   defending: 0
   ally: 0
---- !u!136 &13640314
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 130870}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 42.0999985
-  m_Height: 180.99231
-  m_Direction: 1
-  m_Center: {x: 0, y: 90.5198822, z: -2.53472996}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

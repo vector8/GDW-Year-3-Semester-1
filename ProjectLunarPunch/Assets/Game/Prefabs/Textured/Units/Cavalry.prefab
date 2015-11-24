@@ -46,7 +46,6 @@ GameObject:
   - 33: {fileID: 3322232}
   - 23: {fileID: 2316906}
   - 114: {fileID: 11443652}
-  - 136: {fileID: 13615428}
   m_Layer: 0
   m_Name: Cavalry
   m_TagString: Untagged
@@ -217,19 +216,6 @@ MonoBehaviour:
   type: 2
   defending: 0
   ally: 0
---- !u!136 &13615428
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 138598}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 40.5
-  m_Height: 159
-  m_Direction: 1
-  m_Center: {x: -.634521484, y: 80.3000031, z: 1.01240253}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
