@@ -12,12 +12,6 @@ public class SoldierButton : MonoBehaviour
 
     public Button goBtn;
 
-    // Use this for initialization
-    void Start()
-    {
-
-    }
-
     void Update()
     {
         if (pressedButton != null)
@@ -115,5 +109,10 @@ public class SoldierButton : MonoBehaviour
         }
 
         Application.LoadLevel("Battle");
+    }
+
+    public void backToMainMenu()
+    {
+        Application.LoadLevel("MainMenu");
     }
 }
