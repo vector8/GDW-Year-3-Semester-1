@@ -2,19 +2,15 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class PauseMenuController : MonoBehaviour
+public class OptionsMenuController : MonoBehaviour
 {
-    public GameObject pausePanel;
-    public Button lockInButton;
-    public TimerController timer;
+    public GameObject optionsPanel;
 
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Escape))
         {
-            pausePanel.SetActive(!pausePanel.activeSelf);
-            lockInButton.interactable = !lockInButton.interactable;
-            timer.paused = !timer.paused;
+            toggleOptionsMenu();
         }
     }
 
@@ -26,5 +22,10 @@ public class PauseMenuController : MonoBehaviour
     public void restart()
     {
         Application.LoadLevel(Application.loadedLevel);
+    }
+
+    public void toggleOptionsMenu()
+    {
+        optionsPanel.SetActive(!optionsPanel.activeSelf);
     }
 }

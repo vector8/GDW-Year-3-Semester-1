@@ -8,6 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Game/_Scenes/MainMenu.unity
   - enabled: 1
-    path: Assets/Game/_Scenes/Battle.unity
-  - enabled: 1
     path: Assets/Game/_Scenes/ArmyBuilder2.unity
+  - enabled: 1
+    path: Assets/Game/_Scenes/Battle.unity
