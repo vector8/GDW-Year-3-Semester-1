@@ -1283,7 +1283,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: .5
+  m_Radius: 1.89999998
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &585925206
 MeshFilter:
@@ -1466,7 +1466,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: .5
+  m_Radius: 1.89999998
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &721872698
 MeshFilter:
@@ -2162,7 +2162,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: .5
+  m_Radius: 1.89999998
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &1037890500
 MeshFilter:
@@ -2329,7 +2329,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: .5
+  m_Radius: 1.89999998
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &1122199308
 MeshFilter:
@@ -2998,7 +2998,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: .5
+  m_Radius: 1.89999998
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &1820627296
 MeshFilter:
