@@ -6,14 +6,6 @@ public class OptionsMenuController : MonoBehaviour
 {
     public GameObject optionsPanel;
 
-    void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Escape))
-        {
-            toggleOptionsMenu();
-        }
-    }
-
     public void exitToMainMenu()
     {
         Application.LoadLevel("MainMenu");

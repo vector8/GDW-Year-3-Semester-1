@@ -136,11 +136,12 @@ public class UnitControl : MonoBehaviour
 
     private void handleInput()
     {
-        print(Input.GetMouseButtonDown(0));
-        if (Input.GetMouseButtonDown(0))
+        bool mouseButtonDown = MouseInputWrapper.GetMouseButtonDown(MouseInputWrapper.MouseButtons.Left);
+        //print(mouseButtonDown);
+        if (mouseButtonDown)
         {
             RaycastHit hit;
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            Ray ray = Camera.main.ScreenPointToRay(MouseInputWrapper.getMousePosition());
 
             if (Physics.Raycast(ray, out hit))
             {
@@ -176,12 +177,12 @@ public class UnitControl : MonoBehaviour
                 }
             }
         }
-        else if (!Input.GetMouseButton(0) && drawingLine)
+        else if (!MouseInputWrapper.GetMouseButton(MouseInputWrapper.MouseButtons.Left) && drawingLine)
         {
             drawingLine = false;
 
             RaycastHit hit;
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            Ray ray = Camera.main.ScreenPointToRay(MouseInputWrapper.getMousePosition());
 
             bool clearCommand = true;
 
@@ -228,7 +229,7 @@ public class UnitControl : MonoBehaviour
             if (!endDrawing)
             {
                 worldEndPos = getMouseWorldPosition();
-                endScreenSpace = Input.mousePosition;
+                endScreenSpace = MouseInputWrapper.getMousePosition();
             }
             else
             {
@@ -274,7 +275,7 @@ public class UnitControl : MonoBehaviour
 
     private Vector3 getMouseWorldPosition()
     {
-        Vector3 mousePos = Input.mousePosition;
+        Vector3 mousePos = MouseInputWrapper.getMousePosition();
         mousePos.z = Camera.main.nearClipPlane + 10f;
         mousePos = Camera.main.ScreenToWorldPoint(mousePos);
         return mousePos;
@@ -290,7 +291,7 @@ public class UnitControl : MonoBehaviour
     public void lockIn()
     {
         //// Battle calculations and animations here. ////
-        print("BATTLE STARTING!!");
+        //print("BATTLE STARTING!!");
         List<UnitCommand> allCommands = new List<UnitCommand>();
 
         // TODO: Generate or fetch enemy commands here.
