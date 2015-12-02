@@ -16,20 +16,20 @@ public class SoldierButton : MonoBehaviour
     {
         if (pressedButton != null)
         {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            Ray ray = Camera.main.ScreenPointToRay(MouseInputWrapper.getMousePosition());
 
             RaycastHit hit;
 
             if (Physics.Raycast(ray, out hit))
             {
-                if (hit.collider.tag == "SpawnSphere" && Input.GetMouseButtonDown(0))
+                if (hit.collider.tag == "SpawnSphere" && MouseInputWrapper.GetMouseButtonDown(MouseInputWrapper.MouseButtons.Left))
                 {
 
                     char spawnLocID = hit.collider.name.ToCharArray()[0];
                     int ID = (int)spawnLocID - 49;
 
-                    Debug.Log("sphere " + hit.collider.name);
-                    Debug.Log("ID " + ID);
+                    //Debug.Log("sphere " + hit.collider.name);
+                    //Debug.Log("ID " + ID);
 
                     if (pressedButton.name.Contains("dog"))
                     {
@@ -86,7 +86,7 @@ public class SoldierButton : MonoBehaviour
 
     public void buttonPress(Button caller)
     {
-        Debug.Log(caller.name + " is active");
+        //Debug.Log(caller.name + " is active");
         if (pressedButton != null)
         {
             pressedButton.interactable = true;

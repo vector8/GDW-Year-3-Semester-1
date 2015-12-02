@@ -88,7 +88,7 @@ public class Unit : MonoBehaviour
         {
             // TODO: add special logic for berserkers and swordsmen.
             damage *= CRIT_BONUS;
-            print("Critical hit!");
+            //print("Critical hit!");
         }
 
         if (target.defending)
@@ -96,8 +96,7 @@ public class Unit : MonoBehaviour
             damage *= DEFENDING_MODIFIER;
         }
 
-        // TODO: Add animation logic?
-        print(gameObject.name + " attacking " + target.gameObject.name + " for " + damage + " damage.");
+        //print(gameObject.name + " attacking " + target.gameObject.name + " for " + damage + " damage.");
 
         target.takeDamage(damage);
     }
@@ -124,12 +123,12 @@ public class Unit : MonoBehaviour
 
             // TODO: death logic here...
             gameObject.SetActive(false);
-            print(gameObject.name + " has died!");
+            //print(gameObject.name + " has died!");
         }
-        else
-        {
-            print(gameObject.name + " has " + hp + " HP remaining.");
-        }
+        //else
+        //{
+        //    print(gameObject.name + " has " + hp + " HP remaining.");
+        //}
     }
 
     public static bool hasAdvantage(ClassType first, ClassType second)

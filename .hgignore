@@ -7,3 +7,11 @@ ProjectLunarPunch/obj/*
 Build/*
 ProjectLunarPunch/Temp/*
 *.zip
+*.sdf
+PluginSolutions/FileIOPlugin/FileIOPlugin/x64/Debug/*
+PluginSolutions/FileIOPlugin/x64/Debug/*
+PluginSolutions/MouseInputDLL/MouseInputDLL/x64/Debug/*
+PluginSolutions/MouseInputDLL/x64/Debug/*
+PluginSolutions/SharedMemoryDLL/SharedMemoryDLL/x64/Debug/*
+PluginSolutions/SharedMemoryDLL/x64/Debug/*
+StreamClientUnity/Library/*

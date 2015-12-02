@@ -9,6 +9,11 @@ public class MenuController : MonoBehaviour
 
     //private float currentMoveTime = 0f;
 
+    void Awake()
+    {
+        MouseInputWrapper.initialize();
+    }
+
     private void moveGroups(GameObject inFocus, GameObject outOfFocus1, GameObject outOfFocus2)
     {
         float onScreenX = Camera.main.pixelWidth / 2f;
