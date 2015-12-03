@@ -2,7 +2,6 @@ syntax: glob
 ProjectLunarPunch/Library/*
 *.suo
 *.csproj
-*.sln
 ProjectLunarPunch/obj/*
 Build/*
 ProjectLunarPunch/Temp/*
@@ -15,3 +14,8 @@ PluginSolutions/MouseInputDLL/x64/Debug/*
 PluginSolutions/SharedMemoryDLL/SharedMemoryDLL/x64/Debug/*
 PluginSolutions/SharedMemoryDLL/x64/Debug/*
 StreamClientUnity/Library/*
+PluginSolutions/HgPluginDLL/HgPluginDLL/x64/Release/*
+PluginSolutions/HgPluginDLL/x64/Release/*
+*.opensdf
+ProjectLunarPunch/ProjectLunarPunch.sln
+StreamClientUnity/StreamClientUnity.sln
