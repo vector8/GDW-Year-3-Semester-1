@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -53,7 +54,6 @@ public class BattleManager : MonoBehaviour
             case BattleState.Waiting:
                 if(!currentCommands.Peek().fromUnit.isAttacking())
                 {
-
                     state = BattleState.Cleanup;
                 }
                 break;
@@ -121,5 +121,12 @@ public class BattleManager : MonoBehaviour
     public bool isGameOver()
     {
         return state == BattleState.GameOver;
+    }
+
+    public static void logBattle(string line)
+    {
+        line = "(" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + ") " + line;
+        string path = Application.persistentDataPath.Replace('/', '\\');
+        FileIOWrapper.saveFile(path + @"\BattleLog.txt", line, false, true);
     }
 }

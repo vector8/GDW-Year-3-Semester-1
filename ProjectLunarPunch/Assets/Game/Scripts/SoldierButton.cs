@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using System;
 using System.Collections;
 
 public class SoldierButton : MonoBehaviour
@@ -102,11 +103,18 @@ public class SoldierButton : MonoBehaviour
 
     public void loadBattleScreen()
     {
+        string log = "(" + DateTime.Now.ToString("yyyy-MM-dd HH:mm") + ") Player chose: ";
+
         for (int i = 0; i < 5; i++)
         {
             Unit u = g[i].GetComponent<Unit>();
             ArmyConfiguration.army[i] = u.type;
+            log += Enum.GetName(typeof(ClassType), u.type) + ", ";
         }
+        log += "\n";
+
+        string path = Application.persistentDataPath.Replace('/', '\\');
+        FileIOWrapper.saveFile(path + @"\ArmyBuilderLog.b", log, true, true);
 
         Application.LoadLevel("Battle");
     }

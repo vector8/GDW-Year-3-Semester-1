@@ -4,9 +4,16 @@
 
 #pragma warning(disable: 4996)
 
-void saveAscii(char* path, char* data)
+void saveAscii(char* path, char* data, bool append)
 {
-	std::ofstream out(path);
+	int flags = std::ios::out;
+
+	if (append)
+	{
+		flags = flags | std::ios::app;
+	}
+
+	std::ofstream out(path, flags);
 	std::string stringData(data);
 
 	if (out.is_open())
@@ -17,13 +24,20 @@ void saveAscii(char* path, char* data)
 	}
 }
 
-void saveBinary(char* path, char* data, int length)
+void saveBinary(char* path, char* data, bool append)
 {
-	std::ofstream out(path, std::ios::binary);
+	int flags = std::ios::out | std::ios::binary;
+
+	if (append)
+	{
+		flags = flags | std::ios::app;
+	}
+
+	std::ofstream out(path, flags);
 
 	if (out.is_open())
 	{
-		out.write(data, length);
+		out.write(data, strlen(data));
 		out.close();
 		out.clear();
 	}
@@ -53,10 +67,18 @@ char* loadAscii(char* path)
 	return cResult;
 }
 
-char* loadBinary(char* path, int length)
+char* loadBinary(char* path)
 {
-	char* result = new char[length];
+	std::streampos begin, end;
 	std::ifstream in(path, std::ios::binary);
+	begin = in.tellg();
+	in.seekg(0, std::ios::end);
+	end = in.tellg();
+	in.seekg(0, std::ios::beg);
+
+	int length = end - begin;
+
+	char* result = new char[length + 1];
 
 	if (in.is_open())
 	{
@@ -65,6 +87,8 @@ char* loadBinary(char* path, int length)
 		in.close();
 		in.clear();
 	}
+
+	result[length] = '\0';
 
 	return result;
 }
