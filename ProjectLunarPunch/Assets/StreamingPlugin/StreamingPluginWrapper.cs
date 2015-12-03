@@ -20,6 +20,10 @@ public class StreamingPluginWrapper : MonoBehaviour
     void Awake()
     {
         DontDestroyOnLoad(transform.gameObject);
+        if (FindObjectsOfType(GetType()).Length > 1)
+        {
+            Destroy(gameObject);
+        }
         frameTexture = new Texture2D(Screen.width, Screen.height, TextureFormat.RGB24, false);
     }
 

@@ -8,11 +8,14 @@ public class OptionsMenuController : MonoBehaviour
 
     public void exitToMainMenu()
     {
+        BattleManager.logBattle("Battle finished!\n");
+
         Application.LoadLevel("MainMenu");
     }
 
     public void restart()
     {
+        BattleManager.logBattle("Battle finished!\n");
         Application.LoadLevel(Application.loadedLevel);
     }
 

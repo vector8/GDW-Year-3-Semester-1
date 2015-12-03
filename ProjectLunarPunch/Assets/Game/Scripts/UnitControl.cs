@@ -31,6 +31,8 @@ public class UnitControl : MonoBehaviour
 
     void Start()
     {
+        BattleManager.logBattle("BATTLE STARTING!!\n");
+
         // Initialize allies using ArmyConfiguration and enemies using random creation
         for(int i = 0; i < 5; i++)
         {
@@ -137,7 +139,6 @@ public class UnitControl : MonoBehaviour
     private void handleInput()
     {
         bool mouseButtonDown = MouseInputWrapper.GetMouseButtonDown(MouseInputWrapper.MouseButtons.Left);
-        //print(mouseButtonDown);
         if (mouseButtonDown)
         {
             RaycastHit hit;
@@ -291,7 +292,7 @@ public class UnitControl : MonoBehaviour
     public void lockIn()
     {
         //// Battle calculations and animations here. ////
-        //print("BATTLE STARTING!!");
+        BattleManager.logBattle("New Round!\n");
         List<UnitCommand> allCommands = new List<UnitCommand>();
 
         // TODO: Generate or fetch enemy commands here.

@@ -75,6 +75,7 @@ public class Unit : MonoBehaviour
 
     protected void dealDamage(Unit target)
     {
+        string log = "";
         bool crit = (Random.Range(0f, 100f) < critChance);
 
         float damage = att * ((100f - target.def) / 100f);
@@ -88,7 +89,7 @@ public class Unit : MonoBehaviour
         {
             // TODO: add special logic for berserkers and swordsmen.
             damage *= CRIT_BONUS;
-            //print("Critical hit!");
+            log += "Critical hit! ";
         }
 
         if (target.defending)
@@ -96,7 +97,20 @@ public class Unit : MonoBehaviour
             damage *= DEFENDING_MODIFIER;
         }
 
-        //print(gameObject.name + " attacking " + target.gameObject.name + " for " + damage + " damage.");
+        string firstUnit, secondUnit;
+        if(ally)
+        {
+            firstUnit = "Ally ";
+            secondUnit = "Enemy ";
+        }
+        else
+        {
+            firstUnit = "Enemy ";
+            secondUnit = "Ally ";
+        }
+
+        log += firstUnit + gameObject.name + " attacking " + secondUnit + target.gameObject.name + " for " + damage + " damage.\n";
+        BattleManager.logBattle(log);
 
         target.takeDamage(damage);
     }
@@ -123,12 +137,12 @@ public class Unit : MonoBehaviour
 
             // TODO: death logic here...
             gameObject.SetActive(false);
-            //print(gameObject.name + " has died!");
+            BattleManager.logBattle(gameObject.name + " has died!\n");
         }
-        //else
-        //{
-        //    print(gameObject.name + " has " + hp + " HP remaining.");
-        //}
+        else
+        {
+            BattleManager.logBattle(gameObject.name + " has " + hp + " HP remaining.\n");
+        }
     }
 
     public static bool hasAdvantage(ClassType first, ClassType second)
