@@ -138,7 +138,7 @@ public class UnitControl : MonoBehaviour
 
     private void handleInput()
     {
-        bool mouseButtonDown = MouseInputWrapper.GetMouseButtonDown(MouseInputWrapper.MouseButtons.Left);
+        bool mouseButtonDown = MouseInputWrapper.getMouseButtonDown(MouseInputWrapper.MouseButtons.Left);
         if (mouseButtonDown)
         {
             RaycastHit hit;
@@ -178,7 +178,7 @@ public class UnitControl : MonoBehaviour
                 }
             }
         }
-        else if (!MouseInputWrapper.GetMouseButton(MouseInputWrapper.MouseButtons.Left) && drawingLine)
+        else if (!MouseInputWrapper.getMouseButton(MouseInputWrapper.MouseButtons.Left) && drawingLine)
         {
             drawingLine = false;
 
