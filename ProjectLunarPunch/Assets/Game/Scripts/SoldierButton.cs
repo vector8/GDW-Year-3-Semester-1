@@ -23,7 +23,7 @@ public class SoldierButton : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit))
             {
-                if (hit.collider.tag == "SpawnSphere" && MouseInputWrapper.GetMouseButtonDown(MouseInputWrapper.MouseButtons.Left))
+                if (hit.collider.tag == "SpawnSphere" && MouseInputWrapper.getMouseButtonDown(MouseInputWrapper.MouseButtons.Left))
                 {
 
                     char spawnLocID = hit.collider.name.ToCharArray()[0];

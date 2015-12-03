@@ -61,7 +61,7 @@ public static class MouseInputWrapper
 #endif
     }
 
-    public static bool GetMouseButton(MouseButtons button)
+    public static bool getMouseButton(MouseButtons button)
     {
         if (!initialized)
         {
@@ -72,7 +72,7 @@ public static class MouseInputWrapper
         return isMouseButtonDown(id);
     }
 
-    public static bool GetMouseButtonDown(MouseButtons button)
+    public static bool getMouseButtonDown(MouseButtons button)
     {
         if (!initialized)
         {
