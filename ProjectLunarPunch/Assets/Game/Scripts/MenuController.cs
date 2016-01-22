@@ -7,11 +7,18 @@ public class MenuController : MonoBehaviour
 
     public float moveTime;
 
+    private Camera mainCam;
+    private Vector3 armyBuildPos;
+    
+
     //private float currentMoveTime = 0f;
 
     void Awake()
     {
         MouseInputWrapper.initialize();
+        armyBuildPos.x = 0f;
+        armyBuildPos.y = 0f;
+        armyBuildPos.z = 0f;
     }
 
     private void moveGroups(GameObject inFocus, GameObject outOfFocus1, GameObject outOfFocus2)
@@ -50,6 +57,8 @@ public class MenuController : MonoBehaviour
     public void goToArmySelect()
     {
         Application.LoadLevel("ArmyBuilder2");
+        
+        
     }
 
     public void exitGame()
