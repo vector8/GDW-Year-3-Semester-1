@@ -19,6 +19,8 @@ public class Unit : MonoBehaviour
     public ClassType type;
     public bool defending = false;
     public bool ally = false;
+    public bool debuff_dog = false;
+    public int debuff_dog_time;
 
     protected enum AttackState
     {
@@ -28,9 +30,11 @@ public class Unit : MonoBehaviour
     }
 
     protected const float CRIT_BONUS = 1.5f;
+    protected const float DOG_DEBUFF_REDUCTION = 0.5f;
     protected const float ADVANTAGE_BONUS = 1.2f;
     protected const float DEFENDING_MODIFIER = 0.5f;
     protected const float ATTACK_ANIMATION_TIME = 0.5f;
+    protected const int DOG_DEBUFF_DURATION = 3;
 
     protected AttackState attackState = AttackState.NotAttacking;
     protected Timer attackTimer = new Timer();
@@ -75,10 +79,22 @@ public class Unit : MonoBehaviour
 
     protected void dealDamage(Unit target)
     {
+        if (debuff_dog)
+        {
+            debuff_dog_time -= 1;
+            if (debuff_dog_time <= 0)
+            {
+                debuff_dog = false;
+            }
+        }
+        
         string log = "";
         bool crit = (Random.Range(0f, 100f) < critChance);
 
-        float damage = att * ((100f - target.def) / 100f);
+        float damage = att * Random.Range(0.9f, 1.1f);
+        damage *= (100f / (100f + target.def));
+
+
 
         if (hasAdvantage(type, target.type))
         {
@@ -97,6 +113,11 @@ public class Unit : MonoBehaviour
             damage *= DEFENDING_MODIFIER;
         }
 
+        if (debuff_dog)
+        {
+            damage *= DOG_DEBUFF_REDUCTION;
+        }
+
         string firstUnit, secondUnit;
         if(ally)
         {
@@ -113,6 +134,10 @@ public class Unit : MonoBehaviour
         BattleManager.logBattle(log);
 
         target.takeDamage(damage);
+        if (type == ClassType.Warhound)
+        {
+            target.ApplyDebuff();
+        }
     }
 
     public void attack(Unit other)
@@ -145,6 +170,8 @@ public class Unit : MonoBehaviour
         }
     }
 
+
+
     public static bool hasAdvantage(ClassType first, ClassType second)
     {
         switch(first)
@@ -174,5 +201,11 @@ public class Unit : MonoBehaviour
     public bool isDead()
     {
         return Mathf.Approximately(hp, 0f);
+    }
+
+    public void ApplyDebuff()
+    {
+        debuff_dog_time = DOG_DEBUFF_DURATION;
+        debuff_dog = true;
     }
 }
