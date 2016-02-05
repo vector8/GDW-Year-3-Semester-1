@@ -9,7 +9,8 @@ public class MenuController : MonoBehaviour
 
     private Camera mainCam;
     private Vector3 armyBuildPos;
-    
+
+    private SplineWalker walker;
 
     //private float currentMoveTime = 0f;
 
@@ -19,6 +20,7 @@ public class MenuController : MonoBehaviour
         armyBuildPos.x = 0f;
         armyBuildPos.y = 0f;
         armyBuildPos.z = 0f;
+        walker = GameObject.Find("Main Camera").GetComponent<SplineWalker>();
     }
 
     private void moveGroups(GameObject inFocus, GameObject outOfFocus1, GameObject outOfFocus2)
@@ -56,9 +58,11 @@ public class MenuController : MonoBehaviour
 
     public void goToArmySelect()
     {
-        Application.LoadLevel("ArmyBuilder2");
-        
-        
+        walker.enabled = true;
+        mainMenuGroup.SetActive(false);
+
+        //enable for demo if one scene not done.
+        //Application.LoadLevel("ArmyBuilder2");
     }
 
     public void exitGame()
