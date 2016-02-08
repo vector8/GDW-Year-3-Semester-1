@@ -9,7 +9,8 @@ public class SplineWalker : MonoBehaviour
     public bool lookBehind;
     public SplineWalkerMode mode;
     private bool goingForward = true;
-    private float progress;
+    [HideInInspector]
+    public float progress;
 
     public void Update()
     {

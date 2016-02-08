@@ -81,6 +81,12 @@ public class MenuController : MonoBehaviour
 
     public void goToVsAiScene()
     {
+        walker.spline = GameObject.Find("Army -> Combat Spline").GetComponent<BezierSpline>();
+        walker.lookBehind = false;
+        walker.lookForward = true;
+        walker.enabled = true;
+
+        if (walker.progress == 1f)
         Application.LoadLevel("Battle");
     }
 }
