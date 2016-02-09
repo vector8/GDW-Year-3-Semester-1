@@ -3,7 +3,8 @@ using System.Collections;
 
 public class MenuController : MonoBehaviour
 {
-    public GameObject mainMenuGroup, vsAiGroup, sparGroup;
+    public GameObject mainMenuGroup, vsAiGroup, sparGroup, armyGroup;
+   
 
     public float moveTime;
 
@@ -61,6 +62,9 @@ public class MenuController : MonoBehaviour
         walker.enabled = true;
         mainMenuGroup.SetActive(false);
 
+        if (walker.progress == 1f)
+            armyGroup.SetActive(true);
+        
         //enable for demo if one scene not done.
         //Application.LoadLevel("ArmyBuilder2");
     }
