@@ -59,14 +59,14 @@ public class MenuController : MonoBehaviour
 
     public void goToArmySelect()
     {
-        walker.enabled = true;
-        mainMenuGroup.SetActive(false);
+        //walker.enabled = true;
+        //mainMenuGroup.SetActive(false);
 
-        if (walker.progress == 1f)
-            armyGroup.SetActive(true);
+        //if (walker.progress == 1f)
+        //    armyGroup.SetActive(true);
         
         //enable for demo if one scene not done.
-        //Application.LoadLevel("ArmyBuilder2");
+        Application.LoadLevel("ArmyBuilder2");
     }
 
     public void exitGame()
@@ -80,17 +80,18 @@ public class MenuController : MonoBehaviour
 
     void Update()
     {
-
+        if (walker.progress == 1f)
+            Application.LoadLevel("Battle");
     }
 
     public void goToVsAiScene()
     {
-        walker.spline = GameObject.Find("Army -> Combat Spline").GetComponent<BezierSpline>();
-        walker.lookBehind = false;
-        walker.lookForward = true;
+        //walker.spline = GameObject.Find("Army -> Combat Spline").GetComponent<BezierSpline>();
+       // walker.lookBehind = false;
+       // walker.lookForward = true;
         walker.enabled = true;
 
-        if (walker.progress == 1f)
-        Application.LoadLevel("Battle");
+        //if (walker.progress == 1f)
+        //Application.LoadLevel("Battle");
     }
 }
