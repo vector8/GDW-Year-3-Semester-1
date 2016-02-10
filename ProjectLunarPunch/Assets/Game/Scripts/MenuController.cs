@@ -3,15 +3,25 @@ using System.Collections;
 
 public class MenuController : MonoBehaviour
 {
-    public GameObject mainMenuGroup, vsAiGroup, sparGroup;
+    public GameObject mainMenuGroup, vsAiGroup, sparGroup, armyGroup;
+   
 
     public float moveTime;
+
+    private Camera mainCam;
+    private Vector3 armyBuildPos;
+
+    private SplineWalker walker;
 
     //private float currentMoveTime = 0f;
 
     void Awake()
     {
         MouseInputWrapper.initialize();
+        armyBuildPos.x = 0f;
+        armyBuildPos.y = 0f;
+        armyBuildPos.z = 0f;
+        walker = GameObject.Find("Main Camera").GetComponent<SplineWalker>();
     }
 
     private void moveGroups(GameObject inFocus, GameObject outOfFocus1, GameObject outOfFocus2)
@@ -49,6 +59,13 @@ public class MenuController : MonoBehaviour
 
     public void goToArmySelect()
     {
+        //walker.enabled = true;
+        //mainMenuGroup.SetActive(false);
+
+        //if (walker.progress == 1f)
+        //    armyGroup.SetActive(true);
+        
+        //enable for demo if one scene not done.
         Application.LoadLevel("ArmyBuilder2");
     }
 
@@ -63,11 +80,18 @@ public class MenuController : MonoBehaviour
 
     void Update()
     {
-
+        if (walker.progress == 1f)
+            Application.LoadLevel("Battle");
     }
 
     public void goToVsAiScene()
     {
-        Application.LoadLevel("Battle");
+        //walker.spline = GameObject.Find("Army -> Combat Spline").GetComponent<BezierSpline>();
+       // walker.lookBehind = false;
+       // walker.lookForward = true;
+        walker.enabled = true;
+
+        //if (walker.progress == 1f)
+        //Application.LoadLevel("Battle");
     }
 }
