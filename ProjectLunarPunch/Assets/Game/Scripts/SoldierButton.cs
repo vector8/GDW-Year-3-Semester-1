@@ -5,6 +5,8 @@ using System.Collections;
 
 public class SoldierButton : MonoBehaviour
 {
+    public SplineWalker walker = GameObject.Find("Main Camera").GetComponent<SplineWalker>();
+
     private Button pressedButton = null;
     public bool buttonCheck;
 
@@ -83,6 +85,7 @@ public class SoldierButton : MonoBehaviour
                 break;
             }
         }
+        
     }
 
     public void buttonPress(Button caller)
@@ -116,6 +119,8 @@ public class SoldierButton : MonoBehaviour
         string path = Application.persistentDataPath.Replace('/', '\\');
         FileIOWrapper.saveFile(path + @"\ArmyBuilderLog.b", log, true, true);
 
+       // walker.enabled = true;
+        
         Application.LoadLevel("Battle");
     }
 
