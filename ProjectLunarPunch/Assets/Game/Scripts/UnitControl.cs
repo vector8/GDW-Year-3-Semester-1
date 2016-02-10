@@ -15,6 +15,7 @@ public class UnitControl : MonoBehaviour
     public BattleManager battleMgr;
     public Button lockInButton;
     public TimerController timerControl;
+    public int AILevel = 0;
 
     // TODO: remove after networking?
     public GameObject[] prefabs = new GameObject[6];
@@ -313,7 +314,40 @@ public class UnitControl : MonoBehaviour
                     UnitCommand cmd = new UnitCommand();
                     cmd.fromUnit = enemies[i];
                     int unitNumber = Random.Range(0, availableUnits.Count-1);
-                    cmd.toUnit = allies[availableUnits[unitNumber]];
+                    if (AILevel == 0)
+                    {
+                        cmd.toUnit = allies[availableUnits[unitNumber]];
+                    }
+                    else if (AILevel == 1)
+                    {
+                        float lowestHP = 100000;
+                        // so like, you put a fucking colon thing over here, make a function over there, donezo.
+                        int lowestHPAlly = 0;
+                        for (int k = 0; k < allies.Length; k++)
+                        {
+                            if (allies[k].hp < lowestHP && allies[k].isDead() == false)
+                            {
+                                Debug.Log("found");
+                                lowestHP = allies[k].hp;
+                                lowestHPAlly = k;
+                            }
+                        }
+                        cmd.toUnit = allies[lowestHPAlly];
+                    }
+                    else if (AILevel == 2)
+                    {
+                        float lowestEffectiveHP = 100000;
+                        int lowestHPAlly = 0;
+                        for (int k = 0; k < allies.Length; k++)
+                        {
+                            if (allies[k].hp * 100/(100+allies[k].def) < lowestEffectiveHP && allies[k].isDead() == false)
+                            {
+                                lowestEffectiveHP = allies[k].hp * 100/(100+allies[k].def);
+                                lowestHPAlly = k;
+                            }
+                        }
+                        cmd.toUnit = allies[lowestHPAlly];
+                    }
                     allCommands.Add(cmd);
                 }
             }
