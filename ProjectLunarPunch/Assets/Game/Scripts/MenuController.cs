@@ -7,11 +7,13 @@ public class MenuController : MonoBehaviour
    
 
     public float moveTime;
+    private Color color;
 
     private Camera mainCam;
     private Vector3 armyBuildPos;
 
     private SplineWalker walker;
+    private Material material;
 
     //private float currentMoveTime = 0f;
 
@@ -22,6 +24,7 @@ public class MenuController : MonoBehaviour
         armyBuildPos.y = 0f;
         armyBuildPos.z = 0f;
         walker = GameObject.Find("Main Camera").GetComponent<SplineWalker>();
+        //material = 
     }
 
     private void moveGroups(GameObject inFocus, GameObject outOfFocus1, GameObject outOfFocus2)
@@ -59,14 +62,11 @@ public class MenuController : MonoBehaviour
 
     public void goToArmySelect()
     {
-        //walker.enabled = true;
-        //mainMenuGroup.SetActive(false);
+        walker.enabled = true;
+        mainMenuGroup.SetActive(false);
 
-        //if (walker.progress == 1f)
-        //    armyGroup.SetActive(true);
-        
         //enable for demo if one scene not done.
-        Application.LoadLevel("ArmyBuilder2");
+        //Application.LoadLevel("ArmyBuilder2");
     }
 
     public void exitGame()
@@ -81,7 +81,15 @@ public class MenuController : MonoBehaviour
     void Update()
     {
         if (walker.progress == 1f)
-            Application.LoadLevel("Battle");
+        {
+            armyGroup.SetActive(true);
+            if (material.color.a != 255)
+            {
+                color.a = material.color.a;
+                color.a += 1f;
+                material.color = color;
+            }
+        }
     }
 
     public void goToVsAiScene()
@@ -89,7 +97,7 @@ public class MenuController : MonoBehaviour
         //walker.spline = GameObject.Find("Army -> Combat Spline").GetComponent<BezierSpline>();
        // walker.lookBehind = false;
        // walker.lookForward = true;
-        walker.enabled = true;
+       // walker.enabled = true;
 
         //if (walker.progress == 1f)
         //Application.LoadLevel("Battle");
