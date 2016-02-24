@@ -23,8 +23,8 @@ public class MenuController : MonoBehaviour
         armyBuildPos.x = 0f;
         armyBuildPos.y = 0f;
         armyBuildPos.z = 0f;
-
-        walker.spline = GameObject.Find("Main -> Army Spline").GetComponent<BezierSpline>();
+        walker = GameObject.Find("Main Camera").GetComponent<SplineWalker>();
+        //walker.spline = GameObject.Find("Main -> Army Spline").GetComponent<SplineWalker>();
         //material = 
     }
 
