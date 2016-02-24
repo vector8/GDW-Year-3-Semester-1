@@ -109,7 +109,115 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 361
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: left
+        weight: 1
+      - path: master
+        weight: 1
+      - path: master/hip
+        weight: 1
+      - path: master/hip/L_HindLeg1
+        weight: 1
+      - path: master/hip/L_HindLeg1/L_HindLeg2
+        weight: 1
+      - path: master/hip/L_HindLeg1/L_HindLeg2/L_HindLeg3
+        weight: 1
+      - path: master/hip/L_HindLeg1/L_HindLeg2/L_HindLeg3/L_HindLeg4
+        weight: 1
+      - path: master/hip/L_HindLeg1/L_HindLeg2/L_HindLeg3/L_HindLeg4/L_HindLeg5
+        weight: 1
+      - path: master/hip/R_HindLeg1
+        weight: 1
+      - path: master/hip/R_HindLeg1/R_HindLeg2
+        weight: 1
+      - path: master/hip/R_HindLeg1/R_HindLeg2/R_HindLeg3
+        weight: 1
+      - path: master/hip/R_HindLeg1/R_HindLeg2/R_HindLeg3/R_HindLeg4
+        weight: 1
+      - path: master/hip/R_HindLeg1/R_HindLeg2/R_HindLeg3/R_HindLeg4/R_HindLeg5
+        weight: 1
+      - path: master/hip/tail
+        weight: 1
+      - path: master/hip/tail/tail1
+        weight: 1
+      - path: master/spine
+        weight: 1
+      - path: master/spine/spine1
+        weight: 1
+      - path: master/spine/spine1/spine2
+        weight: 1
+      - path: master/spine/spine1/spine2/spine3
+        weight: 1
+      - path: master/spine/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: master/spine/spine1/spine2/spine3/spine4/L_FrontLeg1
+        weight: 1
+      - path: master/spine/spine1/spine2/spine3/spine4/L_FrontLeg1/L_FrontLeg2
+        weight: 1
+      - path: master/spine/spine1/spine2/spine3/spine4/L_FrontLeg1/L_FrontLeg2/L_FrontLeg3
+        weight: 1
+      - path: master/spine/spine1/spine2/spine3/spine4/L_FrontLeg1/L_FrontLeg2/L_FrontLeg3/L_FrontLeg4
+        weight: 1
+      - path: master/spine/spine1/spine2/spine3/spine4/L_FrontLeg1/L_FrontLeg2/L_FrontLeg3/L_FrontLeg4/L_FrontLeg5
+        weight: 1
+      - path: master/spine/spine1/spine2/spine3/spine4/neck1
+        weight: 1
+      - path: master/spine/spine1/spine2/spine3/spine4/neck1/neck2
+        weight: 1
+      - path: master/spine/spine1/spine2/spine3/spine4/neck1/neck2/neck3
+        weight: 1
+      - path: master/spine/spine1/spine2/spine3/spine4/neck1/neck2/neck3/L_Jaw1
+        weight: 1
+      - path: master/spine/spine1/spine2/spine3/spine4/neck1/neck2/neck3/L_Jaw1/L_Jaw2
+        weight: 1
+      - path: master/spine/spine1/spine2/spine3/spine4/neck1/neck2/neck3/L_Jaw1/L_Jaw2/L_Jaw3
+        weight: 1
+      - path: master/spine/spine1/spine2/spine3/spine4/neck1/neck2/neck3/U_Jaw1
+        weight: 1
+      - path: master/spine/spine1/spine2/spine3/spine4/neck1/neck2/neck3/U_Jaw1/U_Jaw2
+        weight: 1
+      - path: master/spine/spine1/spine2/spine3/spine4/R_FrontLeg1
+        weight: 1
+      - path: master/spine/spine1/spine2/spine3/spine4/R_FrontLeg1/R_FrontLeg2
+        weight: 1
+      - path: master/spine/spine1/spine2/spine3/spine4/R_FrontLeg1/R_FrontLeg2/R_FrontLeg3
+        weight: 1
+      - path: master/spine/spine1/spine2/spine3/spine4/R_FrontLeg1/R_FrontLeg2/R_FrontLeg3/R_FrontLeg4
+        weight: 1
+      - path: master/spine/spine1/spine2/spine3/spine4/R_FrontLeg1/R_FrontLeg2/R_FrontLeg3/R_FrontLeg4/R_FrontLeg5
+        weight: 1
+      - path: polySurface1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
