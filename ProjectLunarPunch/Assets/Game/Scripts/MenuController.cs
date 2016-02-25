@@ -13,8 +13,7 @@ public class MenuController : MonoBehaviour
     private Vector3 armyBuildPos;
 
     private SplineWalker walker;
-    //private Material material;
-
+    
     //private float currentMoveTime = 0f;
 
     void Awake()
@@ -24,8 +23,6 @@ public class MenuController : MonoBehaviour
         armyBuildPos.y = 0f;
         armyBuildPos.z = 0f;
         walker = GameObject.Find("Main Camera").GetComponent<SplineWalker>();
-        //walker.spline = GameObject.Find("Main -> Army Spline").GetComponent<SplineWalker>();
-        //material = 
     }
 
     private void moveGroups(GameObject inFocus, GameObject outOfFocus1, GameObject outOfFocus2)
@@ -86,13 +83,8 @@ public class MenuController : MonoBehaviour
         if (walker.progress == 1f)
         {
             Application.LoadLevel("ArmyBuilder2");
-            /*armyGroup.SetActive(true);
-            if (material.color.a != 255)
-            {
-                color.a = material.color.a;
-                color.a += 1f;
-                material.color = color;
-            }*/
+            armyGroup.SetActive(true);
+
         }
         
     }
