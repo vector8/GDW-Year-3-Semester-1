@@ -386,6 +386,7 @@ GameObject:
   - 4: {fileID: 471774}
   - 95: {fileID: 9512656}
   - 114: {fileID: 11443386}
+  - 114: {fileID: 11459266}
   m_Layer: 0
   m_Name: WarHound
   m_TagString: Untagged
@@ -1151,6 +1152,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 9512656}
+--- !u!114 &11459266
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 180752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e945b2017e885cc4b9f5d513d72e5b0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 80
+  maxHp: 80
+  att: 10
+  def: 5
+  speed: 35
+  critChance: 5
+  type: 5
+  defending: 0
+  ally: 0
+  debuff_dog: 0
+  debuff_dog_time: 0
 --- !u!137 &13723388
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -1222,7 +1245,35 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: att
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: def
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: speed
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: critChance
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: type
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: hp
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: maxHp
+      value: 80
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 180752}
