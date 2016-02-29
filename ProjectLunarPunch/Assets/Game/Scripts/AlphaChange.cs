@@ -17,7 +17,7 @@ public class AlphaChange : MonoBehaviour
     {
         if (material.color.a != 255)
         {
-            material.color = new Color(255, 255, 255, fadeInterval * Time.deltaTime);
+            material.color = new Color(255, 255, 255, Mathf.Lerp(0,255, 0.005f));
         }
     }
 }
