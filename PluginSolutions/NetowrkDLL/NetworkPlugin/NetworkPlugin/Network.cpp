@@ -1,19 +1,11 @@
-#include <iostream>
-#include <WinSock2.h>
+#include "Network.h"
 
-#pragma comment (lib, "ws2_32.lib")
+char Network::setServer()
+{
+	//server = SERVER;
+}
 
-#define SERVER = "localhost"
-
-//Socket Variables//
-SOCKET s;
-struct sockaddr_in sockAddr;
-int slen = sizeof(sockAddr);
-char buf[512];
-char msg[512];
-/////
-
-void initialize()
+void Network::initialize()
 {
 	//initiate the network
 	WSADATA wsa;
@@ -34,7 +26,9 @@ void initialize()
 	ioctlsocket(s, FIONBIO, &iMode);
 }
 
-int main()
+void Network::update()
 {
+	sprintf_s(msg, sizeof(msg), "%f", msg);
 
+	sendto(s, buf, strlen(msg), 0, (struct sockaddr *) &sockAddr, slen);
 }
