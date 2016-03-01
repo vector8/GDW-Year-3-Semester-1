@@ -4,21 +4,25 @@
 
 #pragma comment (lib, "ws2_32.lib")
 
-#define SERVER = "localhost"
+
 
 class Network
 {
 private:
 	SOCKET s;
 	struct sockaddr_in sockAddr;
-	int slen = sizeof(sockAddr);
-	char server;
+	int recv_len, slen = sizeof(sockAddr);
+	char* server;
 	char buf[512];
 	char msg[512];
 
 public:
+	Network();
+
 	void initialize();
 	void update();
 	char setServer();
+	//void Send();
+	//void Receive();
 
 };
