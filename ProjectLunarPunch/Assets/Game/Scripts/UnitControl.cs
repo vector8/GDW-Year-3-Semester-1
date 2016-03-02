@@ -16,6 +16,8 @@ public class UnitControl : MonoBehaviour
     public Button lockInButton;
     public TimerController timerControl;
     public int AILevel = 0;
+    public bool singlePlayer;
+    public int level;
 
     // TODO: remove after networking?
     public GameObject[] prefabs = new GameObject[6];
@@ -32,29 +34,83 @@ public class UnitControl : MonoBehaviour
 
     void Start()
     {
-        BattleManager.logBattle("BATTLE STARTING!!\n");
-
-        // Initialize allies using ArmyConfiguration and enemies using random creation
-        for(int i = 0; i < 5; i++)
+        if (singlePlayer && level == 1)
         {
-            int allyIndex;
-            if(ArmyConfiguration.army[i] == ClassType.NotSet)
-            {
-                allyIndex = Random.Range(0, 5);
-            }
-            else
-            {
-                allyIndex = (int)ArmyConfiguration.army[i];
-            }
-            GameObject ally = Instantiate<GameObject>(prefabs[allyIndex]);
-            allies[i] = ally.GetComponent<Unit>();
-            allies[i].ally = true;
-            ally.transform.SetParent(allySpots[i].transform, false);
+            ArmyConfiguration.army[0] = ClassType.Swordsman;
+            ArmyConfiguration.army[1] = ClassType.Swordsman;
+            ArmyConfiguration.army[2] = ClassType.Swordsman;
 
-            int randomIndex = Random.Range(0, 5);
-            GameObject enemy = Instantiate<GameObject>(prefabs[randomIndex]);
-            enemies[i] = enemy.GetComponent<Unit>();
-            enemy.transform.SetParent(enemySpots[i].transform, false);
+            ArmyConfiguration.army[3] = ClassType.NotSet;
+            ArmyConfiguration.army[4] = ClassType.NotSet;
+
+            GameObject ally0 = Instantiate<GameObject>(prefabs[(int)ArmyConfiguration.army[0]]);
+            GameObject ally1 = Instantiate<GameObject>(prefabs[(int)ArmyConfiguration.army[1]]);
+            GameObject ally2 = Instantiate<GameObject>(prefabs[(int)ArmyConfiguration.army[2]]);
+            //GameObject ally3 = Instantiate<GameObject>(prefabs[(int)ArmyConfiguration.army[3]]);
+            //GameObject ally4 = Instantiate<GameObject>(prefabs[(int)ArmyConfiguration.army[4]]);
+
+            allies[2] = ally0.GetComponent<Unit>();
+            allies[3] = ally1.GetComponent<Unit>();
+            allies[4] = ally2.GetComponent<Unit>();
+            //allies[3] = ally3.GetComponent<Unit>();
+            //allies[4] = ally4.GetComponent<Unit>();
+
+            allies[2].ally = true;
+            allies[3].ally = true;
+            allies[4].ally = true;
+            //allies[3].ally = false;
+            //allies[4].ally = false;
+
+            ally0.transform.SetParent(allySpots[2].transform, false);
+            ally1.transform.SetParent(allySpots[3].transform, false);
+            ally2.transform.SetParent(allySpots[4].transform, false);
+            //ally3.transform.SetParent(allySpots[3].transform, false);
+            //ally4.transform.SetParent(allySpots[4].transform, false);
+
+            GameObject enemy0 = Instantiate<GameObject>(prefabs[(int)ClassType.Swordsman]);
+            GameObject enemy1 = Instantiate<GameObject>(prefabs[(int)ClassType.Swordsman]);
+            //GameObject enemy2 = Instantiate<GameObject>(prefabs[(int)ClassType.Swordsman]);
+            //GameObject enemy3 = Instantiate<GameObject>(prefabs[(int)ClassType.Swordsman]);
+            //GameObject enemy4 = Instantiate<GameObject>(prefabs[(int)ClassType.Swordsman]);
+
+            enemies[2] = enemy0.GetComponent<Unit>();
+            enemies[4] = enemy1.GetComponent<Unit>();
+            //enemies[2] = enemy2.GetComponent<Unit>();
+            //enemies[3] = enemy3.GetComponent<Unit>();
+            //enemies[4] = enemy4.GetComponent<Unit>();
+
+            enemy0.transform.SetParent(enemySpots[2].transform, false);
+            enemy1.transform.SetParent(enemySpots[4].transform, false);
+            //enemy2.transform.SetParent(enemySpots[2].transform, false);
+            //enemy3.transform.SetParent(enemySpots[3].transform, false);
+            //enemy4.transform.SetParent(enemySpots[4].transform, false);
+        }
+        else
+        {
+            BattleManager.logBattle("BATTLE STARTING!!\n");
+
+            // Initialize allies using ArmyConfiguration and enemies using random creation
+            for (int i = 0; i < 5; i++)
+            {
+                int allyIndex;
+                if (ArmyConfiguration.army[i] == ClassType.NotSet)
+                {
+                    allyIndex = Random.Range(0, 5);
+                }
+                else
+                {
+                    allyIndex = (int)ArmyConfiguration.army[i];
+                }
+                GameObject ally = Instantiate<GameObject>(prefabs[allyIndex]);
+                allies[i] = ally.GetComponent<Unit>();
+                allies[i].ally = true;
+                ally.transform.SetParent(allySpots[i].transform, false);
+
+                int randomIndex = Random.Range(0, 5);
+                GameObject enemy = Instantiate<GameObject>(prefabs[randomIndex]);
+                enemies[i] = enemy.GetComponent<Unit>();
+                enemy.transform.SetParent(enemySpots[i].transform, false);
+            }
         }
     }
 
@@ -68,12 +124,12 @@ public class UnitControl : MonoBehaviour
 
         checkGameOver();
 
-        if(battleMgr.isGameOver())
+        if (battleMgr.isGameOver())
         {
             return;
         }
 
-        if(Mathf.Approximately(timerControl.timer, 0f))
+        if (Mathf.Approximately(timerControl.timer, 0f))
         {
             if (drawingLine)
             {
@@ -298,22 +354,22 @@ public class UnitControl : MonoBehaviour
 
         // TODO: Generate or fetch enemy commands here.
         List<int> availableUnits = new List<int>();
-        for(int i = 0; i < allies.Length; i++)
+        for (int i = 0; i < allies.Length; i++)
         {
-            if(allies[i] != null && allies[i].gameObject.activeSelf && !allies[i].isDead())
+            if (allies[i] != null && allies[i].gameObject.activeSelf && !allies[i].isDead())
             {
                 availableUnits.Add(i);
             }
         }
-        if(availableUnits.Count > 0)
+        if (availableUnits.Count > 0)
         {
             for (int i = 0; i < enemies.Length; i++)
             {
-                if(enemies[i] != null && enemies[i].gameObject.activeSelf && !enemies[i].isDead())
+                if (enemies[i] != null && enemies[i].gameObject.activeSelf && !enemies[i].isDead())
                 {
                     UnitCommand cmd = new UnitCommand();
                     cmd.fromUnit = enemies[i];
-                    int unitNumber = Random.Range(0, availableUnits.Count-1);
+                    int unitNumber = Random.Range(0, availableUnits.Count - 1);
                     if (AILevel == 0)
                     {
                         cmd.toUnit = allies[availableUnits[unitNumber]];
@@ -340,9 +396,9 @@ public class UnitControl : MonoBehaviour
                         int lowestHPAlly = 0;
                         for (int k = 0; k < allies.Length; k++)
                         {
-                            if (allies[k].hp * 100/(100+allies[k].def) < lowestEffectiveHP && allies[k].isDead() == false)
+                            if (allies[k].hp * 100 / (100 + allies[k].def) < lowestEffectiveHP && allies[k].isDead() == false)
                             {
-                                lowestEffectiveHP = allies[k].hp * 100/(100+allies[k].def);
+                                lowestEffectiveHP = allies[k].hp * 100 / (100 + allies[k].def);
                                 lowestHPAlly = k;
                             }
                         }
@@ -362,7 +418,7 @@ public class UnitControl : MonoBehaviour
         {
             DestroyImmediate(playerCommands[i].line.gameObject);
         }
-        
+
         allCommands.AddRange(playerCommands);
 
         // Sort commands by speed.
