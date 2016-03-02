@@ -17,6 +17,8 @@ public class BattleManager : MonoBehaviour
     public Text instructionText, timerText;
     public TimerController timerController;
 
+    public bool singlePlayer;
+    public int level;
     public GameObject gamePanel, gameOverPanel;
     public Text gameOverText;
 
