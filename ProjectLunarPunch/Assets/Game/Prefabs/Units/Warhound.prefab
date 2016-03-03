@@ -388,7 +388,7 @@ GameObject:
   - 114: {fileID: 11443386}
   - 114: {fileID: 11459266}
   m_Layer: 0
-  m_Name: WarHound
+  m_Name: Warhound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

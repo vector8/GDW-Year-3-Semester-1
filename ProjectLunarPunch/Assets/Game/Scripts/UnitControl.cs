@@ -52,7 +52,7 @@ public class UnitControl : MonoBehaviour
             ally.transform.SetParent(allySpots[i].transform, false);
 
             int randomIndex = Random.Range(0, 5);
-            GameObject enemy = Instantiate<GameObject>(prefabs[randomIndex]);
+            GameObject enemy = Instantiate<GameObject>(prefabs[3]);
             enemies[i] = enemy.GetComponent<Unit>();
             enemy.transform.SetParent(enemySpots[i].transform, false);
         }
