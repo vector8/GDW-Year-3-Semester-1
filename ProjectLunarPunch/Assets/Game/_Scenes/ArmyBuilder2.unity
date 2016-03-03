@@ -430,8 +430,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1842958918}
   m_HandleRect: {fileID: 1842958917}
   m_Direction: 2
-  m_Value: 0.9999997
-  m_Size: 0.63449645
+  m_Value: 0.9999999
+  m_Size: 0.63501567
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1214,7 +1214,7 @@ MonoBehaviour:
   buttonCheck: 0
   soldierTypes:
   - {fileID: 180752, guid: 9df1ede6aef515942bd3f218836cc36b, type: 2}
-  - {fileID: 130870, guid: 4c5540a0cc8b58a4c89d95143d69057a, type: 2}
+  - {fileID: 198500, guid: 0d6d03719794209469df4607259ddd71, type: 2}
   - {fileID: 168606, guid: b12dc1989b6f7e04b9c7c8531abdc163, type: 2}
   - {fileID: 174828, guid: 4d93da767e3c89f43bab583adf6b5140, type: 2}
   - {fileID: 185474, guid: b66c53355f6d83544833bb9dd9bdb381, type: 2}
