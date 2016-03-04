@@ -4,7 +4,7 @@ using System.Collections;
 public class MenuController : MonoBehaviour
 {
     public GameObject mainMenuGroup, vsAiGroup, sparGroup, armyGroup;
-   
+    static private GameObject song;
 
     public float moveTime;
     private Color color;
@@ -23,6 +23,7 @@ public class MenuController : MonoBehaviour
         armyBuildPos.y = 0f;
         armyBuildPos.z = 0f;
         walker = GameObject.Find("Main Camera").GetComponent<SplineWalker>();
+        //armyGroup = GameObject.Find("ArmyBuilderUI").GetComponent<GameObject>();
     }
 
     private void moveGroups(GameObject inFocus, GameObject outOfFocus1, GameObject outOfFocus2)
@@ -83,9 +84,10 @@ public class MenuController : MonoBehaviour
         if (walker.progress == 1f)
         {
             Application.LoadLevel("ArmyBuilder2");
-            armyGroup.SetActive(true);
+            //armyGroup.SetActive(true);
 
         }
+
         
     }
 
