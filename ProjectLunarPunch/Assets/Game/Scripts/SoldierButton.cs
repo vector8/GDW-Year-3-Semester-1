@@ -5,6 +5,8 @@ using System.Collections;
 
 public class SoldierButton : MonoBehaviour
 {
+    public int ID;
+
     public SplineWalker walker = GameObject.Find("Main Camera").GetComponent<SplineWalker>();
 
     private Button pressedButton = null;
@@ -29,7 +31,7 @@ public class SoldierButton : MonoBehaviour
                 {
 
                     char spawnLocID = hit.collider.name.ToCharArray()[0];
-                    int ID = (int)spawnLocID - 49;
+                    ID = (int)spawnLocID - 49;
 
                     //Debug.Log("sphere " + hit.collider.name);
                     //Debug.Log("ID " + ID);
