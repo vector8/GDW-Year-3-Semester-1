@@ -1501,8 +1501,8 @@ MonoBehaviour:
   walker: {fileID: 0}
   buttonCheck: 0
   soldierTypes:
-  - {fileID: 112330, guid: 9001f6747c4c348429af24a3ad9f5619, type: 2}
-  - {fileID: 130870, guid: 4c5540a0cc8b58a4c89d95143d69057a, type: 2}
+  - {fileID: 165356, guid: 9df1ede6aef515942bd3f218836cc36b, type: 2}
+  - {fileID: 198500, guid: 0d6d03719794209469df4607259ddd71, type: 2}
   - {fileID: 168606, guid: b12dc1989b6f7e04b9c7c8531abdc163, type: 2}
   - {fileID: 174828, guid: 4d93da767e3c89f43bab583adf6b5140, type: 2}
   - {fileID: 185474, guid: b66c53355f6d83544833bb9dd9bdb381, type: 2}
