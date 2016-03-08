@@ -1,0 +1,176 @@
+fileFormatVersion: 2
+guid: cef415d09a159dc41a7a00861dbb2ba3
+timeCreated: 1456517412
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: hip
+    100002: L_arm
+    100004: L_clavical
+    100006: L_elbow
+    100008: L_forearm
+    100010: L_hand
+    100012: L_handtip
+    100014: L_leg
+    100016: L_leg1
+    100018: L_leg2
+    100020: L_leg3
+    100022: L_leg4
+    100024: L_thumb
+    100026: L_thumbtip
+    100028: L_wrist
+    100030: LB_Skirt
+    100032: LB_skirt1
+    100034: LF_skirt
+    100036: LF_skirt1
+    100038: Master
+    100040: MasterManipulator
+    100042: R_arm
+    100044: R_clavical
+    100046: R_elbow
+    100048: R_forearm
+    100050: R_hand
+    100052: R_handtip
+    100054: R_leg
+    100056: R_leg1
+    100058: R_leg2
+    100060: R_leg3
+    100062: R_leg4
+    100064: R_thumb
+    100066: R_thumbtip
+    100068: R_wrist
+    100070: RB_Skirt
+    100072: RB_Skirt1
+    100074: RF_skirt
+    100076: RF_skirt1
+    100078: spearman
+    100080: //RootNode
+    100082: spine
+    100084: spine1
+    100086: spine2
+    100088: spine3
+    100090: spine4
+    100092: spine5
+    100094: spine6
+    100096: tempSpear
+    400000: hip
+    400002: L_arm
+    400004: L_clavical
+    400006: L_elbow
+    400008: L_forearm
+    400010: L_hand
+    400012: L_handtip
+    400014: L_leg
+    400016: L_leg1
+    400018: L_leg2
+    400020: L_leg3
+    400022: L_leg4
+    400024: L_thumb
+    400026: L_thumbtip
+    400028: L_wrist
+    400030: LB_Skirt
+    400032: LB_skirt1
+    400034: LF_skirt
+    400036: LF_skirt1
+    400038: Master
+    400040: MasterManipulator
+    400042: R_arm
+    400044: R_clavical
+    400046: R_elbow
+    400048: R_forearm
+    400050: R_hand
+    400052: R_handtip
+    400054: R_leg
+    400056: R_leg1
+    400058: R_leg2
+    400060: R_leg3
+    400062: R_leg4
+    400064: R_thumb
+    400066: R_thumbtip
+    400068: R_wrist
+    400070: RB_Skirt
+    400072: RB_Skirt1
+    400074: RF_skirt
+    400076: RF_skirt1
+    400078: spearman
+    400080: //RootNode
+    400082: spine
+    400084: spine1
+    400086: spine2
+    400088: spine3
+    400090: spine4
+    400092: spine5
+    400094: spine6
+    400096: tempSpear
+    2300000: tempSpear
+    3300000: tempSpear
+    4300000: tempSpear
+    4300002: spearman
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: spearman
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

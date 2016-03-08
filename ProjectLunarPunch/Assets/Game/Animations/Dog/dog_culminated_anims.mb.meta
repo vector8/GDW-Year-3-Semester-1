@@ -1,0 +1,699 @@
+fileFormatVersion: 2
+guid: 10c31fe84d9ea214a93d93da7a183fc2
+timeCreated: 1457211223
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: hip
+    100004: L_FrontLeg1
+    100006: L_FrontLeg2
+    100008: L_FrontLeg3
+    100010: L_FrontLeg4
+    100012: L_FrontLeg5
+    100014: L_HindLeg1
+    100016: L_HindLeg2
+    100018: L_HindLeg3
+    100020: L_HindLeg4
+    100022: L_HindLeg5
+    100024: L_Jaw1
+    100026: L_Jaw2
+    100028: L_Jaw3
+    100030: master
+    100032: master_Control
+    100034: neck1
+    100036: neck2
+    100038: neck3
+    100040: polySurface1
+    100042: R_FrontLeg1
+    100044: R_FrontLeg2
+    100046: R_FrontLeg3
+    100048: R_FrontLeg4
+    100050: R_FrontLeg5
+    100052: R_HindLeg1
+    100054: R_HindLeg2
+    100056: R_HindLeg3
+    100058: R_HindLeg4
+    100060: R_HindLeg5
+    100062: spine
+    100064: spine1
+    100066: spine2
+    100068: spine3
+    100070: spine4
+    100072: tail
+    100074: tail1
+    100076: U_Jaw1
+    100078: U_Jaw2
+    400000: //RootNode
+    400002: hip
+    400004: L_FrontLeg1
+    400006: L_FrontLeg2
+    400008: L_FrontLeg3
+    400010: L_FrontLeg4
+    400012: L_FrontLeg5
+    400014: L_HindLeg1
+    400016: L_HindLeg2
+    400018: L_HindLeg3
+    400020: L_HindLeg4
+    400022: L_HindLeg5
+    400024: L_Jaw1
+    400026: L_Jaw2
+    400028: L_Jaw3
+    400030: master
+    400032: master_Control
+    400034: neck1
+    400036: neck2
+    400038: neck3
+    400040: polySurface1
+    400042: R_FrontLeg1
+    400044: R_FrontLeg2
+    400046: R_FrontLeg3
+    400048: R_FrontLeg4
+    400050: R_FrontLeg5
+    400052: R_HindLeg1
+    400054: R_HindLeg2
+    400056: R_HindLeg3
+    400058: R_HindLeg4
+    400060: R_HindLeg5
+    400062: spine
+    400064: spine1
+    400066: spine2
+    400068: spine3
+    400070: spine4
+    400072: tail
+    400074: tail1
+    400076: U_Jaw1
+    400078: U_Jaw2
+    4300000: polySurface1
+    7400000: hit
+    7400002: death
+    7400004: attack
+    7400006: run
+    7400008: idle
+    9500000: //RootNode
+    13700000: polySurface1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: hit
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 31
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: master_Control
+        weight: 1
+      - path: master_Control/master
+        weight: 1
+      - path: master_Control/master/hip
+        weight: 1
+      - path: master_Control/master/hip/L_HindLeg1
+        weight: 1
+      - path: master_Control/master/hip/L_HindLeg1/L_HindLeg2
+        weight: 1
+      - path: master_Control/master/hip/L_HindLeg1/L_HindLeg2/L_HindLeg3
+        weight: 1
+      - path: master_Control/master/hip/L_HindLeg1/L_HindLeg2/L_HindLeg3/L_HindLeg4
+        weight: 1
+      - path: master_Control/master/hip/L_HindLeg1/L_HindLeg2/L_HindLeg3/L_HindLeg4/L_HindLeg5
+        weight: 1
+      - path: master_Control/master/hip/R_HindLeg1
+        weight: 1
+      - path: master_Control/master/hip/R_HindLeg1/R_HindLeg2
+        weight: 1
+      - path: master_Control/master/hip/R_HindLeg1/R_HindLeg2/R_HindLeg3
+        weight: 1
+      - path: master_Control/master/hip/R_HindLeg1/R_HindLeg2/R_HindLeg3/R_HindLeg4
+        weight: 1
+      - path: master_Control/master/hip/R_HindLeg1/R_HindLeg2/R_HindLeg3/R_HindLeg4/R_HindLeg5
+        weight: 1
+      - path: master_Control/master/hip/tail
+        weight: 1
+      - path: master_Control/master/hip/tail/tail1
+        weight: 1
+      - path: master_Control/master/spine
+        weight: 1
+      - path: master_Control/master/spine/spine1
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/L_FrontLeg1
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/L_FrontLeg1/L_FrontLeg2
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/L_FrontLeg1/L_FrontLeg2/L_FrontLeg3
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/L_FrontLeg1/L_FrontLeg2/L_FrontLeg3/L_FrontLeg4
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/L_FrontLeg1/L_FrontLeg2/L_FrontLeg3/L_FrontLeg4/L_FrontLeg5
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/neck1
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/neck1/neck2
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/neck1/neck2/neck3
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/neck1/neck2/neck3/L_Jaw1
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/neck1/neck2/neck3/L_Jaw1/L_Jaw2
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/neck1/neck2/neck3/L_Jaw1/L_Jaw2/L_Jaw3
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/neck1/neck2/neck3/U_Jaw1
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/neck1/neck2/neck3/U_Jaw1/U_Jaw2
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/R_FrontLeg1
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/R_FrontLeg1/R_FrontLeg2
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/R_FrontLeg1/R_FrontLeg2/R_FrontLeg3
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/R_FrontLeg1/R_FrontLeg2/R_FrontLeg3/R_FrontLeg4
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/R_FrontLeg1/R_FrontLeg2/R_FrontLeg3/R_FrontLeg4/R_FrontLeg5
+        weight: 1
+      - path: polySurface1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: death
+      takeName: Take 001
+      firstFrame: 41
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: master_Control
+        weight: 1
+      - path: master_Control/master
+        weight: 1
+      - path: master_Control/master/hip
+        weight: 1
+      - path: master_Control/master/hip/L_HindLeg1
+        weight: 1
+      - path: master_Control/master/hip/L_HindLeg1/L_HindLeg2
+        weight: 1
+      - path: master_Control/master/hip/L_HindLeg1/L_HindLeg2/L_HindLeg3
+        weight: 1
+      - path: master_Control/master/hip/L_HindLeg1/L_HindLeg2/L_HindLeg3/L_HindLeg4
+        weight: 1
+      - path: master_Control/master/hip/L_HindLeg1/L_HindLeg2/L_HindLeg3/L_HindLeg4/L_HindLeg5
+        weight: 1
+      - path: master_Control/master/hip/R_HindLeg1
+        weight: 1
+      - path: master_Control/master/hip/R_HindLeg1/R_HindLeg2
+        weight: 1
+      - path: master_Control/master/hip/R_HindLeg1/R_HindLeg2/R_HindLeg3
+        weight: 1
+      - path: master_Control/master/hip/R_HindLeg1/R_HindLeg2/R_HindLeg3/R_HindLeg4
+        weight: 1
+      - path: master_Control/master/hip/R_HindLeg1/R_HindLeg2/R_HindLeg3/R_HindLeg4/R_HindLeg5
+        weight: 1
+      - path: master_Control/master/hip/tail
+        weight: 1
+      - path: master_Control/master/hip/tail/tail1
+        weight: 1
+      - path: master_Control/master/spine
+        weight: 1
+      - path: master_Control/master/spine/spine1
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/L_FrontLeg1
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/L_FrontLeg1/L_FrontLeg2
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/L_FrontLeg1/L_FrontLeg2/L_FrontLeg3
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/L_FrontLeg1/L_FrontLeg2/L_FrontLeg3/L_FrontLeg4
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/L_FrontLeg1/L_FrontLeg2/L_FrontLeg3/L_FrontLeg4/L_FrontLeg5
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/neck1
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/neck1/neck2
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/neck1/neck2/neck3
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/neck1/neck2/neck3/L_Jaw1
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/neck1/neck2/neck3/L_Jaw1/L_Jaw2
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/neck1/neck2/neck3/L_Jaw1/L_Jaw2/L_Jaw3
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/neck1/neck2/neck3/U_Jaw1
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/neck1/neck2/neck3/U_Jaw1/U_Jaw2
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/R_FrontLeg1
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/R_FrontLeg1/R_FrontLeg2
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/R_FrontLeg1/R_FrontLeg2/R_FrontLeg3
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/R_FrontLeg1/R_FrontLeg2/R_FrontLeg3/R_FrontLeg4
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/R_FrontLeg1/R_FrontLeg2/R_FrontLeg3/R_FrontLeg4/R_FrontLeg5
+        weight: 1
+      - path: polySurface1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: attack
+      takeName: Take 001
+      firstFrame: 121
+      lastFrame: 150
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: master_Control
+        weight: 1
+      - path: master_Control/master
+        weight: 1
+      - path: master_Control/master/hip
+        weight: 1
+      - path: master_Control/master/hip/L_HindLeg1
+        weight: 1
+      - path: master_Control/master/hip/L_HindLeg1/L_HindLeg2
+        weight: 1
+      - path: master_Control/master/hip/L_HindLeg1/L_HindLeg2/L_HindLeg3
+        weight: 1
+      - path: master_Control/master/hip/L_HindLeg1/L_HindLeg2/L_HindLeg3/L_HindLeg4
+        weight: 1
+      - path: master_Control/master/hip/L_HindLeg1/L_HindLeg2/L_HindLeg3/L_HindLeg4/L_HindLeg5
+        weight: 1
+      - path: master_Control/master/hip/R_HindLeg1
+        weight: 1
+      - path: master_Control/master/hip/R_HindLeg1/R_HindLeg2
+        weight: 1
+      - path: master_Control/master/hip/R_HindLeg1/R_HindLeg2/R_HindLeg3
+        weight: 1
+      - path: master_Control/master/hip/R_HindLeg1/R_HindLeg2/R_HindLeg3/R_HindLeg4
+        weight: 1
+      - path: master_Control/master/hip/R_HindLeg1/R_HindLeg2/R_HindLeg3/R_HindLeg4/R_HindLeg5
+        weight: 1
+      - path: master_Control/master/hip/tail
+        weight: 1
+      - path: master_Control/master/hip/tail/tail1
+        weight: 1
+      - path: master_Control/master/spine
+        weight: 1
+      - path: master_Control/master/spine/spine1
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/L_FrontLeg1
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/L_FrontLeg1/L_FrontLeg2
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/L_FrontLeg1/L_FrontLeg2/L_FrontLeg3
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/L_FrontLeg1/L_FrontLeg2/L_FrontLeg3/L_FrontLeg4
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/L_FrontLeg1/L_FrontLeg2/L_FrontLeg3/L_FrontLeg4/L_FrontLeg5
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/neck1
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/neck1/neck2
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/neck1/neck2/neck3
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/neck1/neck2/neck3/L_Jaw1
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/neck1/neck2/neck3/L_Jaw1/L_Jaw2
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/neck1/neck2/neck3/L_Jaw1/L_Jaw2/L_Jaw3
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/neck1/neck2/neck3/U_Jaw1
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/neck1/neck2/neck3/U_Jaw1/U_Jaw2
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/R_FrontLeg1
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/R_FrontLeg1/R_FrontLeg2
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/R_FrontLeg1/R_FrontLeg2/R_FrontLeg3
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/R_FrontLeg1/R_FrontLeg2/R_FrontLeg3/R_FrontLeg4
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/R_FrontLeg1/R_FrontLeg2/R_FrontLeg3/R_FrontLeg4/R_FrontLeg5
+        weight: 1
+      - path: polySurface1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: run
+      takeName: Take 001
+      firstFrame: 161
+      lastFrame: 200
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: master_Control
+        weight: 1
+      - path: master_Control/master
+        weight: 1
+      - path: master_Control/master/hip
+        weight: 1
+      - path: master_Control/master/hip/L_HindLeg1
+        weight: 1
+      - path: master_Control/master/hip/L_HindLeg1/L_HindLeg2
+        weight: 1
+      - path: master_Control/master/hip/L_HindLeg1/L_HindLeg2/L_HindLeg3
+        weight: 1
+      - path: master_Control/master/hip/L_HindLeg1/L_HindLeg2/L_HindLeg3/L_HindLeg4
+        weight: 1
+      - path: master_Control/master/hip/L_HindLeg1/L_HindLeg2/L_HindLeg3/L_HindLeg4/L_HindLeg5
+        weight: 1
+      - path: master_Control/master/hip/R_HindLeg1
+        weight: 1
+      - path: master_Control/master/hip/R_HindLeg1/R_HindLeg2
+        weight: 1
+      - path: master_Control/master/hip/R_HindLeg1/R_HindLeg2/R_HindLeg3
+        weight: 1
+      - path: master_Control/master/hip/R_HindLeg1/R_HindLeg2/R_HindLeg3/R_HindLeg4
+        weight: 1
+      - path: master_Control/master/hip/R_HindLeg1/R_HindLeg2/R_HindLeg3/R_HindLeg4/R_HindLeg5
+        weight: 1
+      - path: master_Control/master/hip/tail
+        weight: 1
+      - path: master_Control/master/hip/tail/tail1
+        weight: 1
+      - path: master_Control/master/spine
+        weight: 1
+      - path: master_Control/master/spine/spine1
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/L_FrontLeg1
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/L_FrontLeg1/L_FrontLeg2
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/L_FrontLeg1/L_FrontLeg2/L_FrontLeg3
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/L_FrontLeg1/L_FrontLeg2/L_FrontLeg3/L_FrontLeg4
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/L_FrontLeg1/L_FrontLeg2/L_FrontLeg3/L_FrontLeg4/L_FrontLeg5
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/neck1
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/neck1/neck2
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/neck1/neck2/neck3
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/neck1/neck2/neck3/L_Jaw1
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/neck1/neck2/neck3/L_Jaw1/L_Jaw2
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/neck1/neck2/neck3/L_Jaw1/L_Jaw2/L_Jaw3
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/neck1/neck2/neck3/U_Jaw1
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/neck1/neck2/neck3/U_Jaw1/U_Jaw2
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/R_FrontLeg1
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/R_FrontLeg1/R_FrontLeg2
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/R_FrontLeg1/R_FrontLeg2/R_FrontLeg3
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/R_FrontLeg1/R_FrontLeg2/R_FrontLeg3/R_FrontLeg4
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/R_FrontLeg1/R_FrontLeg2/R_FrontLeg3/R_FrontLeg4/R_FrontLeg5
+        weight: 1
+      - path: polySurface1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: idle
+      takeName: Take 001
+      firstFrame: 211
+      lastFrame: 400
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: master_Control
+        weight: 1
+      - path: master_Control/master
+        weight: 1
+      - path: master_Control/master/hip
+        weight: 1
+      - path: master_Control/master/hip/L_HindLeg1
+        weight: 1
+      - path: master_Control/master/hip/L_HindLeg1/L_HindLeg2
+        weight: 1
+      - path: master_Control/master/hip/L_HindLeg1/L_HindLeg2/L_HindLeg3
+        weight: 1
+      - path: master_Control/master/hip/L_HindLeg1/L_HindLeg2/L_HindLeg3/L_HindLeg4
+        weight: 1
+      - path: master_Control/master/hip/L_HindLeg1/L_HindLeg2/L_HindLeg3/L_HindLeg4/L_HindLeg5
+        weight: 1
+      - path: master_Control/master/hip/R_HindLeg1
+        weight: 1
+      - path: master_Control/master/hip/R_HindLeg1/R_HindLeg2
+        weight: 1
+      - path: master_Control/master/hip/R_HindLeg1/R_HindLeg2/R_HindLeg3
+        weight: 1
+      - path: master_Control/master/hip/R_HindLeg1/R_HindLeg2/R_HindLeg3/R_HindLeg4
+        weight: 1
+      - path: master_Control/master/hip/R_HindLeg1/R_HindLeg2/R_HindLeg3/R_HindLeg4/R_HindLeg5
+        weight: 1
+      - path: master_Control/master/hip/tail
+        weight: 1
+      - path: master_Control/master/hip/tail/tail1
+        weight: 1
+      - path: master_Control/master/spine
+        weight: 1
+      - path: master_Control/master/spine/spine1
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/L_FrontLeg1
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/L_FrontLeg1/L_FrontLeg2
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/L_FrontLeg1/L_FrontLeg2/L_FrontLeg3
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/L_FrontLeg1/L_FrontLeg2/L_FrontLeg3/L_FrontLeg4
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/L_FrontLeg1/L_FrontLeg2/L_FrontLeg3/L_FrontLeg4/L_FrontLeg5
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/neck1
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/neck1/neck2
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/neck1/neck2/neck3
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/neck1/neck2/neck3/L_Jaw1
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/neck1/neck2/neck3/L_Jaw1/L_Jaw2
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/neck1/neck2/neck3/L_Jaw1/L_Jaw2/L_Jaw3
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/neck1/neck2/neck3/U_Jaw1
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/neck1/neck2/neck3/U_Jaw1/U_Jaw2
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/R_FrontLeg1
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/R_FrontLeg1/R_FrontLeg2
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/R_FrontLeg1/R_FrontLeg2/R_FrontLeg3
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/R_FrontLeg1/R_FrontLeg2/R_FrontLeg3/R_FrontLeg4
+        weight: 1
+      - path: master_Control/master/spine/spine1/spine2/spine3/spine4/R_FrontLeg1/R_FrontLeg2/R_FrontLeg3/R_FrontLeg4/R_FrontLeg5
+        weight: 1
+      - path: polySurface1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
