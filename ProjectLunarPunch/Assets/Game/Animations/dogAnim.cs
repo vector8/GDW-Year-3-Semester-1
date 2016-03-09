@@ -10,18 +10,10 @@ public class dogAnim : MonoBehaviour {
         anim.GetComponent<Animator>();
 	}
 	
-	// Update is called once per frame
-	void Update () {
+	public void setRun(bool poop)
+    {
+        anim.SetBool("run", poop);
+    }
 
-        if (Input.GetMouseButtonDown(0))
-        {
-            anim.SetTrigger("run");
-            anim.SetBool("isRun", true);
-        }
-        if(Input.GetMouseButtonDown(1))
-        {
-            anim.SetBool("isRun", false);
-        }
-	
-	}
+
 }

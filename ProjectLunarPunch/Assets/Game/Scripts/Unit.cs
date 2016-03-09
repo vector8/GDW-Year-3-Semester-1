@@ -29,6 +29,9 @@ public class Unit : MonoBehaviour
         Returning
     }
 
+    bool runin = true;
+    float count = 0;
+
     protected const float CRIT_BONUS = 1.5f;
     protected const float DOG_DEBUFF_REDUCTION = 0.5f;
     protected const float ADVANTAGE_BONUS = 1.2f;
@@ -41,6 +44,8 @@ public class Unit : MonoBehaviour
     protected Unit target;
     protected Vector3 originalPosition;
 
+    int attStateHash = Animator.StringToHash("Base Layer.run");
+
     void Update()
     {
         attackAnimation();
@@ -48,31 +53,65 @@ public class Unit : MonoBehaviour
 
     protected virtual void attackAnimation()
     {
+        AnimatorStateInfo animState = gameObject.GetComponent<spearmanAnim>().anim.GetCurrentAnimatorStateInfo(0);
+
         if (attackState == AttackState.Attacking)
         {
             attackTimer.update(Time.deltaTime);
 
-            gameObject.transform.position = Vector3.Lerp(target.transform.position, originalPosition, attackTimer.getTime() / ATTACK_ANIMATION_TIME);
-            gameObject.transform.LookAt(target.transform, new Vector3(0f, 1f, 0f));
+            //TODO: remove this
+            Vector3 Target = target.transform.position;
+            Target.y = 0;
+
+            gameObject.transform.position = Vector3.Lerp(Target, originalPosition, attackTimer.getTime() / ATTACK_ANIMATION_TIME);
+            gameObject.transform.LookAt(Target, new Vector3(0f, 1f, 0f));
+
+            gameObject.GetComponent<spearmanAnim>().setRun(true);
 
             if (attackTimer.isDone())
             {
-                dealDamage(target);
-                attackTimer.setTime(ATTACK_ANIMATION_TIME);
-                attackState = AttackState.Returning;
+                if(runin)
+                {
+                    gameObject.GetComponent<spearmanAnim>().callAttack();
+                    gameObject.GetComponent<spearmanAnim>().setRun(false);
+                    runin = false;
+                }
+
+                count += 0.02f;
+                
+                //gameObject.GetComponent<spearmanAnim>().anim.anima
+               
+                Debug.Log(gameObject.GetComponent<spearmanAnim>().anim.GetCurrentAnimatorStateInfo(0).ToString());
+
+                if(animState.nameHash != attStateHash && count > 1)
+                {
+                    dealDamage(target);
+                    attackTimer.setTime(ATTACK_ANIMATION_TIME);
+                    attackState = AttackState.Returning;
+                    runin = true;
+                }
+                
             }
         }
         else if (attackState == AttackState.Returning)
         {
             attackTimer.update(Time.deltaTime);
 
-            gameObject.transform.position = Vector3.Lerp(originalPosition, target.transform.position, attackTimer.getTime() / ATTACK_ANIMATION_TIME);
-            gameObject.transform.LookAt(target.transform, new Vector3(0f, 1f, 0f));
+            //TODO: remove this
+            Vector3 Target = target.transform.position;
+            Target.y = 0;
+
+            gameObject.transform.position = Vector3.Lerp(originalPosition, Target, attackTimer.getTime() / ATTACK_ANIMATION_TIME);
+            gameObject.transform.LookAt(Target, new Vector3(0f, 1f, 0f));
+
+            gameObject.GetComponent<spearmanAnim>().setRun(true);
 
             if (attackTimer.isDone())
             {
                 attackState = AttackState.NotAttacking;
                 gameObject.transform.localRotation = new Quaternion();
+
+                gameObject.GetComponent<spearmanAnim>().setRun(false);
             }
         }
     }
@@ -155,12 +194,16 @@ public class Unit : MonoBehaviour
 
     public void takeDamage(float damage)
     {
+        gameObject.GetComponent<spearmanAnim>().callHit();
+
         hp -= damage;
         if(hp <= 0f)
         {
             hp = 0f;
 
-            // TODO: death logic here...
+            // TODO: death logic here...b
+            gameObject.GetComponent<spearmanAnim>().setDeath(true);
+
             gameObject.SetActive(false);
             BattleManager.logBattle(gameObject.name + " has died!\n");
         }

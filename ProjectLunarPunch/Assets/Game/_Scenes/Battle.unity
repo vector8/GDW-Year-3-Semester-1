@@ -1510,13 +1510,14 @@ MonoBehaviour:
   battleMgr: {fileID: 1102703239}
   lockInButton: {fileID: 1368666631}
   timerControl: {fileID: 913664233}
+  AILevel: 0
   prefabs:
-  - {fileID: 161312, guid: d22933e156edd8f4081df948515b77b5, type: 2}
-  - {fileID: 188972, guid: 63eeadbc2fe75eb44a27a697fe7ed044, type: 2}
+  - {fileID: 193666, guid: 1e53092ca7c886c4282f3c329f3c7f70, type: 2}
+  - {fileID: 179846, guid: 849bf2d04bc8e5c46bf9baf517a3dc67, type: 2}
   - {fileID: 190232, guid: 8e0f7cfb3e1b28941949e2699b507a21, type: 2}
-  - {fileID: 141862, guid: 801106ffaf9c1c6428d3cd0695cb6432, type: 2}
+  - {fileID: 198500, guid: 0d6d03719794209469df4607259ddd71, type: 2}
   - {fileID: 164956, guid: 8e8128273b8d78d4483b16d15964e68a, type: 2}
-  - {fileID: 137434, guid: 90fbac764b9d5fc40bb0876b20abbf4f, type: 2}
+  - {fileID: 165356, guid: 9df1ede6aef515942bd3f218836cc36b, type: 2}
   allySpots:
   - {fileID: 2031005873}
   - {fileID: 29768828}
@@ -2274,7 +2275,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6e8c94a303060994280ef4930d07a182, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6e8c94a303060994280ef4930d07a182, type: 3}
       propertyPath: m_LocalScale.x

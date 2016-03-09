@@ -1,0 +1,1029 @@
+fileFormatVersion: 2
+guid: 7b989ca732cc2404b90deb1428e9d9b9
+timeCreated: 1457498904
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: berserker_model
+    100002: //RootNode
+    100004: Character3_Head
+    100006: Character3_Hips
+    100008: Character3_LeftArm
+    100010: Character3_LeftFoot
+    100012: Character3_LeftForeArm
+    100014: Character3_LeftHand
+    100016: Character3_LeftHandIndex1
+    100018: Character3_LeftHandIndex2
+    100020: Character3_LeftHandIndex3
+    100022: Character3_LeftHandIndex4
+    100024: Character3_LeftHandMiddle1
+    100026: Character3_LeftHandMiddle2
+    100028: Character3_LeftHandMiddle3
+    100030: Character3_LeftHandMiddle4
+    100032: Character3_LeftHandPinky1
+    100034: Character3_LeftHandPinky2
+    100036: Character3_LeftHandPinky3
+    100038: Character3_LeftHandPinky4
+    100040: Character3_LeftHandRing1
+    100042: Character3_LeftHandRing2
+    100044: Character3_LeftHandRing3
+    100046: Character3_LeftHandRing4
+    100048: Character3_LeftHandThumb1
+    100050: Character3_LeftHandThumb2
+    100052: Character3_LeftHandThumb3
+    100054: Character3_LeftHandThumb4
+    100056: Character3_LeftLeg
+    100058: Character3_LeftShoulder
+    100060: Character3_LeftToeBase
+    100062: Character3_LeftUpLeg
+    100064: Character3_Neck
+    100066: Character3_Reference
+    100068: Character3_RightArm
+    100070: Character3_RightFoot
+    100072: Character3_RightForeArm
+    100074: Character3_RightHand
+    100076: Character3_RightHandIndex1
+    100078: Character3_RightHandIndex2
+    100080: Character3_RightHandIndex3
+    100082: Character3_RightHandIndex4
+    100084: Character3_RightHandMiddle1
+    100086: Character3_RightHandMiddle2
+    100088: Character3_RightHandMiddle3
+    100090: Character3_RightHandMiddle4
+    100092: Character3_RightHandPinky1
+    100094: Character3_RightHandPinky2
+    100096: Character3_RightHandPinky3
+    100098: Character3_RightHandPinky4
+    100100: Character3_RightHandRing1
+    100102: Character3_RightHandRing2
+    100104: Character3_RightHandRing3
+    100106: Character3_RightHandRing4
+    100108: Character3_RightHandThumb1
+    100110: Character3_RightHandThumb2
+    100112: Character3_RightHandThumb3
+    100114: Character3_RightHandThumb4
+    100116: Character3_RightLeg
+    100118: Character3_RightShoulder
+    100120: Character3_RightToeBase
+    100122: Character3_RightUpLeg
+    100124: Character3_Spine
+    100126: Character3_Spine1
+    100128: Character3_Spine2
+    100130: left_axe
+    100132: right_axe
+    400000: berserker_model
+    400002: //RootNode
+    400004: Character3_Head
+    400006: Character3_Hips
+    400008: Character3_LeftArm
+    400010: Character3_LeftFoot
+    400012: Character3_LeftForeArm
+    400014: Character3_LeftHand
+    400016: Character3_LeftHandIndex1
+    400018: Character3_LeftHandIndex2
+    400020: Character3_LeftHandIndex3
+    400022: Character3_LeftHandIndex4
+    400024: Character3_LeftHandMiddle1
+    400026: Character3_LeftHandMiddle2
+    400028: Character3_LeftHandMiddle3
+    400030: Character3_LeftHandMiddle4
+    400032: Character3_LeftHandPinky1
+    400034: Character3_LeftHandPinky2
+    400036: Character3_LeftHandPinky3
+    400038: Character3_LeftHandPinky4
+    400040: Character3_LeftHandRing1
+    400042: Character3_LeftHandRing2
+    400044: Character3_LeftHandRing3
+    400046: Character3_LeftHandRing4
+    400048: Character3_LeftHandThumb1
+    400050: Character3_LeftHandThumb2
+    400052: Character3_LeftHandThumb3
+    400054: Character3_LeftHandThumb4
+    400056: Character3_LeftLeg
+    400058: Character3_LeftShoulder
+    400060: Character3_LeftToeBase
+    400062: Character3_LeftUpLeg
+    400064: Character3_Neck
+    400066: Character3_Reference
+    400068: Character3_RightArm
+    400070: Character3_RightFoot
+    400072: Character3_RightForeArm
+    400074: Character3_RightHand
+    400076: Character3_RightHandIndex1
+    400078: Character3_RightHandIndex2
+    400080: Character3_RightHandIndex3
+    400082: Character3_RightHandIndex4
+    400084: Character3_RightHandMiddle1
+    400086: Character3_RightHandMiddle2
+    400088: Character3_RightHandMiddle3
+    400090: Character3_RightHandMiddle4
+    400092: Character3_RightHandPinky1
+    400094: Character3_RightHandPinky2
+    400096: Character3_RightHandPinky3
+    400098: Character3_RightHandPinky4
+    400100: Character3_RightHandRing1
+    400102: Character3_RightHandRing2
+    400104: Character3_RightHandRing3
+    400106: Character3_RightHandRing4
+    400108: Character3_RightHandThumb1
+    400110: Character3_RightHandThumb2
+    400112: Character3_RightHandThumb3
+    400114: Character3_RightHandThumb4
+    400116: Character3_RightLeg
+    400118: Character3_RightShoulder
+    400120: Character3_RightToeBase
+    400122: Character3_RightUpLeg
+    400124: Character3_Spine
+    400126: Character3_Spine1
+    400128: Character3_Spine2
+    400130: left_axe
+    400132: right_axe
+    2300000: left_axe
+    2300002: right_axe
+    3300000: left_axe
+    3300002: right_axe
+    4300000: berserker_model
+    4300002: right_axe
+    4300004: left_axe
+    7400000: idle
+    7400002: attack
+    7400004: hit
+    7400006: run
+    7400008: death
+    9500000: //RootNode
+    13700000: berserker_model
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: idle
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: berserker_model
+        weight: 1
+      - path: Character3_Reference
+        weight: 1
+      - path: Character3_Reference/Character3_Hips
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_LeftUpLeg
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_LeftUpLeg/Character3_LeftLeg
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_LeftUpLeg/Character3_LeftLeg/Character3_LeftFoot
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_LeftUpLeg/Character3_LeftLeg/Character3_LeftFoot/Character3_LeftToeBase
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_RightUpLeg
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_RightUpLeg/Character3_RightLeg
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_RightUpLeg/Character3_RightLeg/Character3_RightFoot
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_RightUpLeg/Character3_RightLeg/Character3_RightFoot/Character3_RightToeBase
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandIndex1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandIndex1/Character3_LeftHandIndex2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandIndex1/Character3_LeftHandIndex2/Character3_LeftHandIndex3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandIndex1/Character3_LeftHandIndex2/Character3_LeftHandIndex3/Character3_LeftHandIndex4
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandMiddle1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandMiddle1/Character3_LeftHandMiddle2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandMiddle1/Character3_LeftHandMiddle2/Character3_LeftHandMiddle3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandMiddle1/Character3_LeftHandMiddle2/Character3_LeftHandMiddle3/Character3_LeftHandMiddle4
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandPinky1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandPinky1/Character3_LeftHandPinky2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandPinky1/Character3_LeftHandPinky2/Character3_LeftHandPinky3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandPinky1/Character3_LeftHandPinky2/Character3_LeftHandPinky3/Character3_LeftHandPinky4
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandRing1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandRing1/Character3_LeftHandRing2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandRing1/Character3_LeftHandRing2/Character3_LeftHandRing3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandRing1/Character3_LeftHandRing2/Character3_LeftHandRing3/Character3_LeftHandRing4
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandThumb1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandThumb1/Character3_LeftHandThumb2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandThumb1/Character3_LeftHandThumb2/Character3_LeftHandThumb3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandThumb1/Character3_LeftHandThumb2/Character3_LeftHandThumb3/Character3_LeftHandThumb4
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_Neck
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_Neck/Character3_Head
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandIndex1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandIndex1/Character3_RightHandIndex2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandIndex1/Character3_RightHandIndex2/Character3_RightHandIndex3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandIndex1/Character3_RightHandIndex2/Character3_RightHandIndex3/Character3_RightHandIndex4
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandMiddle1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandMiddle1/Character3_RightHandMiddle2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandMiddle1/Character3_RightHandMiddle2/Character3_RightHandMiddle3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandMiddle1/Character3_RightHandMiddle2/Character3_RightHandMiddle3/Character3_RightHandMiddle4
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandPinky1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandPinky1/Character3_RightHandPinky2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandPinky1/Character3_RightHandPinky2/Character3_RightHandPinky3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandPinky1/Character3_RightHandPinky2/Character3_RightHandPinky3/Character3_RightHandPinky4
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandRing1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandRing1/Character3_RightHandRing2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandRing1/Character3_RightHandRing2/Character3_RightHandRing3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandRing1/Character3_RightHandRing2/Character3_RightHandRing3/Character3_RightHandRing4
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandThumb1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandThumb1/Character3_RightHandThumb2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandThumb1/Character3_RightHandThumb2/Character3_RightHandThumb3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandThumb1/Character3_RightHandThumb2/Character3_RightHandThumb3/Character3_RightHandThumb4
+        weight: 1
+      - path: left_axe
+        weight: 1
+      - path: right_axe
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: attack
+      takeName: Take 001
+      firstFrame: 70
+      lastFrame: 90
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: berserker_model
+        weight: 1
+      - path: Character3_Reference
+        weight: 1
+      - path: Character3_Reference/Character3_Hips
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_LeftUpLeg
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_LeftUpLeg/Character3_LeftLeg
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_LeftUpLeg/Character3_LeftLeg/Character3_LeftFoot
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_LeftUpLeg/Character3_LeftLeg/Character3_LeftFoot/Character3_LeftToeBase
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_RightUpLeg
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_RightUpLeg/Character3_RightLeg
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_RightUpLeg/Character3_RightLeg/Character3_RightFoot
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_RightUpLeg/Character3_RightLeg/Character3_RightFoot/Character3_RightToeBase
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandIndex1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandIndex1/Character3_LeftHandIndex2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandIndex1/Character3_LeftHandIndex2/Character3_LeftHandIndex3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandIndex1/Character3_LeftHandIndex2/Character3_LeftHandIndex3/Character3_LeftHandIndex4
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandMiddle1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandMiddle1/Character3_LeftHandMiddle2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandMiddle1/Character3_LeftHandMiddle2/Character3_LeftHandMiddle3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandMiddle1/Character3_LeftHandMiddle2/Character3_LeftHandMiddle3/Character3_LeftHandMiddle4
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandPinky1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandPinky1/Character3_LeftHandPinky2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandPinky1/Character3_LeftHandPinky2/Character3_LeftHandPinky3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandPinky1/Character3_LeftHandPinky2/Character3_LeftHandPinky3/Character3_LeftHandPinky4
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandRing1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandRing1/Character3_LeftHandRing2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandRing1/Character3_LeftHandRing2/Character3_LeftHandRing3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandRing1/Character3_LeftHandRing2/Character3_LeftHandRing3/Character3_LeftHandRing4
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandThumb1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandThumb1/Character3_LeftHandThumb2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandThumb1/Character3_LeftHandThumb2/Character3_LeftHandThumb3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandThumb1/Character3_LeftHandThumb2/Character3_LeftHandThumb3/Character3_LeftHandThumb4
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_Neck
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_Neck/Character3_Head
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandIndex1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandIndex1/Character3_RightHandIndex2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandIndex1/Character3_RightHandIndex2/Character3_RightHandIndex3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandIndex1/Character3_RightHandIndex2/Character3_RightHandIndex3/Character3_RightHandIndex4
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandMiddle1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandMiddle1/Character3_RightHandMiddle2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandMiddle1/Character3_RightHandMiddle2/Character3_RightHandMiddle3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandMiddle1/Character3_RightHandMiddle2/Character3_RightHandMiddle3/Character3_RightHandMiddle4
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandPinky1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandPinky1/Character3_RightHandPinky2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandPinky1/Character3_RightHandPinky2/Character3_RightHandPinky3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandPinky1/Character3_RightHandPinky2/Character3_RightHandPinky3/Character3_RightHandPinky4
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandRing1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandRing1/Character3_RightHandRing2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandRing1/Character3_RightHandRing2/Character3_RightHandRing3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandRing1/Character3_RightHandRing2/Character3_RightHandRing3/Character3_RightHandRing4
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandThumb1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandThumb1/Character3_RightHandThumb2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandThumb1/Character3_RightHandThumb2/Character3_RightHandThumb3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandThumb1/Character3_RightHandThumb2/Character3_RightHandThumb3/Character3_RightHandThumb4
+        weight: 1
+      - path: left_axe
+        weight: 1
+      - path: right_axe
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: hit
+      takeName: Take 001
+      firstFrame: 100
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: berserker_model
+        weight: 1
+      - path: Character3_Reference
+        weight: 1
+      - path: Character3_Reference/Character3_Hips
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_LeftUpLeg
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_LeftUpLeg/Character3_LeftLeg
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_LeftUpLeg/Character3_LeftLeg/Character3_LeftFoot
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_LeftUpLeg/Character3_LeftLeg/Character3_LeftFoot/Character3_LeftToeBase
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_RightUpLeg
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_RightUpLeg/Character3_RightLeg
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_RightUpLeg/Character3_RightLeg/Character3_RightFoot
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_RightUpLeg/Character3_RightLeg/Character3_RightFoot/Character3_RightToeBase
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandIndex1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandIndex1/Character3_LeftHandIndex2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandIndex1/Character3_LeftHandIndex2/Character3_LeftHandIndex3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandIndex1/Character3_LeftHandIndex2/Character3_LeftHandIndex3/Character3_LeftHandIndex4
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandMiddle1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandMiddle1/Character3_LeftHandMiddle2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandMiddle1/Character3_LeftHandMiddle2/Character3_LeftHandMiddle3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandMiddle1/Character3_LeftHandMiddle2/Character3_LeftHandMiddle3/Character3_LeftHandMiddle4
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandPinky1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandPinky1/Character3_LeftHandPinky2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandPinky1/Character3_LeftHandPinky2/Character3_LeftHandPinky3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandPinky1/Character3_LeftHandPinky2/Character3_LeftHandPinky3/Character3_LeftHandPinky4
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandRing1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandRing1/Character3_LeftHandRing2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandRing1/Character3_LeftHandRing2/Character3_LeftHandRing3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandRing1/Character3_LeftHandRing2/Character3_LeftHandRing3/Character3_LeftHandRing4
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandThumb1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandThumb1/Character3_LeftHandThumb2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandThumb1/Character3_LeftHandThumb2/Character3_LeftHandThumb3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandThumb1/Character3_LeftHandThumb2/Character3_LeftHandThumb3/Character3_LeftHandThumb4
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_Neck
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_Neck/Character3_Head
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandIndex1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandIndex1/Character3_RightHandIndex2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandIndex1/Character3_RightHandIndex2/Character3_RightHandIndex3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandIndex1/Character3_RightHandIndex2/Character3_RightHandIndex3/Character3_RightHandIndex4
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandMiddle1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandMiddle1/Character3_RightHandMiddle2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandMiddle1/Character3_RightHandMiddle2/Character3_RightHandMiddle3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandMiddle1/Character3_RightHandMiddle2/Character3_RightHandMiddle3/Character3_RightHandMiddle4
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandPinky1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandPinky1/Character3_RightHandPinky2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandPinky1/Character3_RightHandPinky2/Character3_RightHandPinky3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandPinky1/Character3_RightHandPinky2/Character3_RightHandPinky3/Character3_RightHandPinky4
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandRing1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandRing1/Character3_RightHandRing2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandRing1/Character3_RightHandRing2/Character3_RightHandRing3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandRing1/Character3_RightHandRing2/Character3_RightHandRing3/Character3_RightHandRing4
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandThumb1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandThumb1/Character3_RightHandThumb2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandThumb1/Character3_RightHandThumb2/Character3_RightHandThumb3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandThumb1/Character3_RightHandThumb2/Character3_RightHandThumb3/Character3_RightHandThumb4
+        weight: 1
+      - path: left_axe
+        weight: 1
+      - path: right_axe
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: run
+      takeName: Take 001
+      firstFrame: 130
+      lastFrame: 156
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: berserker_model
+        weight: 1
+      - path: Character3_Reference
+        weight: 1
+      - path: Character3_Reference/Character3_Hips
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_LeftUpLeg
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_LeftUpLeg/Character3_LeftLeg
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_LeftUpLeg/Character3_LeftLeg/Character3_LeftFoot
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_LeftUpLeg/Character3_LeftLeg/Character3_LeftFoot/Character3_LeftToeBase
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_RightUpLeg
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_RightUpLeg/Character3_RightLeg
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_RightUpLeg/Character3_RightLeg/Character3_RightFoot
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_RightUpLeg/Character3_RightLeg/Character3_RightFoot/Character3_RightToeBase
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandIndex1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandIndex1/Character3_LeftHandIndex2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandIndex1/Character3_LeftHandIndex2/Character3_LeftHandIndex3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandIndex1/Character3_LeftHandIndex2/Character3_LeftHandIndex3/Character3_LeftHandIndex4
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandMiddle1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandMiddle1/Character3_LeftHandMiddle2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandMiddle1/Character3_LeftHandMiddle2/Character3_LeftHandMiddle3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandMiddle1/Character3_LeftHandMiddle2/Character3_LeftHandMiddle3/Character3_LeftHandMiddle4
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandPinky1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandPinky1/Character3_LeftHandPinky2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandPinky1/Character3_LeftHandPinky2/Character3_LeftHandPinky3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandPinky1/Character3_LeftHandPinky2/Character3_LeftHandPinky3/Character3_LeftHandPinky4
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandRing1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandRing1/Character3_LeftHandRing2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandRing1/Character3_LeftHandRing2/Character3_LeftHandRing3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandRing1/Character3_LeftHandRing2/Character3_LeftHandRing3/Character3_LeftHandRing4
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandThumb1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandThumb1/Character3_LeftHandThumb2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandThumb1/Character3_LeftHandThumb2/Character3_LeftHandThumb3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandThumb1/Character3_LeftHandThumb2/Character3_LeftHandThumb3/Character3_LeftHandThumb4
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_Neck
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_Neck/Character3_Head
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandIndex1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandIndex1/Character3_RightHandIndex2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandIndex1/Character3_RightHandIndex2/Character3_RightHandIndex3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandIndex1/Character3_RightHandIndex2/Character3_RightHandIndex3/Character3_RightHandIndex4
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandMiddle1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandMiddle1/Character3_RightHandMiddle2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandMiddle1/Character3_RightHandMiddle2/Character3_RightHandMiddle3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandMiddle1/Character3_RightHandMiddle2/Character3_RightHandMiddle3/Character3_RightHandMiddle4
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandPinky1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandPinky1/Character3_RightHandPinky2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandPinky1/Character3_RightHandPinky2/Character3_RightHandPinky3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandPinky1/Character3_RightHandPinky2/Character3_RightHandPinky3/Character3_RightHandPinky4
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandRing1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandRing1/Character3_RightHandRing2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandRing1/Character3_RightHandRing2/Character3_RightHandRing3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandRing1/Character3_RightHandRing2/Character3_RightHandRing3/Character3_RightHandRing4
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandThumb1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandThumb1/Character3_RightHandThumb2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandThumb1/Character3_RightHandThumb2/Character3_RightHandThumb3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandThumb1/Character3_RightHandThumb2/Character3_RightHandThumb3/Character3_RightHandThumb4
+        weight: 1
+      - path: left_axe
+        weight: 1
+      - path: right_axe
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: death
+      takeName: Take 001
+      firstFrame: 175
+      lastFrame: 250
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: berserker_model
+        weight: 1
+      - path: Character3_Reference
+        weight: 1
+      - path: Character3_Reference/Character3_Hips
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_LeftUpLeg
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_LeftUpLeg/Character3_LeftLeg
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_LeftUpLeg/Character3_LeftLeg/Character3_LeftFoot
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_LeftUpLeg/Character3_LeftLeg/Character3_LeftFoot/Character3_LeftToeBase
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_RightUpLeg
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_RightUpLeg/Character3_RightLeg
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_RightUpLeg/Character3_RightLeg/Character3_RightFoot
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_RightUpLeg/Character3_RightLeg/Character3_RightFoot/Character3_RightToeBase
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandIndex1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandIndex1/Character3_LeftHandIndex2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandIndex1/Character3_LeftHandIndex2/Character3_LeftHandIndex3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandIndex1/Character3_LeftHandIndex2/Character3_LeftHandIndex3/Character3_LeftHandIndex4
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandMiddle1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandMiddle1/Character3_LeftHandMiddle2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandMiddle1/Character3_LeftHandMiddle2/Character3_LeftHandMiddle3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandMiddle1/Character3_LeftHandMiddle2/Character3_LeftHandMiddle3/Character3_LeftHandMiddle4
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandPinky1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandPinky1/Character3_LeftHandPinky2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandPinky1/Character3_LeftHandPinky2/Character3_LeftHandPinky3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandPinky1/Character3_LeftHandPinky2/Character3_LeftHandPinky3/Character3_LeftHandPinky4
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandRing1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandRing1/Character3_LeftHandRing2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandRing1/Character3_LeftHandRing2/Character3_LeftHandRing3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandRing1/Character3_LeftHandRing2/Character3_LeftHandRing3/Character3_LeftHandRing4
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandThumb1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandThumb1/Character3_LeftHandThumb2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandThumb1/Character3_LeftHandThumb2/Character3_LeftHandThumb3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_LeftShoulder/Character3_LeftArm/Character3_LeftForeArm/Character3_LeftHand/Character3_LeftHandThumb1/Character3_LeftHandThumb2/Character3_LeftHandThumb3/Character3_LeftHandThumb4
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_Neck
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_Neck/Character3_Head
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandIndex1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandIndex1/Character3_RightHandIndex2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandIndex1/Character3_RightHandIndex2/Character3_RightHandIndex3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandIndex1/Character3_RightHandIndex2/Character3_RightHandIndex3/Character3_RightHandIndex4
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandMiddle1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandMiddle1/Character3_RightHandMiddle2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandMiddle1/Character3_RightHandMiddle2/Character3_RightHandMiddle3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandMiddle1/Character3_RightHandMiddle2/Character3_RightHandMiddle3/Character3_RightHandMiddle4
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandPinky1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandPinky1/Character3_RightHandPinky2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandPinky1/Character3_RightHandPinky2/Character3_RightHandPinky3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandPinky1/Character3_RightHandPinky2/Character3_RightHandPinky3/Character3_RightHandPinky4
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandRing1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandRing1/Character3_RightHandRing2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandRing1/Character3_RightHandRing2/Character3_RightHandRing3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandRing1/Character3_RightHandRing2/Character3_RightHandRing3/Character3_RightHandRing4
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandThumb1
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandThumb1/Character3_RightHandThumb2
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandThumb1/Character3_RightHandThumb2/Character3_RightHandThumb3
+        weight: 1
+      - path: Character3_Reference/Character3_Hips/Character3_Spine/Character3_Spine1/Character3_Spine2/Character3_RightShoulder/Character3_RightArm/Character3_RightForeArm/Character3_RightHand/Character3_RightHandThumb1/Character3_RightHandThumb2/Character3_RightHandThumb3/Character3_RightHandThumb4
+        weight: 1
+      - path: left_axe
+        weight: 1
+      - path: right_axe
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 18
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
