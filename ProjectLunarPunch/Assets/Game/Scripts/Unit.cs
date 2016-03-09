@@ -35,7 +35,7 @@ public class Unit : MonoBehaviour
     protected const float CRIT_BONUS = 1.5f;
     protected const float DOG_DEBUFF_REDUCTION = 0.5f;
     protected const float ADVANTAGE_BONUS = 1.2f;
-    protected const float DEFENDING_MODIFIER = 0.05f;
+    protected const float DEFENDING_MODIFIER = 0.5f;
     protected const float ATTACK_ANIMATION_TIME = 0.5f;
     protected const int DOG_DEBUFF_DURATION = 3;
 
@@ -59,10 +59,12 @@ public class Unit : MonoBehaviour
         {
             attackTimer.update(Time.deltaTime);
 
-            //float dist = Vector3.Distance(target.transform.position, originalPosition);
+            //TODO: remove this
+            Vector3 Target = target.transform.position;
+            Target.y = 0;
 
-            gameObject.transform.position = Vector3.Lerp(target.transform.position , originalPosition, (attackTimer.getTime() / ATTACK_ANIMATION_TIME));
-            gameObject.transform.LookAt(target.transform, new Vector3(0f, 1f, 0f));
+            gameObject.transform.position = Vector3.Lerp(Target, originalPosition, attackTimer.getTime() / ATTACK_ANIMATION_TIME);
+            gameObject.transform.LookAt(Target, new Vector3(0f, 1f, 0f));
 
             gameObject.GetComponent<spearmanAnim>().setRun(true);
 
@@ -95,8 +97,12 @@ public class Unit : MonoBehaviour
         {
             attackTimer.update(Time.deltaTime);
 
-            gameObject.transform.position = Vector3.Lerp(originalPosition, target.transform.position, attackTimer.getTime() / ATTACK_ANIMATION_TIME);
-            gameObject.transform.LookAt(target.transform, new Vector3(0f, 1f, 0f));
+            //TODO: remove this
+            Vector3 Target = target.transform.position;
+            Target.y = 0;
+
+            gameObject.transform.position = Vector3.Lerp(originalPosition, Target, attackTimer.getTime() / ATTACK_ANIMATION_TIME);
+            gameObject.transform.LookAt(Target, new Vector3(0f, 1f, 0f));
 
             gameObject.GetComponent<spearmanAnim>().setRun(true);
 
