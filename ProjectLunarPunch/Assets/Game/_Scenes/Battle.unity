@@ -1517,7 +1517,7 @@ MonoBehaviour:
   AILevel: 0
   prefabs:
   - {fileID: 161312, guid: d22933e156edd8f4081df948515b77b5, type: 2}
-  - {fileID: 188972, guid: 63eeadbc2fe75eb44a27a697fe7ed044, type: 2}
+  - {fileID: 179846, guid: 849bf2d04bc8e5c46bf9baf517a3dc67, type: 2}
   - {fileID: 190232, guid: 8e0f7cfb3e1b28941949e2699b507a21, type: 2}
   - {fileID: 198500, guid: 0d6d03719794209469df4607259ddd71, type: 2}
   - {fileID: 164956, guid: 8e8128273b8d78d4483b16d15964e68a, type: 2}

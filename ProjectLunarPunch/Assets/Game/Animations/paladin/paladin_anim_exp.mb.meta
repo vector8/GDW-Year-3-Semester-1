@@ -1,0 +1,160 @@
+fileFormatVersion: 2
+guid: b29b0eaca6f14384994e235b3b3cf171
+timeCreated: 1457473760
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Character2_Head
+    100002: Character2_Hips
+    100004: Character2_LeftArm
+    100006: Character2_LeftFoot
+    100008: Character2_LeftForeArm
+    100010: Character2_LeftHand
+    100012: Character2_LeftHandIndex1
+    100014: Character2_LeftHandIndex2
+    100016: Character2_LeftHandIndex3
+    100018: Character2_LeftHandThumb1
+    100020: Character2_LeftHandThumb2
+    100022: Character2_LeftHandThumb3
+    100024: Character2_LeftLeg
+    100026: Character2_LeftShoulder
+    100028: Character2_LeftToeBase
+    100030: Character2_LeftUpLeg
+    100032: Character2_Neck
+    100034: Character2_Reference
+    100036: Character2_RightArm
+    100038: Character2_RightFoot
+    100040: Character2_RightForeArm
+    100042: Character2_RightHand
+    100044: Character2_RightHandIndex1
+    100046: Character2_RightHandIndex2
+    100048: Character2_RightHandIndex3
+    100050: Character2_RightHandThumb1
+    100052: Character2_RightHandThumb2
+    100054: Character2_RightHandThumb3
+    100056: Character2_RightLeg
+    100058: Character2_RightShoulder
+    100060: Character2_RightToeBase
+    100062: Character2_RightUpLeg
+    100064: Character2_Spine
+    100066: Character2_Spine1
+    100068: Character2_Spine2
+    100070: group1
+    100072: //RootNode
+    100074: pasted__pCube2
+    100076: penis_man
+    400000: Character2_Head
+    400002: Character2_Hips
+    400004: Character2_LeftArm
+    400006: Character2_LeftFoot
+    400008: Character2_LeftForeArm
+    400010: Character2_LeftHand
+    400012: Character2_LeftHandIndex1
+    400014: Character2_LeftHandIndex2
+    400016: Character2_LeftHandIndex3
+    400018: Character2_LeftHandThumb1
+    400020: Character2_LeftHandThumb2
+    400022: Character2_LeftHandThumb3
+    400024: Character2_LeftLeg
+    400026: Character2_LeftShoulder
+    400028: Character2_LeftToeBase
+    400030: Character2_LeftUpLeg
+    400032: Character2_Neck
+    400034: Character2_Reference
+    400036: Character2_RightArm
+    400038: Character2_RightFoot
+    400040: Character2_RightForeArm
+    400042: Character2_RightHand
+    400044: Character2_RightHandIndex1
+    400046: Character2_RightHandIndex2
+    400048: Character2_RightHandIndex3
+    400050: Character2_RightHandThumb1
+    400052: Character2_RightHandThumb2
+    400054: Character2_RightHandThumb3
+    400056: Character2_RightLeg
+    400058: Character2_RightShoulder
+    400060: Character2_RightToeBase
+    400062: Character2_RightUpLeg
+    400064: Character2_Spine
+    400066: Character2_Spine1
+    400068: Character2_Spine2
+    400070: group1
+    400072: //RootNode
+    400074: pasted__pCube2
+    400076: penis_man
+    2300000: pasted__pCube2
+    3300000: pasted__pCube2
+    4300000: penis_man
+    4300002: pasted__pCube2
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: penis_man
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar to
+      improve retargeting quality.\n\t'Character2_Spine2' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
