@@ -4,15 +4,16 @@ using System.Collections;
 public class MenuController : MonoBehaviour
 {
     public GameObject mainMenuGroup, vsAiGroup, sparGroup, armyGroup;
-   
+    static private GameObject song;
 
     public float moveTime;
+    private Color color;
 
     private Camera mainCam;
     private Vector3 armyBuildPos;
 
     private SplineWalker walker;
-
+    
     //private float currentMoveTime = 0f;
 
     void Awake()
@@ -22,6 +23,7 @@ public class MenuController : MonoBehaviour
         armyBuildPos.y = 0f;
         armyBuildPos.z = 0f;
         walker = GameObject.Find("Main Camera").GetComponent<SplineWalker>();
+        //armyGroup = GameObject.Find("ArmyBuilderUI").GetComponent<GameObject>();
     }
 
     private void moveGroups(GameObject inFocus, GameObject outOfFocus1, GameObject outOfFocus2)
@@ -49,6 +51,8 @@ public class MenuController : MonoBehaviour
 
     public void goToVsAiGroup()
     {
+        walker.enabled = true;
+        //mainMenuGroup.SetActive(false);
         moveGroups(vsAiGroup, mainMenuGroup, sparGroup);
     }
 
@@ -59,14 +63,11 @@ public class MenuController : MonoBehaviour
 
     public void goToArmySelect()
     {
-        //walker.enabled = true;
-        //mainMenuGroup.SetActive(false);
-
-        //if (walker.progress == 1f)
-        //    armyGroup.SetActive(true);
-        
+        walker.enabled = true;
+        mainMenuGroup.SetActive(false);
+        //
         //enable for demo if one scene not done.
-        Application.LoadLevel("ArmyBuilder2");
+        //Application.LoadLevel("ArmyBuilder2");
     }
 
     public void exitGame()
@@ -81,15 +82,21 @@ public class MenuController : MonoBehaviour
     void Update()
     {
         if (walker.progress == 1f)
-            Application.LoadLevel("Battle");
+        {
+            Application.LoadLevel("ArmyBuilder2");
+            //armyGroup.SetActive(true);
+
+        }
+
+        
     }
 
     public void goToVsAiScene()
     {
-        //walker.spline = GameObject.Find("Army -> Combat Spline").GetComponent<BezierSpline>();
+        //walker.spline = GameObject.Find("Main -> Map Spline").GetComponent<BezierSpline>();
        // walker.lookBehind = false;
        // walker.lookForward = true;
-        walker.enabled = true;
+       // walker.enabled = true;
 
         //if (walker.progress == 1f)
         //Application.LoadLevel("Battle");
