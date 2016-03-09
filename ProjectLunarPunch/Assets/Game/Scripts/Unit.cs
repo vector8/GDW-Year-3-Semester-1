@@ -54,8 +54,12 @@ public class Unit : MonoBehaviour
         {
             attackTimer.update(Time.deltaTime);
 
-            gameObject.transform.position = Vector3.Lerp(target.transform.position, originalPosition, attackTimer.getTime() / ATTACK_ANIMATION_TIME);
-            gameObject.transform.LookAt(target.transform, new Vector3(0f, 1f, 0f));
+            //TODO: remove this
+            Vector3 Target = target.transform.position;
+            Target.y = 0;
+
+            gameObject.transform.position = Vector3.Lerp(Target, originalPosition, attackTimer.getTime() / ATTACK_ANIMATION_TIME);
+            gameObject.transform.LookAt(Target, new Vector3(0f, 1f, 0f));
 
             gameObject.GetComponent<spearmanAnim>().setRun(true);
 
@@ -76,8 +80,12 @@ public class Unit : MonoBehaviour
         {
             attackTimer.update(Time.deltaTime);
 
-            gameObject.transform.position = Vector3.Lerp(originalPosition, target.transform.position, attackTimer.getTime() / ATTACK_ANIMATION_TIME);
-            gameObject.transform.LookAt(target.transform, new Vector3(0f, 1f, 0f));
+            //TODO: remove this
+            Vector3 Target = target.transform.position;
+            Target.y = 0;
+
+            gameObject.transform.position = Vector3.Lerp(originalPosition, Target, attackTimer.getTime() / ATTACK_ANIMATION_TIME);
+            gameObject.transform.LookAt(Target, new Vector3(0f, 1f, 0f));
 
             gameObject.GetComponent<spearmanAnim>().setRun(true);
 
