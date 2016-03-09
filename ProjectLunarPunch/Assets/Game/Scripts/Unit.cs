@@ -29,12 +29,13 @@ public class Unit : MonoBehaviour
         Returning
     }
 
-    
+    bool runin = true;
+    float count = 0;
 
     protected const float CRIT_BONUS = 1.5f;
     protected const float DOG_DEBUFF_REDUCTION = 0.5f;
     protected const float ADVANTAGE_BONUS = 1.2f;
-    protected const float DEFENDING_MODIFIER = 0.5f;
+    protected const float DEFENDING_MODIFIER = 0.05f;
     protected const float ATTACK_ANIMATION_TIME = 0.5f;
     protected const int DOG_DEBUFF_DURATION = 3;
 
@@ -43,6 +44,8 @@ public class Unit : MonoBehaviour
     protected Unit target;
     protected Vector3 originalPosition;
 
+    int attStateHash = Animator.StringToHash("Base Layer.run");
+
     void Update()
     {
         attackAnimation();
@@ -50,26 +53,42 @@ public class Unit : MonoBehaviour
 
     protected virtual void attackAnimation()
     {
+        AnimatorStateInfo animState = gameObject.GetComponent<spearmanAnim>().anim.GetCurrentAnimatorStateInfo(0);
+
         if (attackState == AttackState.Attacking)
         {
             attackTimer.update(Time.deltaTime);
 
-            gameObject.transform.position = Vector3.Lerp(target.transform.position, originalPosition, attackTimer.getTime() / ATTACK_ANIMATION_TIME);
+            //float dist = Vector3.Distance(target.transform.position, originalPosition);
+
+            gameObject.transform.position = Vector3.Lerp(target.transform.position , originalPosition, (attackTimer.getTime() / ATTACK_ANIMATION_TIME));
             gameObject.transform.LookAt(target.transform, new Vector3(0f, 1f, 0f));
 
             gameObject.GetComponent<spearmanAnim>().setRun(true);
 
             if (attackTimer.isDone())
             {
-                gameObject.GetComponent<spearmanAnim>().callAttack();
-                gameObject.GetComponent<spearmanAnim>().setRun(false);
+                if(runin)
+                {
+                    gameObject.GetComponent<spearmanAnim>().callAttack();
+                    gameObject.GetComponent<spearmanAnim>().setRun(false);
+                    runin = false;
+                }
 
+                count += 0.02f;
+                
+                //gameObject.GetComponent<spearmanAnim>().anim.anima
                
-                gameObject.GetComponent<spearmanAnim>().anim.GetCurrentAnimatorStateInfo(0);
+                Debug.Log(gameObject.GetComponent<spearmanAnim>().anim.GetCurrentAnimatorStateInfo(0).ToString());
 
-                dealDamage(target);
-                attackTimer.setTime(ATTACK_ANIMATION_TIME);
-                attackState = AttackState.Returning;
+                if(animState.nameHash != attStateHash && count > 1)
+                {
+                    dealDamage(target);
+                    attackTimer.setTime(ATTACK_ANIMATION_TIME);
+                    attackState = AttackState.Returning;
+                    runin = true;
+                }
+                
             }
         }
         else if (attackState == AttackState.Returning)
