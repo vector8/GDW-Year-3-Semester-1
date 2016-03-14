@@ -83,7 +83,7 @@ public class Unit : MonoBehaviour
                
                 Debug.Log(gameObject.GetComponent<spearmanAnim>().anim.GetCurrentAnimatorStateInfo(0).ToString());
 
-                if(animState.nameHash != attStateHash && count > 1)
+                if(animState.fullPathHash != attStateHash && count > 1)
                 {
                     dealDamage(target);
                     attackTimer.setTime(ATTACK_ANIMATION_TIME);
