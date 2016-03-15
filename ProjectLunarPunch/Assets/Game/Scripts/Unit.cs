@@ -36,7 +36,7 @@ public class Unit : MonoBehaviour
     protected const float DOG_DEBUFF_REDUCTION = 0.5f;
     protected const float ADVANTAGE_BONUS = 1.2f;
     protected const float DEFENDING_MODIFIER = 0.5f;
-    protected const float ATTACK_ANIMATION_TIME = 0.5f;
+    protected const float ATTACK_ANIMATION_TIME = 1.0f;
     protected const int DOG_DEBUFF_DURATION = 3;
 
     protected AttackState attackState = AttackState.NotAttacking;
@@ -53,6 +53,10 @@ public class Unit : MonoBehaviour
 
     protected virtual void attackAnimation()
     {
+        //gameObject.transform.Rotate(Vector3.up, 180);
+
+        //gameObject.transform.LookAt(target.originalPosition);
+
         AnimatorStateInfo animState = gameObject.GetComponent<spearmanAnim>().anim.GetCurrentAnimatorStateInfo(0);
 
         if (attackState == AttackState.Attacking)
@@ -60,11 +64,13 @@ public class Unit : MonoBehaviour
             attackTimer.update(Time.deltaTime);
 
             //TODO: remove this
-            Vector3 Target = target.transform.position;
-            Target.y = 0;
+            Vector3 targetPosition = target.transform.position + target.transform.forward * 100f;
+            targetPosition.y = 0;
 
-            gameObject.transform.position = Vector3.Lerp(Target, originalPosition, attackTimer.getTime() / ATTACK_ANIMATION_TIME);
-            gameObject.transform.LookAt(Target, new Vector3(0f, 1f, 0f));
+            print(Vector3.Distance(targetPosition, originalPosition));
+
+            gameObject.transform.position = Vector3.Lerp(targetPosition, originalPosition, attackTimer.getTime() / (ATTACK_ANIMATION_TIME));
+            gameObject.transform.LookAt(target.transform.position, new Vector3(0f, 1f, 0f));
 
             gameObject.GetComponent<spearmanAnim>().setRun(true);
 
@@ -89,6 +95,7 @@ public class Unit : MonoBehaviour
                     attackTimer.setTime(ATTACK_ANIMATION_TIME);
                     attackState = AttackState.Returning;
                     runin = true;
+                    count = 0;
                 }
                 
             }
@@ -100,9 +107,10 @@ public class Unit : MonoBehaviour
             //TODO: remove this
             Vector3 Target = target.transform.position;
             Target.y = 0;
+            gameObject.transform.Rotate(Vector3.up, 180);
 
             gameObject.transform.position = Vector3.Lerp(originalPosition, Target, attackTimer.getTime() / ATTACK_ANIMATION_TIME);
-            gameObject.transform.LookAt(Target, new Vector3(0f, 1f, 0f));
+            gameObject.transform.LookAt(originalPosition, new Vector3(0f, 1f, 0f));
 
             gameObject.GetComponent<spearmanAnim>().setRun(true);
 
