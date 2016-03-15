@@ -3,7 +3,6 @@ using System.Collections;
 
 public class AudioManager : MonoBehaviour
 {
-    
     void Start()
     {
         DontDestroyOnLoad(GameObject.Find("Eve_of_Battle_Song"));
@@ -12,7 +11,7 @@ public class AudioManager : MonoBehaviour
 
     void Update()
     {
-        if (Application.loadedLevelName == "Battle")
+        if (Application.loadedLevel == 2)
         {
             AudioSource.Destroy(GameObject.Find("Eve_of_Battle_Song"));
         }
