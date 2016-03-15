@@ -67,10 +67,12 @@ public class Unit : MonoBehaviour
             Vector3 targetPosition = target.transform.position + target.transform.forward * 100f;
             targetPosition.y = 0;
 
-            print(Vector3.Distance(targetPosition, originalPosition));
+            //print(Vector3.Distance(targetPosition, originalPosition));
 
             gameObject.transform.position = Vector3.Lerp(targetPosition, originalPosition, attackTimer.getTime() / (ATTACK_ANIMATION_TIME));
             gameObject.transform.LookAt(target.transform.position, new Vector3(0f, 1f, 0f));
+
+            Debug.Log(attackState);
 
             gameObject.GetComponent<spearmanAnim>().setRun(true);
 
@@ -89,13 +91,15 @@ public class Unit : MonoBehaviour
                
                 Debug.Log(gameObject.GetComponent<spearmanAnim>().anim.GetCurrentAnimatorStateInfo(0).ToString());
 
-                if(animState.fullPathHash != attStateHash && count > 1)
+                if(count > 1)
                 {
                     dealDamage(target);
                     attackTimer.setTime(ATTACK_ANIMATION_TIME);
                     attackState = AttackState.Returning;
                     runin = true;
                     count = 0;
+
+                    Debug.Log(attackState);
                 }
                 
             }
