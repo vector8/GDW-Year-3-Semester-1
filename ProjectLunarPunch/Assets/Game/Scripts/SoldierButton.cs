@@ -5,7 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 [System.Serializable]
-public class ButtonClass : System.Object
+public class ButtonClass
 {
     public Button m_spawnWarHound,
         m_spawnSpearMan,
@@ -27,7 +27,7 @@ public class SoldierButton : MonoBehaviour
     [SerializeField]
     private ButtonClass spawnButtons;
 
-    public SplineWalker walker = GameObject.Find("Main Camera").GetComponent<SplineWalker>();
+    public SplineWalker walker;
 
     private Button pressedButton = null;
     public bool buttonCheck;
@@ -44,6 +44,8 @@ public class SoldierButton : MonoBehaviour
     // Add on click listeners, for each button
     void Start()
     {
+        walker = GameObject.Find("Main Camera").GetComponent<SplineWalker>();
+
         // Initialize the list for the UI Handler
         m_statsHandlers = new List<Stats_UI_Handler>();
 
