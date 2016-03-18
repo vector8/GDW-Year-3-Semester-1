@@ -44,6 +44,35 @@ public class MenuController : MonoBehaviour
         outOfFocus2.transform.position = pos;
     }
 
+   
+
+    //happens on mouse events
+    void MouseClicked()
+    {
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit))
+        {
+            
+
+            if (hit.collider.tag == "battleFLag")
+            {
+                Debug.Log(hit.collider.name);
+                Application.LoadLevel("Battle");
+            }
+
+            if(hit.collider.tag == "ArmyFLag")
+            {
+
+                Debug.Log(hit.collider.name);
+                //walker.enabled = true;
+                goToVsAiGroup();
+            }
+        }
+    }
+
+
     public void goToMainMenuGroup()
     {
         moveGroups(mainMenuGroup, vsAiGroup, sparGroup);
@@ -87,6 +116,14 @@ public class MenuController : MonoBehaviour
             //armyGroup.SetActive(true);
 
         }
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            MouseClicked();
+        }
+      
+
+
 
         
     }
