@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 486100}
   - 137: {fileID: 13730424}
   - 95: {fileID: 9561420}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Blend_flag2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23,9 +23,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 119138}
-  m_LocalRotation: {x: 0, y: -0.435986, z: 0, w: -0.8999535}
-  m_LocalPosition: {x: -63, y: 316.8, z: -5.8}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: -0.26561654, z: 0, w: 0.9640788}
+  m_LocalPosition: {x: 0.976839, y: 2.6228018, z: -5.4802074}
+  m_LocalScale: {x: 0.09768355, y: 0.097683474, z: 0.097683504}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
