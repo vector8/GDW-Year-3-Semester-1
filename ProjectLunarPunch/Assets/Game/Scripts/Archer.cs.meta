@@ -1,10 +1,19 @@
 fileFormatVersion: 2
 guid: 45cf34c52c77242438e54ebd506846d5
-timeCreated: 1445716092
+timeCreated: 1459452657
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - lockInButton: {instanceID: 0}
+  - instructionText: {instanceID: 0}
+  - timerText: {instanceID: 0}
+  - timerController: {instanceID: 0}
+  - gamePanel: {instanceID: 0}
+  - gameOverPanel: {instanceID: 0}
+  - gameOverText: {instanceID: 0}
+  - DmgTextPrefab: {fileID: 10265736, guid: 6cad1e30df28fbc4cb004e432fc03a03, type: 2}
+  - arrowPrefab: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

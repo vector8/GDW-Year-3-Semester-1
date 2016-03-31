@@ -7,6 +7,7 @@ TagManager:
   - SpawnSphere
   - battleFLag
   - ArmyFLag
+  - DmgText
   layers:
   - Default
   - TransparentFX

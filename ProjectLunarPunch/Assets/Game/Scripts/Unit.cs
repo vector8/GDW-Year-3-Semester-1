@@ -44,9 +44,6 @@ public class Unit : MonoBehaviour
     protected Unit target;
     protected Vector3 originalPosition;
 
-    public TextMesh dmgNumPrefab;
-
-
     int attStateHash = Animator.StringToHash("Base Layer.run");
 
     void Update()
@@ -192,14 +189,6 @@ public class Unit : MonoBehaviour
         {
             target.ApplyDebuff();
         }
-
-        //floating combat text
-        //TextMesh dmgNum = Instantiate(dmgNumPrefab, target.transform.position, target.transform.rotation) as TextMesh;
-        //dmgNum.text = damage.ToString();
-        //if (attackState == AttackState.Returning)
-        //{
-        //    Destroy(dmgNum);
-        //}
     }
 
     public void attack(Unit other)
