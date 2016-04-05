@@ -21,6 +21,7 @@ public class Unit : MonoBehaviour
     public bool ally = false;
     public bool debuff_dog = false;
     public int debuff_dog_time;
+    //public GUIText dmgText;
 
     protected enum AttackState
     {
@@ -30,7 +31,7 @@ public class Unit : MonoBehaviour
     }
 
     bool runin = true;
-    float count = 0;
+    float count = 0; 
 
     protected const float CRIT_BONUS = 1.5f;
     protected const float DOG_DEBUFF_REDUCTION = 0.5f;
@@ -209,6 +210,8 @@ public class Unit : MonoBehaviour
         gameObject.GetComponent<spearmanAnim>().callHit();
 
         hp -= damage;
+        //battletext
+        //dmgText.text = damage.ToString();
         if(hp <= 0f)
         {
             hp = 0f;
@@ -262,5 +265,10 @@ public class Unit : MonoBehaviour
     {
         debuff_dog_time = DOG_DEBUFF_DURATION;
         debuff_dog = true;
+    }
+
+    public void UpdateBattleText()
+    {
+
     }
 }
