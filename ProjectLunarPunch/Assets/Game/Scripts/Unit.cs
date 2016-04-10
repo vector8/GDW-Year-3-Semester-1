@@ -85,7 +85,7 @@ public class Unit : MonoBehaviour
                     runin = false;
                 }
 
-                count += 0.02f;
+                count += 0.03f;
                 
                 //gameObject.GetComponent<spearmanAnim>().anim.anima
                
