@@ -21,7 +21,11 @@ public class Unit : MonoBehaviour
     public bool ally = false;
     public bool debuff_dog = false;
     public int debuff_dog_time;
+<<<<<<< local
+    public bool isCrit;
     //public GUIText dmgText;
+=======
+>>>>>>> other
 
     protected enum AttackState
     {
@@ -31,7 +35,7 @@ public class Unit : MonoBehaviour
     }
 
     bool runin = true;
-    float count = 0; 
+    float count = 0;
 
     protected const float CRIT_BONUS = 1.5f;
     protected const float DOG_DEBUFF_REDUCTION = 0.5f;
@@ -55,6 +59,7 @@ public class Unit : MonoBehaviour
     protected virtual void attackAnimation()
     {
         //gameObject.transform.Rotate(Vector3.up, 180);
+        //Vector3 targetPosition = target.transform.position + target.transform.forward * 100f;
 
         //gameObject.transform.LookAt(target.originalPosition);
 
@@ -86,7 +91,7 @@ public class Unit : MonoBehaviour
                     runin = false;
                 }
 
-                count += 0.02f;
+                count += 0.03f;
                 
                 //gameObject.GetComponent<spearmanAnim>().anim.anima
                
@@ -109,12 +114,14 @@ public class Unit : MonoBehaviour
         {
             attackTimer.update(Time.deltaTime);
 
+            Vector3 targetPosition = target.transform.position + target.transform.forward * 100f;
+
             //TODO: remove this
             Vector3 Target = target.transform.position;
             Target.y = 0;
             gameObject.transform.Rotate(Vector3.up, 180);
 
-            gameObject.transform.position = Vector3.Lerp(originalPosition, Target, attackTimer.getTime() / ATTACK_ANIMATION_TIME);
+            gameObject.transform.position = Vector3.Lerp(originalPosition, targetPosition, attackTimer.getTime() / ATTACK_ANIMATION_TIME);
             gameObject.transform.LookAt(originalPosition, new Vector3(0f, 1f, 0f));
 
             gameObject.GetComponent<spearmanAnim>().setRun(true);
@@ -141,19 +148,19 @@ public class Unit : MonoBehaviour
         }
         
         string log = "";
-        bool crit = (Random.Range(0f, 100f) < critChance);
+        //bool crit = (Random.Range(0f, 100f) < critChance);
 
-        float damage = att * Random.Range(0.9f, 1.1f);
-        damage *= (100f / (100f + target.def));
-
-
+        //float damage = att * Random.Range(0.9f, 1.1f);
+        //damage *= (100f / (100f + target.def));
+        float damage = att * (100f / (100f + target.def));
 
         if (hasAdvantage(type, target.type))
         {
             damage *= ADVANTAGE_BONUS;
         }
 
-        if (crit)
+
+        if (isCrit)
         {
             // TODO: add special logic for berserkers and swordsmen.
             damage *= CRIT_BONUS;
@@ -192,7 +199,7 @@ public class Unit : MonoBehaviour
         }
     }
 
-    public void attack(Unit other)
+    public void attack(Unit other, int crit)
     {
         if(!other.gameObject.activeSelf)
         {
@@ -202,6 +209,7 @@ public class Unit : MonoBehaviour
         attackState = AttackState.Attacking;
         attackTimer.setTime(ATTACK_ANIMATION_TIME);
         target = other;
+        isCrit = critChance > crit;
         originalPosition = gameObject.transform.position;
     }
 
@@ -210,8 +218,6 @@ public class Unit : MonoBehaviour
         gameObject.GetComponent<spearmanAnim>().callHit();
 
         hp -= damage;
-        //battletext
-        //dmgText.text = damage.ToString();
         if(hp <= 0f)
         {
             hp = 0f;
@@ -265,10 +271,5 @@ public class Unit : MonoBehaviour
     {
         debuff_dog_time = DOG_DEBUFF_DURATION;
         debuff_dog = true;
-    }
-
-    public void UpdateBattleText()
-    {
-
     }
 }
