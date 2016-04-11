@@ -858,7 +858,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: aea3571c835df8b499dfb77a51516cbb, type: 2}
+  - {fileID: 2100000, guid: 5082ac15a12f7194c979643b71c1c776, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -884,7 +884,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: aea3571c835df8b499dfb77a51516cbb, type: 2}
+  - {fileID: 2100000, guid: 8e227c7f1ad09194f897b78dec259169, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -965,7 +965,6 @@ MonoBehaviour:
   ally: 0
   debuff_dog: 0
   debuff_dog_time: 0
-  dmgNumPrefab: {fileID: 0}
 --- !u!136 &13601228
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -989,7 +988,7 @@ SkinnedMeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: aea3571c835df8b499dfb77a51516cbb, type: 2}
+  - {fileID: 2100000, guid: 39acf9c2d85e6d84d933c9a1e2fc2deb, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
