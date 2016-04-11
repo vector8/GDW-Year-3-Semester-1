@@ -21,9 +21,9 @@ public class UnitControl : MonoBehaviour
     public TimerController timerControl;
     public int AILevel = 0;
 
-    public bool online = false;
+    public bool online = true;
     public bool isHost = false;
-    public string serverIP = "127.0.0.1";
+    public string serverIP = "10.120.35.53";
 
     // TODO: remove after networking?
     public GameObject[] prefabs = new GameObject[6];
@@ -40,16 +40,19 @@ public class UnitControl : MonoBehaviour
 
     void Start()
     {
+        online = true;
+        isHost = true;
+        int error;
         if (online)
         {
             if (isHost)
             {
-                NetworkWrapper.initializeServer();
+                error = NetworkWrapper.initializeServer();
             }
             else
             {
                 NetworkWrapper.setServer(serverIP);
-                NetworkWrapper.initializeClient();
+                error = NetworkWrapper.initializeClient();
             }
         }
         
@@ -81,7 +84,8 @@ public class UnitControl : MonoBehaviour
             NetworkWrapper.sendTo(sendingMsg);
 
             int timeOut = 100;
-            while (NetworkWrapper.receive() != 0)
+            error = NetworkWrapper.receive();
+            while (error != 0)
             {
                 timeOut -= 1;
                 Thread.Sleep(100);
@@ -89,6 +93,7 @@ public class UnitControl : MonoBehaviour
                 {
                     break;
                 }
+                error = NetworkWrapper.receive();
             }
             if (timeOut <= 0)
             {
