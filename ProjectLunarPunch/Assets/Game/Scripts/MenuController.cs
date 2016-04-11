@@ -69,6 +69,10 @@ public class MenuController : MonoBehaviour
                 //walker.enabled = true;
                 goToVsAiGroup();
             }
+            if (hit.collider.tag == "mpFlag")
+            {
+                //do multiplayer stuff
+            }
         }
     }
 

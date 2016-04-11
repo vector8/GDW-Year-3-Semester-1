@@ -703,15 +703,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 486100, guid: 264fcba395592044cab8c82a46fb8883, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -4.69
+      value: -4.69000006
       objectReference: {fileID: 0}
     - target: {fileID: 486100, guid: 264fcba395592044cab8c82a46fb8883, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.6228018
+      value: 2.62280178
       objectReference: {fileID: 0}
     - target: {fileID: 486100, guid: 264fcba395592044cab8c82a46fb8883, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 1.9
+      value: 1.89999998
       objectReference: {fileID: 0}
     - target: {fileID: 486100, guid: 264fcba395592044cab8c82a46fb8883, type: 2}
       propertyPath: m_LocalRotation.x
@@ -719,7 +719,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 486100, guid: 264fcba395592044cab8c82a46fb8883, type: 2}
       propertyPath: m_LocalRotation.y
-      value: -0.26561657
+      value: -.265616566
       objectReference: {fileID: 0}
     - target: {fileID: 486100, guid: 264fcba395592044cab8c82a46fb8883, type: 2}
       propertyPath: m_LocalRotation.z
@@ -727,7 +727,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 486100, guid: 264fcba395592044cab8c82a46fb8883, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.9640788
+      value: .964078784
       objectReference: {fileID: 0}
     - target: {fileID: 486100, guid: 264fcba395592044cab8c82a46fb8883, type: 2}
       propertyPath: m_RootOrder
@@ -735,20 +735,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 486100, guid: 264fcba395592044cab8c82a46fb8883, type: 2}
       propertyPath: m_LocalScale.x
-      value: 0.097683534
+      value: .097683534
       objectReference: {fileID: 0}
     - target: {fileID: 486100, guid: 264fcba395592044cab8c82a46fb8883, type: 2}
       propertyPath: m_LocalScale.y
-      value: 0.097683474
+      value: .0976834744
       objectReference: {fileID: 0}
     - target: {fileID: 486100, guid: 264fcba395592044cab8c82a46fb8883, type: 2}
       propertyPath: m_LocalScale.z
-      value: 0.09768352
+      value: .0976835191
       objectReference: {fileID: 0}
     - target: {fileID: 119138, guid: 264fcba395592044cab8c82a46fb8883, type: 2}
       propertyPath: m_Name
-      value: Blend_flag2 (2)
+      value: MPFlag
       objectReference: {fileID: 0}
+    - target: {fileID: 119138, guid: 264fcba395592044cab8c82a46fb8883, type: 2}
+      propertyPath: m_TagString
+      value: mpFlag
+      objectReference: {fileID: 0}
+    - target: {fileID: 13730424, guid: 264fcba395592044cab8c82a46fb8883, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 618290f6457ae6a49bb628d4838e449f, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 264fcba395592044cab8c82a46fb8883, type: 2}
   m_IsPrefabParent: 0
@@ -3002,6 +3010,7 @@ RectTransform:
   m_Children:
   - {fileID: 1390930868}
   - {fileID: 640418985}
+  - {fileID: 2137351737}
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_AnchorMin: {x: 0, y: 0}
@@ -3354,7 +3363,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 8f44b43d20b8e924781038451c11b19c, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
@@ -5180,15 +5189,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 486100, guid: 264fcba395592044cab8c82a46fb8883, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -6.27
+      value: -6.26999998
       objectReference: {fileID: 0}
     - target: {fileID: 486100, guid: 264fcba395592044cab8c82a46fb8883, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.2623496
+      value: 2.26234961
       objectReference: {fileID: 0}
     - target: {fileID: 486100, guid: 264fcba395592044cab8c82a46fb8883, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -1.68
+      value: -1.67999995
       objectReference: {fileID: 0}
     - target: {fileID: 486100, guid: 264fcba395592044cab8c82a46fb8883, type: 2}
       propertyPath: m_LocalRotation.x
@@ -5196,7 +5205,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 486100, guid: 264fcba395592044cab8c82a46fb8883, type: 2}
       propertyPath: m_LocalRotation.y
-      value: -0.21357241
+      value: -.213572413
       objectReference: {fileID: 0}
     - target: {fileID: 486100, guid: 264fcba395592044cab8c82a46fb8883, type: 2}
       propertyPath: m_LocalRotation.z
@@ -5204,7 +5213,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 486100, guid: 264fcba395592044cab8c82a46fb8883, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.9769273
+      value: .97692728
       objectReference: {fileID: 0}
     - target: {fileID: 486100, guid: 264fcba395592044cab8c82a46fb8883, type: 2}
       propertyPath: m_RootOrder
@@ -5212,24 +5221,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 119138, guid: 264fcba395592044cab8c82a46fb8883, type: 2}
       propertyPath: m_Name
-      value: Blend_flag2 (1)
+      value: QBFlag
       objectReference: {fileID: 0}
     - target: {fileID: 486100, guid: 264fcba395592044cab8c82a46fb8883, type: 2}
       propertyPath: m_LocalScale.x
-      value: 0.09768356
+      value: .0976835564
       objectReference: {fileID: 0}
     - target: {fileID: 486100, guid: 264fcba395592044cab8c82a46fb8883, type: 2}
       propertyPath: m_LocalScale.y
-      value: 0.097683474
+      value: .0976834744
       objectReference: {fileID: 0}
     - target: {fileID: 486100, guid: 264fcba395592044cab8c82a46fb8883, type: 2}
       propertyPath: m_LocalScale.z
-      value: 0.09768349
+      value: .0976834893
       objectReference: {fileID: 0}
     - target: {fileID: 119138, guid: 264fcba395592044cab8c82a46fb8883, type: 2}
       propertyPath: m_TagString
       value: battleFLag
       objectReference: {fileID: 0}
+    - target: {fileID: 13730424, guid: 264fcba395592044cab8c82a46fb8883, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 618290f6457ae6a49bb628d4838e449f, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 264fcba395592044cab8c82a46fb8883, type: 2}
   m_IsPrefabParent: 0
@@ -7762,7 +7775,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 8f44b43d20b8e924781038451c11b19c, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
@@ -10034,15 +10047,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 486100, guid: 264fcba395592044cab8c82a46fb8883, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1.17
+      value: 1.16999996
       objectReference: {fileID: 0}
     - target: {fileID: 486100, guid: 264fcba395592044cab8c82a46fb8883, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.2623496
+      value: 2.26234961
       objectReference: {fileID: 0}
     - target: {fileID: 486100, guid: 264fcba395592044cab8c82a46fb8883, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -5.47
+      value: -5.46999979
       objectReference: {fileID: 0}
     - target: {fileID: 486100, guid: 264fcba395592044cab8c82a46fb8883, type: 2}
       propertyPath: m_LocalRotation.x
@@ -10050,7 +10063,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 486100, guid: 264fcba395592044cab8c82a46fb8883, type: 2}
       propertyPath: m_LocalRotation.y
-      value: -0.2135724
+      value: -.213572398
       objectReference: {fileID: 0}
     - target: {fileID: 486100, guid: 264fcba395592044cab8c82a46fb8883, type: 2}
       propertyPath: m_LocalRotation.z
@@ -10058,7 +10071,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 486100, guid: 264fcba395592044cab8c82a46fb8883, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.9769273
+      value: .97692728
       objectReference: {fileID: 0}
     - target: {fileID: 486100, guid: 264fcba395592044cab8c82a46fb8883, type: 2}
       propertyPath: m_RootOrder
@@ -10066,8 +10079,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 119138, guid: 264fcba395592044cab8c82a46fb8883, type: 2}
       propertyPath: m_Name
-      value: Blend_flag2 (3)
+      value: ABFlag
       objectReference: {fileID: 0}
+    - target: {fileID: 13730424, guid: 264fcba395592044cab8c82a46fb8883, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 92d2a0b29d2111c4e8ade1d5b4e59d5e, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 264fcba395592044cab8c82a46fb8883, type: 2}
   m_IsPrefabParent: 0
@@ -10487,6 +10504,80 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2109838937}
+--- !u!1 &2137351736
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 2137351737}
+  - 222: {fileID: 2137351739}
+  - 114: {fileID: 2137351738}
+  m_Layer: 5
+  m_Name: Multiplayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2137351737
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2137351736}
+  m_LocalRotation: {x: .349655449, y: 3.4139358e-15, z: 1.13932167e-07, w: .936878443}
+  m_LocalPosition: {x: 0, y: 0, z: -45.9000015}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 521212345}
+  m_RootOrder: 2
+  m_AnchorMin: {x: .5, y: .5}
+  m_AnchorMax: {x: .5, y: .5}
+  m_AnchoredPosition: {x: -21, y: -60.5}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &2137351738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2137351736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 8f44b43d20b8e924781038451c11b19c, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Multiplayer
+
+'
+--- !u!222 &2137351739
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2137351736}
 --- !u!1001 &2137818755
 Prefab:
   m_ObjectHideFlags: 0

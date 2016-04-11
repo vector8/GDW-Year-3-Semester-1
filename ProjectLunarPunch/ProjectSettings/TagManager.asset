@@ -9,6 +9,7 @@ TagManager:
   - ArmyFLag
   - DmgText
   - vsFlag
+  - mpFlag
   layers:
   - Default
   - TransparentFX
