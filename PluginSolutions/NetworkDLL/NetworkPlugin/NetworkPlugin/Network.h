@@ -1,6 +1,7 @@
 #define _WINSOCK_DEPRECATED_NO_WARNINGS
 #include <iostream>
 #include "LibSettings.h"
+#include "string"
 #include <WinSock2.h>
 
 #pragma comment (lib, "ws2_32.lib")
@@ -16,14 +17,19 @@ private:
 	char* serverIP;
 	char buf[512];
 	char msg[512];
+	std::string* message;
 
 public:
 	Network();
 
-	void initializeClient();
-	void initializeServer();
+	int initializeClient();
+	int initializeServer();
 	void setServer(char* SERVER);
-	void send(char* msg);
-	void receive();
+	int send(char* msg);
+	int receive();
+	char* readBuffer();
+	int getLength();
+	void clearBuffer();
+	void closeConnections();
 
 };
