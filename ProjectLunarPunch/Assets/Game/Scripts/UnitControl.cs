@@ -2,11 +2,15 @@
 using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using System.Threading;
+using System.Runtime.InteropServices;
 
 public struct UnitCommand
 {
     public Unit fromUnit, toUnit;
     public LineRenderer line;
+    public int crit;
 }
 
 public class UnitControl : MonoBehaviour
@@ -16,6 +20,10 @@ public class UnitControl : MonoBehaviour
     public Button lockInButton;
     public TimerController timerControl;
     public int AILevel = 0;
+
+    public bool online = false;
+    public bool isHost = false;
+    public string serverIP = "127.0.0.1";
 
     // TODO: remove after networking?
     public GameObject[] prefabs = new GameObject[6];
@@ -32,13 +40,28 @@ public class UnitControl : MonoBehaviour
 
     void Start()
     {
+        if (online)
+        {
+            if (isHost)
+            {
+                NetworkWrapper.initializeServer();
+            }
+            else
+            {
+                NetworkWrapper.setServer(serverIP);
+                NetworkWrapper.initializeClient();
+            }
+        }
+        
         BattleManager.logBattle("BATTLE STARTING!!\n");
 
+        string sendingMsg = "AC";
+
         // Initialize allies using ArmyConfiguration and enemies using random creation
-        for(int i = 0; i < 5; i++)
+        for (int i = 0; i < 5; i++)
         {
             int allyIndex;
-            if(ArmyConfiguration.army[i] == ClassType.NotSet)
+            if (ArmyConfiguration.army[i] == ClassType.NotSet)
             {
                 allyIndex = Random.Range(0, 5);
             }
@@ -50,11 +73,51 @@ public class UnitControl : MonoBehaviour
             allies[i] = ally.GetComponent<Unit>();
             allies[i].ally = true;
             ally.transform.SetParent(allySpots[i].transform, false);
+            sendingMsg += allyIndex.ToString();
+        }
 
-            int randomIndex = Random.Range(0, 5);
-            GameObject enemy = Instantiate<GameObject>(prefabs[3]);
-            enemies[i] = enemy.GetComponent<Unit>();
-            enemy.transform.SetParent(enemySpots[i].transform, false);
+        if (online)
+        {
+            NetworkWrapper.sendTo(sendingMsg);
+
+            int timeOut = 100;
+            while (NetworkWrapper.receive() != 0)
+            {
+                timeOut -= 1;
+                Thread.Sleep(100);
+                if (timeOut <= 0)
+                {
+                    break;
+                }
+            }
+            if (timeOut <= 0)
+            {
+                //TODO: connection failed, return to menu
+            }
+            else
+            {
+                string receivedString = Marshal.PtrToStringAnsi(NetworkWrapper.readBuffer());
+                NetworkWrapper.clearBuffer();
+                if (receivedString.Substring(0, 2) == "AC")
+                {
+                    enemies[0] = Instantiate<GameObject>(prefabs[int.Parse(receivedString.Substring(2, 1))]).GetComponent<Unit>();
+                    enemies[1] = Instantiate<GameObject>(prefabs[int.Parse(receivedString.Substring(3, 1))]).GetComponent<Unit>();
+                    enemies[2] = Instantiate<GameObject>(prefabs[int.Parse(receivedString.Substring(4, 1))]).GetComponent<Unit>();
+                    enemies[3] = Instantiate<GameObject>(prefabs[int.Parse(receivedString.Substring(5, 1))]).GetComponent<Unit>();
+                    enemies[4] = Instantiate<GameObject>(prefabs[int.Parse(receivedString.Substring(6, 1))]).GetComponent<Unit>();
+                }
+            }
+
+        }
+        else
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                int randomIndex = Random.Range(0, 5);
+                GameObject enemy = Instantiate<GameObject>(prefabs[3]);
+                enemies[i] = enemy.GetComponent<Unit>();
+                enemy.transform.SetParent(enemySpots[i].transform, false);
+            }
         }
     }
 
@@ -68,12 +131,12 @@ public class UnitControl : MonoBehaviour
 
         checkGameOver();
 
-        if(battleMgr.isGameOver())
+        if (battleMgr.isGameOver())
         {
             return;
         }
 
-        if(Mathf.Approximately(timerControl.timer, 0f))
+        if (Mathf.Approximately(timerControl.timer, 0f))
         {
             if (drawingLine)
             {
@@ -203,6 +266,7 @@ public class UnitControl : MonoBehaviour
                     lineEndScreenSpace = screenPos;
 
                     currentCommand.toUnit = unit;
+                    currentCommand.crit = Random.Range(0, 100);
                     if (!commandExists)
                     {
                         playerCommands.Add(currentCommand);
@@ -298,22 +362,22 @@ public class UnitControl : MonoBehaviour
 
         // TODO: Generate or fetch enemy commands here.
         List<int> availableUnits = new List<int>();
-        for(int i = 0; i < allies.Length; i++)
+        for (int i = 0; i < allies.Length; i++)
         {
-            if(allies[i] != null && allies[i].gameObject.activeSelf && !allies[i].isDead())
+            if (allies[i] != null && allies[i].gameObject.activeSelf && !allies[i].isDead())
             {
                 availableUnits.Add(i);
             }
         }
-        if(availableUnits.Count > 0)
+        if (availableUnits.Count > 0 && !online)
         {
             for (int i = 0; i < enemies.Length; i++)
             {
-                if(enemies[i] != null && enemies[i].gameObject.activeSelf && !enemies[i].isDead())
+                if (enemies[i] != null && enemies[i].gameObject.activeSelf && !enemies[i].isDead())
                 {
                     UnitCommand cmd = new UnitCommand();
                     cmd.fromUnit = enemies[i];
-                    int unitNumber = Random.Range(0, availableUnits.Count-1);
+                    int unitNumber = Random.Range(0, availableUnits.Count - 1);
                     if (AILevel == 0)
                     {
                         cmd.toUnit = allies[availableUnits[unitNumber]];
@@ -340,14 +404,15 @@ public class UnitControl : MonoBehaviour
                         int lowestHPAlly = 0;
                         for (int k = 0; k < allies.Length; k++)
                         {
-                            if (allies[k].hp * 100/(100+allies[k].def) < lowestEffectiveHP && allies[k].isDead() == false)
+                            if (allies[k].hp * 100 / (100 + allies[k].def) < lowestEffectiveHP && allies[k].isDead() == false)
                             {
-                                lowestEffectiveHP = allies[k].hp * 100/(100+allies[k].def);
+                                lowestEffectiveHP = allies[k].hp * 100 / (100 + allies[k].def);
                                 lowestHPAlly = k;
                             }
                         }
                         cmd.toUnit = allies[lowestHPAlly];
                     }
+                    cmd.crit = Random.Range(0, 100);
                     allCommands.Add(cmd);
                 }
             }
@@ -357,13 +422,89 @@ public class UnitControl : MonoBehaviour
             // game should be over already...
         }
 
+        string msgToSend = "CM";
+        Random rand = new Random();
         // Loop through player commands to destroy all lines.
         for (int i = 0; i < playerCommands.Count; i++)
         {
             DestroyImmediate(playerCommands[i].line.gameObject);
+            
+            msgToSend += playerCommands[i].fromUnit.ToString() + playerCommands[i].toUnit.ToString() + playerCommands[i].crit.ToString().PadLeft(3, '0');
         }
-        
+
+        if (online)
+        {
+            NetworkWrapper.sendTo(msgToSend);
+
+            int timeOut = 100;
+            while (NetworkWrapper.receive() != 0)
+            {
+                timeOut -= 1;
+                Thread.Sleep(100);
+                if (timeOut <= 0)
+                {
+                    break;
+                }
+            }
+            if (timeOut <= 0)
+            {
+                //TODO: connection failed, return to menu
+            }
+            else
+            {
+                string receivedString = Marshal.PtrToStringAnsi(NetworkWrapper.readBuffer());
+                NetworkWrapper.clearBuffer();
+
+                if (receivedString.Substring(0, 2) == "AC")
+                {
+                    if (receivedString.Length >= 7)
+                    {
+                        UnitCommand onlineEnemyCmd = new UnitCommand();
+                        onlineEnemyCmd.fromUnit = enemies[int.Parse(receivedString.Substring(2, 1))];
+                        onlineEnemyCmd.toUnit = allies[int.Parse(receivedString.Substring(3, 1))];
+                        onlineEnemyCmd.crit = int.Parse(receivedString.Substring(4, 3));
+                        allCommands.Add(onlineEnemyCmd);
+                    }
+                    if (receivedString.Length >= 12)
+                    {
+                        UnitCommand onlineEnemyCmd = new UnitCommand();
+                        onlineEnemyCmd.fromUnit = enemies[int.Parse(receivedString.Substring(7, 1))];
+                        onlineEnemyCmd.toUnit = allies[int.Parse(receivedString.Substring(8, 1))];
+                        onlineEnemyCmd.crit = int.Parse(receivedString.Substring(9, 3));
+                        allCommands.Add(onlineEnemyCmd);
+                    }
+                    if (receivedString.Length >= 17)
+                    {
+                        UnitCommand onlineEnemyCmd = new UnitCommand();
+                        onlineEnemyCmd.fromUnit = enemies[int.Parse(receivedString.Substring(12, 1))];
+                        onlineEnemyCmd.toUnit = allies[int.Parse(receivedString.Substring(13, 1))];
+                        onlineEnemyCmd.crit = int.Parse(receivedString.Substring(14, 3));
+                        allCommands.Add(onlineEnemyCmd);
+                    }
+                    if (receivedString.Length >= 22)
+                    {
+                        UnitCommand onlineEnemyCmd = new UnitCommand();
+                        onlineEnemyCmd.fromUnit = enemies[int.Parse(receivedString.Substring(17, 1))];
+                        onlineEnemyCmd.toUnit = allies[int.Parse(receivedString.Substring(18, 1))];
+                        onlineEnemyCmd.crit = int.Parse(receivedString.Substring(19, 3));
+                        allCommands.Add(onlineEnemyCmd);
+                    }
+                    if (receivedString.Length >= 27)
+                    {
+                        UnitCommand onlineEnemyCmd = new UnitCommand();
+                        onlineEnemyCmd.fromUnit = enemies[int.Parse(receivedString.Substring(22, 1))];
+                        onlineEnemyCmd.toUnit = allies[int.Parse(receivedString.Substring(23, 1))];
+                        onlineEnemyCmd.crit = int.Parse(receivedString.Substring(24, 3));
+                        allCommands.Add(onlineEnemyCmd);
+                    }
+                }
+
+            }
+        }
+
         allCommands.AddRange(playerCommands);
+
+
 
         // Sort commands by speed.
         allCommands.Sort(delegate(UnitCommand a, UnitCommand b)
@@ -389,6 +530,8 @@ public class UnitControl : MonoBehaviour
         {
             sortedCommands.Enqueue(allCommands[i]);
         }
+
+
 
         battleMgr.commenceBattle(sortedCommands);
 

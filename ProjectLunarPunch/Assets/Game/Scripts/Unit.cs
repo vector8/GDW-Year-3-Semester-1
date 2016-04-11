@@ -21,6 +21,7 @@ public class Unit : MonoBehaviour
     public bool ally = false;
     public bool debuff_dog = false;
     public int debuff_dog_time;
+    public bool isCrit;
     //public GUIText dmgText;
 
     protected enum AttackState
@@ -141,19 +142,19 @@ public class Unit : MonoBehaviour
         }
         
         string log = "";
-        bool crit = (Random.Range(0f, 100f) < critChance);
+        //bool crit = (Random.Range(0f, 100f) < critChance);
 
-        float damage = att * Random.Range(0.9f, 1.1f);
-        damage *= (100f / (100f + target.def));
-
-
+        //float damage = att * Random.Range(0.9f, 1.1f);
+        //damage *= (100f / (100f + target.def));
+        float damage = att * (100f / (100f + target.def));
 
         if (hasAdvantage(type, target.type))
         {
             damage *= ADVANTAGE_BONUS;
         }
 
-        if (crit)
+
+        if (isCrit)
         {
             // TODO: add special logic for berserkers and swordsmen.
             damage *= CRIT_BONUS;
@@ -192,7 +193,7 @@ public class Unit : MonoBehaviour
         }
     }
 
-    public void attack(Unit other)
+    public void attack(Unit other, int crit)
     {
         if(!other.gameObject.activeSelf)
         {
@@ -202,6 +203,7 @@ public class Unit : MonoBehaviour
         attackState = AttackState.Attacking;
         attackTimer.setTime(ATTACK_ANIMATION_TIME);
         target = other;
+        isCrit = critChance > crit;
         originalPosition = gameObject.transform.position;
     }
 
