@@ -72,6 +72,7 @@ public class MenuController : MonoBehaviour
             if (hit.collider.tag == "mpFlag")
             {
                 //do multiplayer stuff
+                Application.LoadLevel("Multiplayer");
             }
         }
     }
