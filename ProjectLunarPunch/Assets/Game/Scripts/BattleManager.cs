@@ -42,7 +42,7 @@ public class BattleManager : MonoBehaviour
                     UnitCommand command = currentCommands.Peek();
                     if (command.fromUnit.gameObject.activeSelf && command.toUnit.gameObject.activeSelf)
                     {
-                        command.fromUnit.attack(command.toUnit);
+                        command.fromUnit.attack(command.toUnit, command.crit);
                         state = BattleState.Waiting;
                     }
                     else
