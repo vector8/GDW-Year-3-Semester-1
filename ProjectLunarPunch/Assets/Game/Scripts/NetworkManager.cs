@@ -28,8 +28,12 @@ public static class NetworkWrapper
 
     [DllImport(DLL_NAME)]
     public static extern int getLength();
+
     [DllImport(DLL_NAME)]
     public static extern void clearBuffer();
+
+    [DllImport(DLL_NAME)]
+    public static extern void closeConnections();
 
     public static string getLocalIPAddress()
     {
