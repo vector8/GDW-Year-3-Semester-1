@@ -24,6 +24,7 @@ public class Unit : MonoBehaviour
     //public GUIText dmgText;
     public bool isCrit;
     //public GUIText dmgText;
+    public int position;
 
     protected enum AttackState
     {
