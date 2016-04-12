@@ -159,11 +159,31 @@ public class Unit : MonoBehaviour
             damage *= ADVANTAGE_BONUS;
         }
 
+        if (type == ClassType.Berserker)
+        {
+            damage *= 1 + (maxHp - hp) / (maxHp * 4);
+        }
+
+        if (target.type == ClassType.Spearman && hp > 5 && type != ClassType.Archer)
+        {
+            hp -= 5;
+        }
 
         if (isCrit)
         {
             // TODO: add special logic for berserkers and swordsmen.
-            damage *= CRIT_BONUS;
+            if (type == ClassType.Cavalry)
+            {
+                damage *= 1.75f;
+            }
+            else 
+            {
+                damage *= CRIT_BONUS;
+            }
+            if (target.type == ClassType.Swordsman)
+            {
+                damage *= 0.8f;
+            }
             log += "Critical hit! ";
         }
 
@@ -196,7 +216,7 @@ public class Unit : MonoBehaviour
         //dmg text
         GameObject temp = Instantiate(DmgText) as GameObject;
         temp.transform.position = target.transform.position + offset;
-        temp.GetComponent<TextMesh>().text = "-" + damage.ToString();
+        temp.GetComponent<TextMesh>().text = "-" + Mathf.Round(damage).ToString();
         Destroy(temp.gameObject, 1);
 
         if (type == ClassType.Warhound)

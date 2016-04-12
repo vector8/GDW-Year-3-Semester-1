@@ -54,12 +54,12 @@ public class UnitControl : MonoBehaviour
                     NetworkWrapper.closeConnections();
                     Application.LoadLevel("MainMenu");
                 }
-                int timeOut = 100;
+                int timeOut = 200;
                 error = NetworkWrapper.receive();
                 while (error != 0)
                 {
                     timeOut -= 1;
-                    Thread.Sleep(200);
+                    Thread.Sleep(100);
                     if (timeOut <= 0)
                     {
                         break;
@@ -95,12 +95,12 @@ public class UnitControl : MonoBehaviour
                     Application.LoadLevel("MainMenu");
                 }
                 NetworkWrapper.sendTo("RR");
-                int timeOut = 100;
+                int timeOut = 200;
                 error = NetworkWrapper.receive();
                 while (error != 0)
                 {
                     timeOut -= 1;
-                    Thread.Sleep(200);
+                    Thread.Sleep(100);
                     if (timeOut <= 0)
                     {
                         break;
@@ -161,12 +161,12 @@ public class UnitControl : MonoBehaviour
                 Application.LoadLevel("MainMenu");
             }
 
-            int timeOut = 100;
+            int timeOut = 200;
             error = NetworkWrapper.receive();
             while (error != 0)
             {
                 timeOut -= 1;
-                Thread.Sleep(200);
+                Thread.Sleep(100);
                 if (timeOut <= 0)
                 {
                     break;
@@ -551,7 +551,7 @@ public class UnitControl : MonoBehaviour
                 Application.LoadLevel("MainMenu");
             }
 
-            int timeOut = 100;
+            int timeOut = 200;
             while (NetworkWrapper.receive() != 0)
             {
                 timeOut -= 1;
