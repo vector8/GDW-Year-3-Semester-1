@@ -770,7 +770,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: cb00cd9f7ab51644f88f631662daeacc, type: 3}
       propertyPath: m_LocalRotation.y
-      value: .711170912
+      value: 0.7111709
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: cb00cd9f7ab51644f88f631662daeacc, type: 3}
       propertyPath: m_LocalRotation.z
@@ -778,7 +778,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: cb00cd9f7ab51644f88f631662daeacc, type: 3}
       propertyPath: m_LocalRotation.w
-      value: .703019142
+      value: 0.70301914
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: cb00cd9f7ab51644f88f631662daeacc, type: 3}
       propertyPath: m_RootOrder
@@ -786,15 +786,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: cb00cd9f7ab51644f88f631662daeacc, type: 3}
       propertyPath: m_LocalScale.x
-      value: .0912462771
+      value: 0.09124628
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: cb00cd9f7ab51644f88f631662daeacc, type: 3}
       propertyPath: m_LocalScale.y
-      value: .0912462845
+      value: 0.091246285
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: cb00cd9f7ab51644f88f631662daeacc, type: 3}
       propertyPath: m_LocalScale.z
-      value: .0912462845
+      value: 0.091246285
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: cb00cd9f7ab51644f88f631662daeacc, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1651,7 +1651,7 @@ MonoBehaviour:
   - {fileID: 165356, guid: 9df1ede6aef515942bd3f218836cc36b, type: 2}
   - {fileID: 198500, guid: 0d6d03719794209469df4607259ddd71, type: 2}
   - {fileID: 157482, guid: de455e5767c7eda4891403a393776cab, type: 2}
-  - {fileID: 193666, guid: 1e53092ca7c886c4282f3c329f3c7f70, type: 2}
+  - {fileID: 180814, guid: 850f3742ad9a4ca4db4abcb8d92c3e61, type: 2}
   - {fileID: 179846, guid: 849bf2d04bc8e5c46bf9baf517a3dc67, type: 2}
   - {fileID: 147170, guid: 09726e4870afff446a7e936c45c2b168, type: 2}
   g:
@@ -5028,7 +5028,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: d40f470ab3a0ead45a1e2d768a50b357, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 75.7439575
+      value: 75.74396
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: d40f470ab3a0ead45a1e2d768a50b357, type: 3}
       propertyPath: m_LocalRotation.x
@@ -5036,7 +5036,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: d40f470ab3a0ead45a1e2d768a50b357, type: 3}
       propertyPath: m_LocalRotation.y
-      value: .720878065
+      value: 0.72087806
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: d40f470ab3a0ead45a1e2d768a50b357, type: 3}
       propertyPath: m_LocalRotation.z
@@ -5044,7 +5044,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: d40f470ab3a0ead45a1e2d768a50b357, type: 3}
       propertyPath: m_LocalRotation.w
-      value: .693061888
+      value: 0.6930619
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: d40f470ab3a0ead45a1e2d768a50b357, type: 3}
       propertyPath: m_RootOrder
@@ -5052,15 +5052,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: d40f470ab3a0ead45a1e2d768a50b357, type: 3}
       propertyPath: m_LocalScale.x
-      value: .0856580958
+      value: 0.085658096
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: d40f470ab3a0ead45a1e2d768a50b357, type: 3}
       propertyPath: m_LocalScale.y
-      value: .0856580958
+      value: 0.085658096
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: d40f470ab3a0ead45a1e2d768a50b357, type: 3}
       propertyPath: m_LocalScale.z
-      value: .0856580958
+      value: 0.085658096
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: d40f470ab3a0ead45a1e2d768a50b357, type: 3}
       propertyPath: m_Materials.Array.data[0]

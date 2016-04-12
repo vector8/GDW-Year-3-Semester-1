@@ -21,8 +21,8 @@ public class UnitControl : MonoBehaviour
     public TimerController timerControl;
     public int AILevel = 0;
 
-    public bool online = false;
-    public bool isHost = false;
+    public bool online = true;
+    public bool isHost = true;
     public string serverIP = "127.0.0.1";
 
     // TODO: remove after networking?
