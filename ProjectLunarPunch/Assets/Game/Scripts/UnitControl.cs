@@ -43,6 +43,7 @@ public class UnitControl : MonoBehaviour
     {
         online = true;
         isHost = true;
+        serverIP = "10.120.28.1";
         if (online)
         {
             if (isHost)
