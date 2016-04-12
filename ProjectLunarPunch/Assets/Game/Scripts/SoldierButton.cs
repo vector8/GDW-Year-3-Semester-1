@@ -168,10 +168,7 @@ public class SoldierButton : MonoBehaviour
                     case ButtonNames.ARCHER:
                         {
                             Destroy(g[ID]);
-                            //TODO: Remove this
-                            Vector3 temp = hit.transform.position;
-                            temp.y = 90;
-                            g[ID] = (GameObject)Instantiate(soldierTypes[3], temp, hit.transform.rotation);
+                            g[ID] = (GameObject)Instantiate(soldierTypes[3], hit.transform.position, hit.transform.rotation);
                         }
                         break;
                     case ButtonNames.BERSERKER:
