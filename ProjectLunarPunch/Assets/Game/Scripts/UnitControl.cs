@@ -42,7 +42,7 @@ public class UnitControl : MonoBehaviour
     void Start()
     {
         //NetworkWrapper.online = true;
-        //NetworkWrapper.isHost = false;
+        //NetworkWrapper.isHost = true;
         //NetworkWrapper.serverIP = "127.0.0.1";
         if (NetworkWrapper.online)
         {

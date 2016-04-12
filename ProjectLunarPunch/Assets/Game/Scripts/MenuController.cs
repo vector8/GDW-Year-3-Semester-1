@@ -62,6 +62,7 @@ public class MenuController : MonoBehaviour
             {
                 Debug.Log(hit.collider.name);
                 buttonSound.Play();
+                NetworkWrapper.online = false;
                 Application.LoadLevel("Battle");
             }
 
@@ -76,7 +77,8 @@ public class MenuController : MonoBehaviour
             if (hit.collider.tag == "mpFlag")
             {
                 buttonSound.Play();
-                Application.LoadLevel("Multiplayer");
+                NetworkWrapper.online = true; 
+                Application.LoadLevel("Battle");
             }
         }
     }
