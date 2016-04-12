@@ -13,7 +13,8 @@ public class MenuController : MonoBehaviour
     private Vector3 armyBuildPos;
 
     private SplineWalker walker;
-    
+
+    private AudioSource buttonSound;
     //private float currentMoveTime = 0f;
 
     void Awake()
@@ -23,6 +24,7 @@ public class MenuController : MonoBehaviour
         armyBuildPos.y = 0f;
         armyBuildPos.z = 0f;
         walker = GameObject.Find("Main Camera").GetComponent<SplineWalker>();
+        buttonSound = GameObject.Find("button").GetComponent<AudioSource>();
         //armyGroup = GameObject.Find("ArmyBuilderUI").GetComponent<GameObject>();
     }
 
@@ -59,6 +61,7 @@ public class MenuController : MonoBehaviour
             if (hit.collider.tag == "battleFLag")
             {
                 Debug.Log(hit.collider.name);
+                buttonSound.Play();
                 Application.LoadLevel("Battle");
             }
 
@@ -66,12 +69,13 @@ public class MenuController : MonoBehaviour
             {
 
                 Debug.Log(hit.collider.name);
+                buttonSound.Play();
                 //walker.enabled = true;
                 goToVsAiGroup();
             }
             if (hit.collider.tag == "mpFlag")
             {
-                //do multiplayer stuff
+                buttonSound.Play();
                 Application.LoadLevel("Multiplayer");
             }
         }

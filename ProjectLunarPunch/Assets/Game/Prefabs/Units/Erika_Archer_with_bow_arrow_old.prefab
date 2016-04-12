@@ -2192,6 +2192,8 @@ MonoBehaviour:
   ally: 0
   debuff_dog: 0
   debuff_dog_time: 0
+  isCrit: 0
+  DmgText: {fileID: 176502, guid: 5b84bd2d9ceceb349be013541a2248cc, type: 2}
   arrowPrefab: {fileID: 122890, guid: 52c7fe06d6e045348b36ae2dc4b31cb8, type: 2}
 --- !u!136 &13613252
 CapsuleCollider:
@@ -2500,7 +2502,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: DmgText
+      value: 
+      objectReference: {fileID: 176502, guid: 5b84bd2d9ceceb349be013541a2248cc, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 147028}

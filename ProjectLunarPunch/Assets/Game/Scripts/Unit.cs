@@ -21,10 +21,11 @@ public class Unit : MonoBehaviour
     public bool ally = false;
     public bool debuff_dog = false;
     public int debuff_dog_time;
-    //public GUIText dmgText;
     public bool isCrit;
-    //public GUIText dmgText;
     public int position;
+    
+    public GameObject DmgText;
+    private Vector3 offset =  new Vector3 (-10, 210, 0);
 
     protected enum AttackState
     {
@@ -192,6 +193,12 @@ public class Unit : MonoBehaviour
         BattleManager.logBattle(log);
 
         target.takeDamage(damage);
+        //dmg text
+        GameObject temp = Instantiate(DmgText) as GameObject;
+        temp.transform.position = target.transform.position + offset;
+        temp.GetComponent<TextMesh>().text = "-" + damage.ToString();
+        Destroy(temp.gameObject, 1);
+
         if (type == ClassType.Warhound)
         {
             target.ApplyDebuff();
