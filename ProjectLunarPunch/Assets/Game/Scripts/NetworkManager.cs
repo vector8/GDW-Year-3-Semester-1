@@ -6,6 +6,10 @@ using System.Net.Sockets;
 
 public static class NetworkWrapper
 {
+    public static bool online = false;
+    public static bool isHost = false;
+    public static string serverIP = "";
+    
     private const string DLL_NAME = "NetworkPlugin";
 
     [DllImport(DLL_NAME)]
