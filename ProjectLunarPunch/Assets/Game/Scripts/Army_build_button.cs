@@ -17,7 +17,7 @@ public class Army_build_button : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
     {
-        if (pressedButton != null)
+        if (pressedButton != null && MouseInputWrapper.getMouseButtonDown(MouseInputWrapper.MouseButtons.Left))
         {
             Ray ray = Camera.main.ScreenPointToRay(MouseInputWrapper.getMousePosition());
 
@@ -25,7 +25,7 @@ public class Army_build_button : MonoBehaviour {
 
             if (Physics.Raycast(ray, out hit))
             {
-                if (hit.collider.tag == "Army_Flag" && MouseInputWrapper.getMouseButtonDown(MouseInputWrapper.MouseButtons.Left))
+                if (hit.collider.tag == "Army_Flag")
                 {
                     walker.enabled=true;
                 }
