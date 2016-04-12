@@ -23,13 +23,14 @@ public class UnitControl : MonoBehaviour
 
     public bool online = true;
     public bool isHost = true;
-    public string serverIP = "127.0.0.1";
+    public string serverIP = "10.120.35.53";
 
     // TODO: remove after networking?
     public GameObject[] prefabs = new GameObject[6];
     public GameObject[] allySpots = new GameObject[5], enemySpots = new GameObject[5];
     public Unit[] enemies = new Unit[5], allies = new Unit[5];
 
+    private int error;
     private bool drawingLine = false, commandExists = false, endDrawing = false;
     private Vector3 lineStart, lineStartScreenSpace;
     private Vector3 lineEnd, lineEndScreenSpace;
@@ -40,19 +41,31 @@ public class UnitControl : MonoBehaviour
 
     void Start()
     {
+        online = true;
+        isHost = true;
         if (online)
         {
             if (isHost)
             {
-                NetworkWrapper.initializeServer();
+                error = NetworkWrapper.initializeServer();
+                if (error != 0)
+                {
+                    NetworkWrapper.closeConnections();
+                    Application.LoadLevel("MainMenu");
+                }
             }
             else
             {
                 NetworkWrapper.setServer(serverIP);
-                NetworkWrapper.initializeClient();
+                error = NetworkWrapper.initializeClient();
+                if (error != 0)
+                {
+                    NetworkWrapper.closeConnections();
+                    Application.LoadLevel("MainMenu");
+                }
             }
         }
-        
+
         BattleManager.logBattle("BATTLE STARTING!!\n");
 
         string sendingMsg = "AC";
@@ -78,21 +91,30 @@ public class UnitControl : MonoBehaviour
 
         if (online)
         {
-            NetworkWrapper.sendTo(sendingMsg);
+            error = NetworkWrapper.sendTo(sendingMsg);
+            if (error != 0)
+            {
+                NetworkWrapper.closeConnections();
+                Application.LoadLevel("MainMenu");
+            }
 
             int timeOut = 100;
-            while (NetworkWrapper.receive() != 0)
+            error = NetworkWrapper.receive();
+            while (error != 0)
             {
                 timeOut -= 1;
-                Thread.Sleep(100);
+                Thread.Sleep(200);
                 if (timeOut <= 0)
                 {
                     break;
                 }
+                error = NetworkWrapper.receive();
             }
             if (timeOut <= 0)
             {
-                //TODO: connection failed, return to menu
+                NetworkWrapper.closeConnections();
+                Application.LoadLevel("MainMenu");
+
             }
             else
             {
@@ -428,13 +450,19 @@ public class UnitControl : MonoBehaviour
         for (int i = 0; i < playerCommands.Count; i++)
         {
             DestroyImmediate(playerCommands[i].line.gameObject);
-            
+
             msgToSend += playerCommands[i].fromUnit.ToString() + playerCommands[i].toUnit.ToString() + playerCommands[i].crit.ToString().PadLeft(3, '0');
         }
 
         if (online)
         {
-            NetworkWrapper.sendTo(msgToSend);
+            error = NetworkWrapper.sendTo(msgToSend);
+
+            if (error != 0)
+            {
+                NetworkWrapper.closeConnections();
+                Application.LoadLevel("MainMenu");
+            }
 
             int timeOut = 100;
             while (NetworkWrapper.receive() != 0)
@@ -448,7 +476,8 @@ public class UnitControl : MonoBehaviour
             }
             if (timeOut <= 0)
             {
-                //TODO: connection failed, return to menu
+                NetworkWrapper.closeConnections();
+                Application.LoadLevel("MainMenu");
             }
             else
             {
