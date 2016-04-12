@@ -40,6 +40,8 @@ public class UnitControl : MonoBehaviour
 
     void Start()
     {
+        online = false;
+        isHost = true;
         if (online)
         {
             if (isHost)
