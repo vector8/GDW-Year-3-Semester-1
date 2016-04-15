@@ -80,6 +80,15 @@ public class MenuController : MonoBehaviour
                 NetworkWrapper.online = true; 
                 Application.LoadLevel("Battle");
             }
+            if(hit.collider.tag == "exitGate")
+            {
+                buttonSound.Play();
+
+                Debug.Log("exit was clicked");
+                Application.Quit();
+            }
+
+
         }
     }
 
