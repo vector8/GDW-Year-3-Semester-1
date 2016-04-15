@@ -10,6 +10,7 @@ TagManager:
   - DmgText
   - vsFlag
   - mpFlag
+  - exitGate
   layers:
   - Default
   - TransparentFX
